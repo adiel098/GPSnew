@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+<Style id="satelliteStyle">
+  <IconStyle>
+    <scale>1.0</scale>
+    <Icon>
+      <href>http://maps.google.com/mapfiles/kml/shapes/star.png</href>
+    </Icon>
+  </IconStyle>
+</Style>
+    <Placemark>
+      <name>Satellite 1</name>
+      <description>Azimuth: -7.50°, Elevation: 49.18°, Height: 909.27 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>34.01754307516342,37.4469595644327,909272.3176112882</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 2</name>
+      <description>Azimuth: 33.42°, Elevation: 76.50°, Height: 825.55 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>38.34871583051882,36.877241664043034,825550.6804851878</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 3</name>
+      <description>Azimuth: 33.66°, Elevation: 67.38°, Height: 781.83 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>37.16984601802077,35.05882992069744,781833.2642304396</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 4</name>
+      <description>Azimuth: 39.80°, Elevation: 52.88°, Height: 957.82 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>37.626243274558945,34.892479101136686,957823.2173975462</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 5</name>
+      <description>Azimuth: 22.70°, Elevation: 53.41°, Height: 538.27 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>36.421418175030766,35.376290583211485,538271.1083305262</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 6</name>
+      <description>Azimuth: 51.29°, Elevation: 67.12°, Height: 792.59 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>40.40311374426225,35.99062814013696,792594.3043504811</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 7</name>
+      <description>Azimuth: 42.56°, Elevation: 66.84°, Height: 476.97 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>36.32320917271043,33.15888491681254,476970.35099566606</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 8</name>
+      <description>Azimuth: 107.85°, Elevation: 58.17°, Height: 906.00 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>39.06757143180119,30.125355382104132,905998.9433353728</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 9</name>
+      <description>Azimuth: 116.99°, Elevation: 47.53°, Height: 491.81 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>39.901921834067416,28.90174886757875,491808.4436575135</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 10</name>
+      <description>Azimuth: 135.02°, Elevation: 55.54°, Height: 824.26 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>37.609502974367054,28.68889672246567,824264.4189470957</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 11</name>
+      <description>Azimuth: 91.78°, Elevation: 74.13°, Height: 466.72 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>42.99061875573833,31.24553651325278,466718.2746411899</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 12</name>
+      <description>Azimuth: 141.37°, Elevation: 49.98°, Height: 967.52 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>36.08315239013561,29.894301537969596,967516.0846675965</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 13</name>
+      <description>Azimuth: 117.66°, Elevation: 56.83°, Height: 938.27 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>36.3496898407682,30.687631846756066,938268.3603309209</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 14</name>
+      <description>Azimuth: 132.88°, Elevation: 60.62°, Height: 425.66 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>39.736776617240594,26.915759855253,425663.08678227407</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 15</name>
+      <description>Azimuth: 178.87°, Elevation: 58.69°, Height: 804.39 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>34.955302768636436,23.597860095354214,804385.4789277724</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 16</name>
+      <description>Azimuth: 175.44°, Elevation: 57.62°, Height: 1044.49 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>35.13781523505456,27.265716150791214,1044489.200505589</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 17</name>
+      <description>Azimuth: 186.34°, Elevation: 69.02°, Height: 1057.34 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>34.16146097589428,25.754364462015587,1057344.9407474122</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 18</name>
+      <description>Azimuth: 212.21°, Elevation: 72.96°, Height: 500.07 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>30.591886508180302,24.81958942439839,500073.77705860673</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 19</name>
+      <description>Azimuth: 189.53°, Elevation: 55.65°, Height: 519.15 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>34.47531276252901,29.56521471226865,519153.4535674779</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 20</name>
+      <description>Azimuth: 217.18°, Elevation: 70.66°, Height: 439.67 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>30.31358470917997,25.585470288545473,439667.75573771045</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 21</name>
+      <description>Azimuth: 215.85°, Elevation: 46.94°, Height: 957.45 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>31.811925391252814,27.36529089931156,957449.4968306435</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 22</name>
+      <description>Azimuth: 261.49°, Elevation: 66.75°, Height: 767.15 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>31.969132275301458,31.07656889514739,767149.7337567349</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 23</name>
+      <description>Azimuth: 281.75°, Elevation: 73.04°, Height: 760.05 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>28.73327911547647,32.76230025029918,760046.3837501542</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 24</name>
+      <description>Azimuth: 263.92°, Elevation: 52.58°, Height: 951.19 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>27.226802514673356,30.693671462990263,951187.1611505724</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 25</name>
+      <description>Azimuth: 294.26°, Elevation: 49.65°, Height: 546.24 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>31.043320022937287,33.19335165728188,546242.7641913786</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 26</name>
+      <description>Azimuth: 292.11°, Elevation: 54.51°, Height: 634.23 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>29.902160155138347,33.490023412309654,634227.528352752</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 27</name>
+      <description>Azimuth: 297.22°, Elevation: 46.22°, Height: 1093.03 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>29.64534116889772,34.15117813688224,1093025.8963877612</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 28</name>
+      <description>Azimuth: 315.96°, Elevation: 75.93°, Height: 820.44 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>29.6007521976372,36.87565252724018,820444.7389047983</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 29</name>
+      <description>Azimuth: 330.97°, Elevation: 59.52°, Height: 554.29 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>33.76599656466658,33.36293814607312,554292.2198275402</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satellite 30</name>
+      <description>Azimuth: 369.66°, Elevation: 62.11°, Height: 720.77 km</description>
+      <styleUrl>#satelliteStyle</styleUrl>
+      <Point>
+        <extrude>1</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>35.568104887710795,36.01440501651388,720765.493186617</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

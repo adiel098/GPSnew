@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Style id="wallStyle">
+  <LineStyle>
+    <color>ff0000ff</color>
+    <width>2</width>
+  </LineStyle>
+  <PolyStyle>
+    <color>4d0000ff</color>
+    <fill>1</fill>
+    <outline>1</outline>
+  </PolyStyle>
+</Style>
+<Style id="lineStyle">
+  <LineStyle>
+    <color>ff0000ff</color>
+    <width>2</width>
+  </LineStyle>
+</Style>
+<Style id="intersectionStyle">
+  <IconStyle>
+    <color>ff00ffff</color>
+    <scale>0.8</scale>
+  </IconStyle>
+</Style>
+<Placemark>
+  <name>Observer (70.00 m)</name>
+  <Point>
+    <altitudeMode>relativeToGround</altitudeMode>
+    <coordinates>35.217018,31.771959,70.0</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wall</name>
+  <styleUrl>#wallStyle</styleUrl>
+  <Polygon>
+    <extrude>1</extrude>
+    <altitudeMode>relativeToGround</altitudeMode>
+    <outerBoundaryIs>
+      <LinearRing>
+        <coordinates>
+35.21731691934435,31.772086063213152,0.0
+35.217167459672176,31.7722131264263,0.0
+35.217167459672176,31.7722131264263,100.0
+35.21731691934435,31.772086063213152,100.0
+35.21731691934435,31.772086063213152,0.0
+        </coordinates>
+      </LinearRing>
+    </outerBoundaryIs>
+  </Polygon>
+</Placemark>
+<Placemark>
+  <name>Line of Sight (NLOS - Blocked)</name>
+  <styleUrl>#lineStyle</styleUrl>
+  <LineString>
+    <altitudeMode>relativeToGround</altitudeMode>
+    <coordinates>
+      35.217018,31.771959,70.0
+      35.21722403227498,31.772165032274966,97.57028327147925
+    </coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <name>Intersection Point (97.57 m < 100.00 m)</name>
+  <styleUrl>#intersectionStyle</styleUrl>
+  <Point>
+    <altitudeMode>relativeToGround</altitudeMode>
+    <coordinates>35.21722403227498,31.772165032274966,97.57028327147925</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Satellite (Symbolic)</name>
+  <Point>
+    <altitudeMode>relativeToGround</altitudeMode>
+    <coordinates>35.22273584459181,31.778684685247686,1109.9999999999998</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

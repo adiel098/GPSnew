@@ -1,0 +1,381 @@
+KML Validation Report
+===================
+Generated at: 2025-04-01T14:34:02.1620967
+
+Building KML Validation Report
+============================
+
+Total buildings found: 13
+
+Building 1:
+- Number of vertices: 5
+- Height: 120.22 meters
+- Bounds:
+  * Latitude: 32.083774 to 32.084043
+  * Longitude: 34.801861 to 34.802400
+  * Altitude: 120.22 to 120.22 meters
+
+Building 2:
+- Number of vertices: 5
+- Height: 58.33 meters
+- Bounds:
+  * Latitude: 32.083265 to 32.083467
+  * Longitude: 34.802277 to 34.802774
+  * Altitude: 58.33 to 58.33 meters
+
+Building 3:
+- Number of vertices: 16
+- Height: 75.90 meters
+- Bounds:
+  * Latitude: 32.083758 to 32.084171
+  * Longitude: 34.802663 to 34.803076
+  * Altitude: 75.90 to 75.90 meters
+
+Building 4:
+- Number of vertices: 5
+- Height: 53.36 meters
+- Bounds:
+  * Latitude: 32.084430 to 32.084635
+  * Longitude: 34.802647 to 34.803243
+  * Altitude: 53.36 to 53.36 meters
+
+Building 5:
+- Number of vertices: 111
+- Height: 80.54 meters
+- Bounds:
+  * Latitude: 32.083328 to 32.083514
+  * Longitude: 34.801225 to 34.801655
+  * Altitude: 80.54 to 80.54 meters
+
+Building 6:
+- Number of vertices: 121
+- Height: 235.19 meters
+- Bounds:
+  * Latitude: 32.083159 to 32.083513
+  * Longitude: 34.803572 to 34.803875
+  * Altitude: 235.19 to 235.19 meters
+
+Building 7:
+- Number of vertices: 14
+- Height: 121.89 meters
+- Bounds:
+  * Latitude: 32.083146 to 32.083631
+  * Longitude: 34.803521 to 34.804400
+  * Altitude: 121.89 to 121.89 meters
+
+Building 8:
+- Number of vertices: 21
+- Height: 48.28 meters
+- Bounds:
+  * Latitude: 32.084261 to 32.084988
+  * Longitude: 34.801921 to 34.802744
+  * Altitude: 48.28 to 48.28 meters
+
+Building 9:
+- Number of vertices: 258
+- Height: 75.25 meters
+- Bounds:
+  * Latitude: 32.084576 to 32.084973
+  * Longitude: 34.802330 to 34.802596
+  * Altitude: 75.25 to 75.25 meters
+
+Building 10:
+- Number of vertices: 23
+- Height: 79.89 meters
+- Bounds:
+  * Latitude: 32.084542 to 32.084914
+  * Longitude: 34.803971 to 34.804468
+  * Altitude: 79.89 to 79.89 meters
+
+Building 11:
+- Number of vertices: 14
+- Height: 24.29 meters
+- Bounds:
+  * Latitude: 32.083654 to 32.084555
+  * Longitude: 34.803528 to 34.804059
+  * Altitude: 24.29 to 24.29 meters
+
+Building 12:
+- Number of vertices: 26
+- Height: 86.99 meters
+- Bounds:
+  * Latitude: 32.084033 to 32.084833
+  * Longitude: 34.804255 to 34.805091
+  * Altitude: 86.99 to 86.99 meters
+
+Building 13:
+- Number of vertices: 23
+- Height: 85.13 meters
+- Bounds:
+  * Latitude: 32.084959 to 32.085367
+  * Longitude: 34.804350 to 34.804732
+  * Altitude: 85.13 to 85.13 meters
+
+
+Satellite KML Validation Report
+=============================
+
+Total satellites found: 30
+
+Satellite: Satellite 1
+- Position:
+  * Longitude: 34.017543
+  * Latitude: 37.446960
+  * Altitude: 909272.32 meters
+- Azimuth: -7.50°
+- Elevation: 49.18°
+
+Satellite: Satellite 2
+- Position:
+  * Longitude: 38.348716
+  * Latitude: 36.877242
+  * Altitude: 825550.68 meters
+- Azimuth: 33.42°
+- Elevation: 76.50°
+
+Satellite: Satellite 3
+- Position:
+  * Longitude: 37.169846
+  * Latitude: 35.058830
+  * Altitude: 781833.26 meters
+- Azimuth: 33.66°
+- Elevation: 67.38°
+
+Satellite: Satellite 4
+- Position:
+  * Longitude: 37.626243
+  * Latitude: 34.892479
+  * Altitude: 957823.22 meters
+- Azimuth: 39.80°
+- Elevation: 52.88°
+
+Satellite: Satellite 5
+- Position:
+  * Longitude: 36.421418
+  * Latitude: 35.376291
+  * Altitude: 538271.11 meters
+- Azimuth: 22.70°
+- Elevation: 53.41°
+
+Satellite: Satellite 6
+- Position:
+  * Longitude: 40.403114
+  * Latitude: 35.990628
+  * Altitude: 792594.30 meters
+- Azimuth: 51.29°
+- Elevation: 67.12°
+
+Satellite: Satellite 7
+- Position:
+  * Longitude: 36.323209
+  * Latitude: 33.158885
+  * Altitude: 476970.35 meters
+- Azimuth: 42.56°
+- Elevation: 66.84°
+
+Satellite: Satellite 8
+- Position:
+  * Longitude: 39.067571
+  * Latitude: 30.125355
+  * Altitude: 905998.94 meters
+- Azimuth: 107.85°
+- Elevation: 58.17°
+
+Satellite: Satellite 9
+- Position:
+  * Longitude: 39.901922
+  * Latitude: 28.901749
+  * Altitude: 491808.44 meters
+- Azimuth: 116.99°
+- Elevation: 47.53°
+
+Satellite: Satellite 10
+- Position:
+  * Longitude: 37.609503
+  * Latitude: 28.688897
+  * Altitude: 824264.42 meters
+- Azimuth: 135.02°
+- Elevation: 55.54°
+
+Satellite: Satellite 11
+- Position:
+  * Longitude: 42.990619
+  * Latitude: 31.245537
+  * Altitude: 466718.27 meters
+- Azimuth: 91.78°
+- Elevation: 74.13°
+
+Satellite: Satellite 12
+- Position:
+  * Longitude: 36.083152
+  * Latitude: 29.894302
+  * Altitude: 967516.08 meters
+- Azimuth: 141.37°
+- Elevation: 49.98°
+
+Satellite: Satellite 13
+- Position:
+  * Longitude: 36.349690
+  * Latitude: 30.687632
+  * Altitude: 938268.36 meters
+- Azimuth: 117.66°
+- Elevation: 56.83°
+
+Satellite: Satellite 14
+- Position:
+  * Longitude: 39.736777
+  * Latitude: 26.915760
+  * Altitude: 425663.09 meters
+- Azimuth: 132.88°
+- Elevation: 60.62°
+
+Satellite: Satellite 15
+- Position:
+  * Longitude: 34.955303
+  * Latitude: 23.597860
+  * Altitude: 804385.48 meters
+- Azimuth: 178.87°
+- Elevation: 58.69°
+
+Satellite: Satellite 16
+- Position:
+  * Longitude: 35.137815
+  * Latitude: 27.265716
+  * Altitude: 1044489.20 meters
+- Azimuth: 175.44°
+- Elevation: 57.62°
+
+Satellite: Satellite 17
+- Position:
+  * Longitude: 34.161461
+  * Latitude: 25.754364
+  * Altitude: 1057344.94 meters
+- Azimuth: 186.34°
+- Elevation: 69.02°
+
+Satellite: Satellite 18
+- Position:
+  * Longitude: 30.591887
+  * Latitude: 24.819589
+  * Altitude: 500073.78 meters
+- Azimuth: 212.21°
+- Elevation: 72.96°
+
+Satellite: Satellite 19
+- Position:
+  * Longitude: 34.475313
+  * Latitude: 29.565215
+  * Altitude: 519153.45 meters
+- Azimuth: 189.53°
+- Elevation: 55.65°
+
+Satellite: Satellite 20
+- Position:
+  * Longitude: 30.313585
+  * Latitude: 25.585470
+  * Altitude: 439667.76 meters
+- Azimuth: 217.18°
+- Elevation: 70.66°
+
+Satellite: Satellite 21
+- Position:
+  * Longitude: 31.811925
+  * Latitude: 27.365291
+  * Altitude: 957449.50 meters
+- Azimuth: 215.85°
+- Elevation: 46.94°
+
+Satellite: Satellite 22
+- Position:
+  * Longitude: 31.969132
+  * Latitude: 31.076569
+  * Altitude: 767149.73 meters
+- Azimuth: 261.49°
+- Elevation: 66.75°
+
+Satellite: Satellite 23
+- Position:
+  * Longitude: 28.733279
+  * Latitude: 32.762300
+  * Altitude: 760046.38 meters
+- Azimuth: 281.75°
+- Elevation: 73.04°
+
+Satellite: Satellite 24
+- Position:
+  * Longitude: 27.226803
+  * Latitude: 30.693671
+  * Altitude: 951187.16 meters
+- Azimuth: 263.92°
+- Elevation: 52.58°
+
+Satellite: Satellite 25
+- Position:
+  * Longitude: 31.043320
+  * Latitude: 33.193352
+  * Altitude: 546242.76 meters
+- Azimuth: 294.26°
+- Elevation: 49.65°
+
+Satellite: Satellite 26
+- Position:
+  * Longitude: 29.902160
+  * Latitude: 33.490023
+  * Altitude: 634227.53 meters
+- Azimuth: 292.11°
+- Elevation: 54.51°
+
+Satellite: Satellite 27
+- Position:
+  * Longitude: 29.645341
+  * Latitude: 34.151178
+  * Altitude: 1093025.90 meters
+- Azimuth: 297.22°
+- Elevation: 46.22°
+
+Satellite: Satellite 28
+- Position:
+  * Longitude: 29.600752
+  * Latitude: 36.875653
+  * Altitude: 820444.74 meters
+- Azimuth: 315.96°
+- Elevation: 75.93°
+
+Satellite: Satellite 29
+- Position:
+  * Longitude: 33.765997
+  * Latitude: 33.362938
+  * Altitude: 554292.22 meters
+- Azimuth: 330.97°
+- Elevation: 59.52°
+
+Satellite: Satellite 30
+- Position:
+  * Longitude: 35.568105
+  * Latitude: 36.014405
+  * Altitude: 720765.49 meters
+- Azimuth: 369.66°
+- Elevation: 62.11°
+
+
+Route KML Validation Report
+=========================
+
+Total route points: 184
+
+Route bounds:
+- Latitude: 32.083704 to 32.084029
+- Longitude: 34.802489 to 34.802641
+- Altitude: 1.80 to 1.80 meters
+
+Route statistics:
+- Total distance: 0.00 meters
+- Average altitude: 1.80 meters
+
+Sample points:
+Point 1: (34.802510, 32.083704, 1.80)
+Point 2: (34.802522, 32.083705, 1.80)
+Point 3: (34.802534, 32.083705, 1.80)
+Point 4: (34.802546, 32.083706, 1.80)
+Point 5: (34.802557, 32.083706, 1.80)
+
