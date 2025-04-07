@@ -14,7 +14,7 @@ import java.util.Map;
  */
 public class LosNlosTest {
     private static final double WALL_HEIGHT = 100.0; // גובה הקיר במטרים
-    private static final double OBSERVER_HEIGHT = 70.45; // גובה המשתמש במטרים
+    private static final double OBSERVER_HEIGHT = 70.0; // גובה המשתמש במטרים
     private static final double WALL_DISTANCE = 30.0; // מרחק מהמשתמש לקיר במטרים
     private static final double WALL_LENGTH = 20.0; // אורך הקיר במטרים
     
@@ -238,9 +238,17 @@ public class LosNlosTest {
             writer.write("  </LineStyle>\n");
             writer.write("</Style>\n");
             
+            // סגנון לנקודת החיתוך
+            writer.write("<Style id=\"intersectionStyle\">\n");
+            writer.write("  <IconStyle>\n");
+            writer.write("    <color>ff00ffff</color>\n");
+            writer.write("    <scale>0.8</scale>\n");
+            writer.write("  </IconStyle>\n");
+            writer.write("</Style>\n");
+
             // הוספת נקודת המשתמש
             writer.write("<Placemark>\n");
-            writer.write("  <name>Observer (" + String.format("%.2f", OBSERVER_HEIGHT) + " m)</name>\n");
+            writer.write("  <name>Observer (" + String.format("%.2f m", OBSERVER_HEIGHT) + ")</name>\n");
             writer.write("  <Point>\n");
             writer.write("    <altitudeMode>relativeToGround</altitudeMode>\n");
             writer.write("    <coordinates>" + userPoint.getY() + "," + userPoint.getX() + "," + OBSERVER_HEIGHT + "</coordinates>\n");
@@ -279,7 +287,7 @@ public class LosNlosTest {
             
             // נציג את הקו בצורה שונה, תלוי אם יש או אין חיתוך עם הקיר
             if (intersectionPoint != null && !isLos) {
-                // אם יש חיתוך עם הקיר ואנחנו בNLOS, נציג את הקו המלא עד ללוויין
+                // אם יש חיתוך עם הקיר ואנחנו בNLOS, נציג את הקו עד לנקודת החיתוך
                 writer.write("<Placemark>\n");
                 writer.write("  <name>Line of Sight (NLOS - Blocked)</name>\n");
                 writer.write("  <styleUrl>#lineStyle</styleUrl>\n");
@@ -287,10 +295,21 @@ public class LosNlosTest {
                 writer.write("    <altitudeMode>relativeToGround</altitudeMode>\n");
                 writer.write("    <coordinates>\n");
                 writer.write("      " + userPoint.getY() + "," + userPoint.getX() + "," + OBSERVER_HEIGHT + "\n");
-                writer.write("      " + (userPoint.getY() + dLon) + "," + (userPoint.getX() + dLat) + "," + 
-                           (OBSERVER_HEIGHT + lineLength * Math.sin(Math.toRadians(satellite.getElevation()))) + "\n");
+                writer.write("      " + intersectionPoint.getY() + "," + intersectionPoint.getX() + "," + zAtIntersection + "\n");
                 writer.write("    </coordinates>\n");
                 writer.write("  </LineString>\n");
+                writer.write("</Placemark>\n");
+                
+                // הוספת נקודת החיתוך המדויקת
+                writer.write("<Placemark>\n");
+                writer.write("  <name>Intersection Point (" + String.format("%.2f", zAtIntersection) + " m < " + 
+                             String.format("%.2f", WALL_HEIGHT) + " m)</name>\n");
+                writer.write("  <styleUrl>#intersectionStyle</styleUrl>\n");
+                writer.write("  <Point>\n");
+                writer.write("    <altitudeMode>relativeToGround</altitudeMode>\n");
+                writer.write("    <coordinates>" + intersectionPoint.getY() + 
+                             "," + intersectionPoint.getX() + "," + zAtIntersection + "</coordinates>\n");
+                writer.write("  </Point>\n");
                 writer.write("</Placemark>\n");
                 
             } else {

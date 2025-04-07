@@ -18,17 +18,11 @@
     <width>2</width>
   </LineStyle>
 </Style>
-<Style id="intersectionStyle">
-  <IconStyle>
-    <color>ff00ffff</color>
-    <scale>0.8</scale>
-  </IconStyle>
-</Style>
 <Placemark>
-  <name>Observer (70.00 m)</name>
+  <name>Observer (70.45 m)</name>
   <Point>
     <altitudeMode>relativeToGround</altitudeMode>
-    <coordinates>35.217018,31.771959,70.0</coordinates>
+    <coordinates>35.217018,31.771959,70.45</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -56,24 +50,16 @@
   <LineString>
     <altitudeMode>relativeToGround</altitudeMode>
     <coordinates>
-      35.217018,31.771959,70.0
-      35.21722403227498,31.772165032274966,97.57028327147925
+      35.217018,31.771959,70.45
+      35.219259895082565,31.773864948197268,282.58203435596425
     </coordinates>
   </LineString>
-</Placemark>
-<Placemark>
-  <name>Intersection Point (97.57 m < 100.00 m)</name>
-  <styleUrl>#intersectionStyle</styleUrl>
-  <Point>
-    <altitudeMode>relativeToGround</altitudeMode>
-    <coordinates>35.21722403227498,31.772165032274966,97.57028327147925</coordinates>
-  </Point>
 </Placemark>
 <Placemark>
   <name>Satellite (Symbolic)</name>
   <Point>
     <altitudeMode>relativeToGround</altitudeMode>
-    <coordinates>35.22273584459181,31.778684685247686,1109.9999999999998</coordinates>
+    <coordinates>35.22273584459181,31.778684685247686,1111.35</coordinates>
   </Point>
 </Placemark>
 </Document>

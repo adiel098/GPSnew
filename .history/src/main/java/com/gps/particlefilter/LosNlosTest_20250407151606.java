@@ -14,7 +14,7 @@ import java.util.Map;
  */
 public class LosNlosTest {
     private static final double WALL_HEIGHT = 100.0; // גובה הקיר במטרים
-    private static final double OBSERVER_HEIGHT = 70.45; // גובה המשתמש במטרים
+    private static final double OBSERVER_HEIGHT = 70.0; // גובה המשתמש במטרים
     private static final double WALL_DISTANCE = 30.0; // מרחק מהמשתמש לקיר במטרים
     private static final double WALL_LENGTH = 20.0; // אורך הקיר במטרים
     
