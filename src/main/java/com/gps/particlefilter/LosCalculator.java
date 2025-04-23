@@ -20,26 +20,33 @@ public class LosCalculator {
         this.satellites = satellites;
     }
 
-    public Map<String, Boolean> calculateLOS(Point3D position) {
+    public Map<String, Boolean> calculateLOS(Point3D pos) {
         Map<String, Boolean> result = new HashMap<>();
         
         for (Satellite satellite : satellites) {
-            // אם הלוויין מתחת ל-10 מעלות, נחשיב אותו כ-NLOS באופן אוטומטי
-            if (satellite.getElevation() < 10.0) {
-                result.put(satellite.getName(), false);
-                continue;
-            }
-            
             boolean isLos = true;
-            // בדוק את כל הבניינים, אם יש חסימה אפילו על ידי בניין אחד, סמן NLOS
+            double requiredHeightAddition = 0;
+            
+            // Skip invalid buildings
             for (Building building : buildings) {
-                double losResult = computeLosDetailed(position, building, satellite);
-                if (losResult != -1) {
-                    // נמצאה חסימה
+                if (building == null || building.getVertices() == null || building.getVertices().size() < 3) {
+                    continue;
+                }
+                
+                LosResult losResult = computeLosDetailedWithIntersection(pos, building, satellite);
+                if (!losResult.isLos) {
                     isLos = false;
+                    requiredHeightAddition = losResult.heightDifference;
                     break;
                 }
             }
+            
+            if (isLos) {
+                System.out.println("LOS");
+            } else {
+                System.out.println("NLOS - Required height addition: " + String.format("%.2f", requiredHeightAddition) + "m");
+            }
+            
             result.put(satellite.getName(), isLos);
         }
         
@@ -47,102 +54,46 @@ public class LosCalculator {
     }
 
     /**
-     * Computes LOS/NLOS status and returns the height difference if NLOS
-     * or -1 if LOS
+     * מחשב האם יש קו ראייה ישיר (LOS) בין נקודת המשתמש ללוויין
+     * מחזיר אובייקט המכיל את כל המידע הרלוונטי: האם יש LOS, נקודת החיתוך, גובה הקרן וכו'
      */
-    public double computeLosDetailed(Point3D pos, Building building, Satellite satellite) {
-        // Skip invalid buildings
-        if (building == null || building.getVertices() == null || building.getVertices().size() < 3) {
-            return -1; // התעלם מבניינים לא תקינים
-        }
+    public LosResult computeLosDetailedWithIntersection(Point3D userPoint, Building building, Satellite satellite) {
+        Line3D ray = new Line3D(userPoint, satellite.getAzimuth(), satellite.getElevation(), 300);
         
-        // Create line of sight ray
-        Line3D ray = new Line3D(pos, satellite.getAzimuth(), satellite.getElevation(), 300);
-        
-        // Check intersection with each wall of the building
-        double minHeightDiff = Double.POSITIVE_INFINITY;
-        
+        // בדיקת חיתוך עם הקיר
         for (int i = 0; i < building.getVertices().size() - 1; i++) {
             Point3D p1 = building.getVertices().get(i);
             Point3D p2 = building.getVertices().get(i + 1);
-            Line2D wall = new Line2D(new Point2D(p1.getX(), p1.getY()), 
-                                   new Point2D(p2.getX(), p2.getY()));
+            Line2D wallLine = new Line2D(new Point2D(p1.getX(), p1.getY()), 
+                                    new Point2D(p2.getX(), p2.getY()));
             
             // Get the 2D intersection point
-            Point2D intersectionPoint = ray.getIntersectionPoint(wall);
+            Point2D intersectionPoint = ray.getIntersectionPoint(wallLine);
             
-            // הדפסת מידע דיבאג רק בפעם הראשונה
-            if (!debugPrinted && intersectionPoint != null) {
-                System.out.println("\n=== DEBUG: FOUND INTERSECTION ===");
-                System.out.println("Satellite: " + satellite.getName());
-                System.out.println("Satellite Elevation: " + satellite.getElevation());
-                System.out.println("Satellite Azimuth: " + satellite.getAzimuth());
-                System.out.println("Wall from: " + p1.getX() + "," + p1.getY() + " to " + p2.getX() + "," + p2.getY());
-                System.out.println("Intersection at: " + intersectionPoint.getX() + "," + intersectionPoint.getY());
-                
-                // Calculate height at intersection point
-                double dx = intersectionPoint.getX() - pos.getX();
-                double dy = intersectionPoint.getY() - pos.getY();
+            if (intersectionPoint != null) {
+                // חישוב המרחק האופקי לנקודת החיתוך
+                double dx = intersectionPoint.getX() - userPoint.getX();
+                double dy = intersectionPoint.getY() - userPoint.getY();
                 double horizontalDistance = Math.sqrt(dx*dx + dy*dy);
                 
-                // המרת מרחק אופקי ממעלות למטרים
-                double horizontalDistanceInMeters = horizontalDistance * 111300 * Math.cos(Math.toRadians(pos.getX()));
+                // חישוב גובה הקרן בנקודת החיתוך
+                double heightGain = horizontalDistance * Math.tan(Math.toRadians(satellite.getElevation()));
+                double rayHeightAtIntersection = userPoint.getZ() + heightGain;
                 
-                double heightGain = horizontalDistanceInMeters * Math.tan(Math.toRadians(satellite.getElevation()));
-                double zAtIntersection = pos.getZ() + heightGain;
-                
-                System.out.println("Height at intersection: " + zAtIntersection);
-                System.out.println("Building height: " + building.getHeight());
-                System.out.println("Observer height: " + pos.getZ());
-                System.out.println("Horizontal distance: " + horizontalDistance);
-                System.out.println("Horizontal distance in meters: " + horizontalDistanceInMeters);
-                
-                debugPrinted = true;
-            }
-            
-            if (intersectionPoint == null) continue;
-            
-            // Calculate horizontal distance to intersection
-            double dx = intersectionPoint.getX() - pos.getX();
-            double dy = intersectionPoint.getY() - pos.getY();
-            double horizontalDistance = Math.sqrt(dx*dx + dy*dy);
-            
-            // המרת מרחק אופקי ממעלות למטרים
-            double horizontalDistanceInMeters = horizontalDistance * 111300 * Math.cos(Math.toRadians(pos.getX()));
-            
-            // Calculate height at intersection point
-            double heightGain = horizontalDistanceInMeters * Math.tan(Math.toRadians(satellite.getElevation()));
-            double zAtIntersection = pos.getZ() + heightGain;
-            
-            // Check if ray passes below wall top
-            double wallTotalHeight = building.getHeight();
-            
-            // Debug information always for now to help diagnose the issue
-            System.out.println("\n=== DEBUG: Intersection Calculation ===");
-            System.out.println("Satellite: " + satellite.getName());
-            System.out.println("Satellite Elevation: " + satellite.getElevation() + "°");
-            System.out.println("Observer height: " + pos.getZ() + " m");
-            System.out.println("Wall height: " + wallTotalHeight + " m");
-            System.out.println("Horizontal distance to wall: " + horizontalDistanceInMeters + " m");
-            System.out.println("Height gain to intersection: " + heightGain + " m");
-            System.out.println("Z at intersection: " + zAtIntersection + " m");
-            System.out.println("Is LOS check: " + (zAtIntersection >= wallTotalHeight));
-            
-            // בדיקה מוחלטת - אם הגובה בנקודת החיתוך קטן מגובה הקיר, זה NLOS
-            if (zAtIntersection < wallTotalHeight) {
-                double heightDiff = wallTotalHeight - zAtIntersection;
-                minHeightDiff = Math.min(minHeightDiff, heightDiff);
-                System.out.println("NLOS: Ray hits the wall. Height difference: " + heightDiff + " m");
-            } else {
-                System.out.println("LOS: Ray passes above the wall");
+                // בדיקה האם הקרן עוברת מעל או מתחת לקיר
+                if (rayHeightAtIntersection >= building.getHeight()) {
+                    // LOS - הקרן עוברת מעל הקיר
+                    return new LosResult(true, 0, intersectionPoint, rayHeightAtIntersection);
+                } else {
+                    // NLOS - הקרן פוגעת בקיר
+                    double deltaH = building.getHeight() - rayHeightAtIntersection;
+                    return new LosResult(false, deltaH, intersectionPoint, rayHeightAtIntersection);
+                }
             }
         }
         
-        if (minHeightDiff != Double.POSITIVE_INFINITY) {
-            return minHeightDiff;
-        }
-        
-        return -1;
+        // אם לא נמצאה חסימה
+        return new LosResult(true, 0, null, 0);
     }
     
     /**
@@ -173,5 +124,19 @@ public class LosCalculator {
         int[] counts = getLosNlosCount(position);
         
         return String.format("LOS: %d, NLOS: %d", counts[0], counts[1]);
+    }
+
+    public static class LosResult {
+        public boolean isLos;
+        public double heightDifference;
+        public Point2D intersectionPoint;
+        public double rayHeightAtIntersection;
+        
+        public LosResult(boolean isLos, double heightDifference, Point2D intersectionPoint, double rayHeightAtIntersection) {
+            this.isLos = isLos;
+            this.heightDifference = heightDifference;
+            this.intersectionPoint = intersectionPoint;
+            this.rayHeightAtIntersection = rayHeightAtIntersection;
+        }
     }
 }

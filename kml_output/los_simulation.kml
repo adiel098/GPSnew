@@ -12,17 +12,29 @@
     <outline>1</outline>
   </PolyStyle>
 </Style>
-<Style id="lineStyle">
+<Style id="losStyle">
+  <LineStyle>
+    <color>ff00ff00</color>
+    <width>1</width>
+  </LineStyle>
+</Style>
+<Style id="nlosStyle">
   <LineStyle>
     <color>ff0000ff</color>
+    <width>1</width>
+  </LineStyle>
+</Style>
+<Style id="blockedStyle">
+  <LineStyle>
+    <color>4f0000ff</color>
     <width>2</width>
   </LineStyle>
 </Style>
 <Placemark>
-  <name>Observer (70.45 m)</name>
+  <name>Observer (83.30 m)</name>
   <Point>
     <altitudeMode>relativeToGround</altitudeMode>
-    <coordinates>35.217018,31.771959,70.45</coordinates>
+    <coordinates>35.217018,31.771959,83.3</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -34,32 +46,40 @@
     <outerBoundaryIs>
       <LinearRing>
         <coordinates>
-35.21731691934435,31.772086063213152,0.0
-35.217167459672176,31.7722131264263,0.0
-35.217167459672176,31.7722131264263,100.0
-35.21731691934435,31.772086063213152,100.0
-35.21731691934435,31.772086063213152,0.0
+          35.21720482459022,31.771990765803288,0.0
+          35.217055364918046,31.772117829016437,0.0
+          35.217055364918046,31.772117829016437,100.0
+          35.21720482459022,31.771990765803288,100.0
+          35.21720482459022,31.771990765803288,0.0
         </coordinates>
       </LinearRing>
     </outerBoundaryIs>
   </Polygon>
 </Placemark>
 <Placemark>
-  <name>Line of Sight (NLOS - Blocked)</name>
-  <styleUrl>#lineStyle</styleUrl>
+  <name>Line of Sight (NLOS)</name>
+  <styleUrl>#nlosStyle</styleUrl>
   <LineString>
     <altitudeMode>relativeToGround</altitudeMode>
     <coordinates>
-      35.217018,31.771959,70.45
-      35.219259895082565,31.773864948197268,282.58203435596425
+      35.217018,31.771959,83.3
+      35.22075449180427,31.77513558032878,583.3
     </coordinates>
   </LineString>
 </Placemark>
 <Placemark>
-  <name>Satellite (Symbolic)</name>
+  <name>TEST</name>
+  <Style>
+    <IconStyle>
+      <scale>1.0</scale>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/kml/shapes/star.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
   <Point>
     <altitudeMode>relativeToGround</altitudeMode>
-    <coordinates>35.22273584459181,31.778684685247686,1111.35</coordinates>
+    <coordinates>35.22075449180427,31.77513558032878,583.3</coordinates>
   </Point>
 </Placemark>
 </Document>

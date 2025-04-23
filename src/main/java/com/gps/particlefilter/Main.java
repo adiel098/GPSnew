@@ -2,6 +2,7 @@ package com.gps.particlefilter;
 
 import com.gps.particlefilter.kml.*;
 import com.gps.particlefilter.model.*;
+import com.gps.particlefilter.LosCalculator.LosResult;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
@@ -114,9 +115,16 @@ public class Main {
                     Satellite testSat = satellites.get(0);
                     System.out.println("Testing satellite " + testSat.getName());
                     for (Building b : buildings) {
-                        double result = losCalculator.computeLosDetailed(firstPoint, b, testSat);
-                        System.out.println("Building test result: " + (result == -1 ? "LOS" : "NLOS"));
+                        LosResult result = losCalculator.computeLosDetailedWithIntersection(firstPoint, b, testSat);
+                        if (!result.isLos) {
+                            // NLOS - נמצאה חסימה
+                            nlosCount++;
+                        } else {
+                            // LOS - אין חסימה
+                            losCount++;
+                        }
                     }
+                    System.out.println("LOS count: " + losCount + ", NLOS count: " + nlosCount);
                 }
             }
             

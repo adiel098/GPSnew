@@ -14,7 +14,7 @@ import java.util.Map;
  */
 public class LosNlosTest {
     private static final double WALL_HEIGHT = 100.0; // גובה הקיר במטרים
-    private static final double OBSERVER_HEIGHT = 83.3; // גובה המשתמש במטרים
+    private static final double OBSERVER_HEIGHT = 85.1; // גובה המשתמש במטרים
     private static final double WALL_DISTANCE = 15.0; // מרחק מהמשתמש לקיר במטרים
     private static final double WALL_LENGTH = 20.0; // אורך הקיר במטרים
     
@@ -95,7 +95,7 @@ public class LosNlosTest {
                 String filename = "los_simulation.kml";
                 generateKml(userPoint, wall, satellite, isLos, 
                           detailedResult.intersectionPoint, detailedResult.rayHeightAtIntersection, filename);
-                System.out.println("KML file generated successfully: kml_output/" + filename);          
+                          System.out.println("KML file generated successfully: kml_output/" + filename);          
             }
             
         } catch (Exception e) {

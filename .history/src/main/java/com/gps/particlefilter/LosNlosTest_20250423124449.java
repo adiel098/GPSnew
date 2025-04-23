@@ -14,7 +14,7 @@ import java.util.Map;
  */
 public class LosNlosTest {
     private static final double WALL_HEIGHT = 100.0; // גובה הקיר במטרים
-    private static final double OBSERVER_HEIGHT = 83.3; // גובה המשתמש במטרים
+    private static final double OBSERVER_HEIGHT = 85.1; // גובה המשתמש במטרים
     private static final double WALL_DISTANCE = 15.0; // מרחק מהמשתמש לקיר במטרים
     private static final double WALL_LENGTH = 20.0; // אורך הקיר במטרים
     
@@ -95,7 +95,7 @@ public class LosNlosTest {
                 String filename = "los_simulation.kml";
                 generateKml(userPoint, wall, satellite, isLos, 
                           detailedResult.intersectionPoint, detailedResult.rayHeightAtIntersection, filename);
-                System.out.println("KML file generated successfully: kml_output/" + filename);          
+                System.out.println("KML file generated successfully: kml_output/" + filename);
             }
             
         } catch (Exception e) {
@@ -145,20 +145,13 @@ public class LosNlosTest {
             writer.write("<Style id=\"losStyle\">\n");
             writer.write("  <LineStyle>\n");
             writer.write("    <color>ff00ff00</color>\n");
-            writer.write("    <width>1</width>\n");
+            writer.write("    <width>2</width>\n");
             writer.write("  </LineStyle>\n");
             writer.write("</Style>\n");
             
             writer.write("<Style id=\"nlosStyle\">\n");
             writer.write("  <LineStyle>\n");
             writer.write("    <color>ff0000ff</color>\n");
-            writer.write("    <width>1</width>\n");
-            writer.write("  </LineStyle>\n");
-            writer.write("</Style>\n");
-            
-            writer.write("<Style id=\"blockedStyle\">\n");
-            writer.write("  <LineStyle>\n");
-            writer.write("    <color>4f0000ff</color>\n");
             writer.write("    <width>2</width>\n");
             writer.write("  </LineStyle>\n");
             writer.write("</Style>\n");
@@ -201,8 +194,8 @@ public class LosNlosTest {
             writer.write("</Placemark>\n");
 
             // חישוב נקודת הקצה של קו הראייה ומיקום הלוויין
-            double rayLength = 500.0; // אורך קו הראייה במטרים
-            double satelliteDistance = 500.0; // מרחק הלוויין במטרים (רחוק יותר מקו הראייה)
+            double rayLength = 300.0; // אורך קו הראייה במטרים
+            double satelliteDistance = 300.0; // מרחק הלוויין במטרים (רחוק יותר מקו הראייה)
             
             // חישוב נקודת הסיום של קו הראייה (או נקודת החיתוך אם קיימת)
             double endLat, endLon, endZ;
@@ -227,7 +220,7 @@ public class LosNlosTest {
             double satLon = baseLon + (userPoint.getX() + satDx) / (METERS_PER_DEGREE * Math.cos(Math.toRadians(baseLat)));
             double satZ = userPoint.getZ() + satDz;
 
-            // הוספת קו הראייה - ירוק ל-LOS, אדום ל-NLOS
+            // הוספת קו הראייה
             writer.write("<Placemark>\n");
             writer.write("  <name>" + (isLos ? "Line of Sight (LOS)" : "Line of Sight (NLOS)") + "</name>\n");
             writer.write("  <styleUrl>" + (isLos ? "#losStyle" : "#nlosStyle") + "</styleUrl>\n");
@@ -235,7 +228,13 @@ public class LosNlosTest {
             writer.write("    <altitudeMode>relativeToGround</altitudeMode>\n");
             writer.write("    <coordinates>\n");
             writer.write("      " + userLon + "," + userLat + "," + userPoint.getZ() + "\n");
-            writer.write("      " + satLon + "," + satLat + "," + satZ + "\n");
+            if (intersectionPoint != null) {
+                // אם יש חיתוך, מציירים את הקו עד לנקודת החיתוך
+                writer.write("      " + endLon + "," + endLat + "," + endZ + "\n");
+            } else {
+                // אם אין חיתוך, מציירים את הקו עד ללוויין
+                writer.write("      " + satLon + "," + satLat + "," + satZ + "\n");
+            }
             writer.write("    </coordinates>\n");
             writer.write("  </LineString>\n");
             writer.write("</Placemark>\n");
