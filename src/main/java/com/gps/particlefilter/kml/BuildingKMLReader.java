@@ -30,14 +30,30 @@ public class BuildingKMLReader {
                                 List<Coordinate> coordinates = ring.getCoordinates();
                                 
                                 for (Coordinate coord : coordinates) {
-                                    vertices.add(new Point3D(coord.getLongitude(), 
+                                    Point3D newPoint = new Point3D(coord.getLongitude(), 
                                                            coord.getLatitude(), 
-                                                           coord.getAltitude()));
+                                                           coord.getAltitude());
+                                    
+                                    // Check if the point is not identical to the previous one
+                                    if (vertices.isEmpty() || !isPointEqual(vertices.get(vertices.size()-1), newPoint)) {
+                                        vertices.add(newPoint);
+                                    }
+                                }
+                                
+                                // Ensure the polygon is closed
+                                if (!vertices.isEmpty() && !isPointEqual(vertices.get(0), vertices.get(vertices.size()-1))) {
+                                    vertices.add(vertices.get(0));
                                 }
                                 
                                 // Get height from the first point's altitude
                                 double height = coordinates.get(0).getAltitude();
-                                buildings.add(new Building(vertices, height));
+                                
+                                // Only if there are at least 3 unique points
+                                if (vertices.size() >= 3) {
+                                    buildings.add(new Building(vertices, height));
+                                } else {
+                                    System.out.println("Warning: Skipping building with less than 3 unique vertices");
+                                }
                             }
                         }
                     }
@@ -91,5 +107,12 @@ public class BuildingKMLReader {
         }
 
         return report.toString();
+    }
+
+    // Helper function to compare points
+    private boolean isPointEqual(Point3D p1, Point3D p2) {
+        final double EPSILON = 0.000001; // Accuracy of about 10 centimeters
+        return Math.abs(p1.getX() - p2.getX()) < EPSILON && 
+               Math.abs(p1.getY() - p2.getY()) < EPSILON;
     }
 }

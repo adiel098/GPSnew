@@ -94,7 +94,7 @@ public class LosNlosTest {
             if (generateKmlFile) {
                 String filename = "los_simulation.kml";
                 generateKml(userPoint, wall, satellite, isLos, 
-                          detailedResult.intersectionPoint, detailedResult.rayHeightAtIntersection, filename);
+                          detailedResult.getIntersection(), detailedResult.getRayHeight(), filename);
                 System.out.println("KML file generated successfully: kml_output/" + filename);          
             }
             

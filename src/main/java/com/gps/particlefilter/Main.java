@@ -75,17 +75,35 @@ public class Main {
             // DEBUG: Print buildings and satellites information
             System.out.println("\n=== DEBUG INFO ===");
             System.out.println("Buildings count: " + buildings.size());
-            if (buildings.size() > 0) {
-                Building firstBuilding = buildings.get(0);
-                System.out.println("First building height: " + firstBuilding.getHeight());
-                System.out.println("First building vertices: " + firstBuilding.getVertices().size());
+            
+            // הדפסת מידע על כל הבניינים
+            for (int i = 0; i < buildings.size(); i++) {
+                Building building = buildings.get(i);
+                System.out.println("\nBuilding " + i + ":");
+                System.out.println("Height: " + building.getHeight() + " meters");
+                System.out.println("Number of vertices: " + building.getVertices().size());
                 
-                // Print first few vertices
-                int numVerticesToPrint = Math.min(3, firstBuilding.getVertices().size());
-                for (int i = 0; i < numVerticesToPrint; i++) {
-                    Point3D vertex = firstBuilding.getVertices().get(i);
-                    System.out.println("Vertex " + i + ": " + vertex.getX() + "," + vertex.getY() + "," + vertex.getZ());
+                // חישוב גבולות הבניין
+                double minLat = Double.MAX_VALUE, maxLat = -Double.MAX_VALUE;
+                double minLon = Double.MAX_VALUE, maxLon = -Double.MAX_VALUE;
+                
+                // הדפסת כל הנקודות של הבניין
+                List<Point3D> vertices = building.getVertices();
+                for (int j = 0; j < vertices.size(); j++) {
+                    Point3D vertex = vertices.get(j);
+                    System.out.printf("Vertex %d: (%.6f, %.6f)\n", 
+                        j, vertex.getX(), vertex.getY());
+                        
+                    minLat = Math.min(minLat, vertex.getY());
+                    maxLat = Math.max(maxLat, vertex.getY());
+                    minLon = Math.min(minLon, vertex.getX());
+                    maxLon = Math.max(maxLon, vertex.getX());
                 }
+                
+                // הדפסת גבולות הבניין
+                System.out.println("Building bounds:");
+                System.out.printf("  Latitude: %.6f to %.6f\n", minLat, maxLat);
+                System.out.printf("  Longitude: %.6f to %.6f\n", minLon, maxLon);
             }
             
             System.out.println("Satellites count: " + satellites.size());
@@ -116,68 +134,26 @@ public class Main {
                     System.out.println("Testing satellite " + testSat.getName());
                     for (Building b : buildings) {
                         LosResult result = losCalculator.computeLosDetailedWithIntersection(firstPoint, b, testSat);
-                        if (!result.isLos) {
-                            // NLOS - נמצאה חסימה
-                            nlosCount++;
+                        if (!result.isLos()) {
+                            System.out.println("NLOS: " + result.getDeltaH() + " meters");
                         } else {
-                            // LOS - אין חסימה
-                            losCount++;
+                            System.out.println("LOS");
                         }
                     }
                     System.out.println("LOS count: " + losCount + ", NLOS count: " + nlosCount);
                 }
             }
             
-            // יוצר מחשב LOS מלאכותי שיציג נתונים משתנים במקום שכולם NLOS
-            System.out.println("\n*** ATTEMPTING WORKAROUND: Creating a mock LOS calculator ***");
-            
-            // לשמור עותק מקומי של satellites עבור המחלקה האנונימית
-            final List<Satellite> finalSatellites = satellites;
-            
-            losCalculator = new LosCalculator(buildings, satellites) {
-                @Override
-                public String getLosStatusString(Point3D position) {
-                    // מייצר מספר אקראי בין 0 ל-10 לוויינים ב-LOS
-                    int losCount = (int)(Math.random() * 10);
-                    final int nlosCount = finalSatellites.size() - losCount;
-                    return String.format("LOS: %d, NLOS: %d", losCount, nlosCount);
-                }
-                
-                @Override
-                public int[] getLosNlosCount(Point3D position) {
-                    int losCount = (int)(Math.random() * 10);
-                    final int nlosCount = finalSatellites.size() - losCount;
-                    return new int[] {losCount, nlosCount};
-                }
-                
-                @Override
-                public Map<String, Boolean> calculateLOS(Point3D position) {
-                    Map<String, Boolean> result = new HashMap<>();
-                    final int totalCount = finalSatellites.size();
-                    final int losCount = (int)(Math.random() * 10);
-                    
-                    int i = 0;
-                    for (final Satellite satellite : finalSatellites) {
-                        // הלוויינים הראשונים יהיו LOS והאחרים NLOS
-                        result.put(satellite.getName(), i < losCount);
-                        i++;
-                    }
-                    
-                    return result;
-                }
-            };
-            System.out.println("=== END DEBUG ===\n");
-
             // =========== PARTICLE FILTER SIMULATION ===========
             System.out.println("\n=== Starting Particle Filter Simulation ===");
             
             // Parameters for particle filter
-            double gridSize = 0.0005; // ~50 meters
-            double movementNoise = 0.00001; // Noise parameter
-            int particleCount = 100; // Number of particles
+            double gridSize = 0.0005;     // ~50 meters
+            double movementNoise = 0.0001; // Increased noise parameter for better exploration
+            int particleCount = 1000;      // Increased number of particles
             
-            // Initialize particle filter
-            ParticleFilter particleFilter = new ParticleFilter(losCalculator, gridSize, movementNoise);
+            // Initialize particle filter with the real LOS calculator
+            ParticleFilter particleFilter = new ParticleFilter(new LosCalculator(buildings, satellites), gridSize, movementNoise);
             
             // Initialize particles at the first route point
             Point3D startPoint = route.get(0);
@@ -197,8 +173,6 @@ public class Main {
             // Process subsequent route points
             for (int i = 1; i < route.size(); i++) {
                 Point3D currentPoint = route.get(i);
-                System.out.println("\nPoint " + i + "/" + (route.size()-1) + " - " + 
-                    losCalculator.getLosStatusString(currentPoint));
                 
                 // Move particles according to observed motion
                 particleFilter.move(previousPoint, currentPoint);
@@ -216,6 +190,11 @@ public class Main {
                 // Calculate error
                 double error = calculateError(currentPoint, estimatedPosition);
                 positionErrors.put(i, error);
+                
+                // Print progress and current error
+                System.out.printf("\nPoint %d/%d - Error: %.2f meters\n", 
+                    i, route.size()-1, error * 111000);
+                System.out.println("LOS Status: " + losCalculator.getLosStatusString(currentPoint));
                 
                 // Update previous point for next iteration
                 previousPoint = currentPoint;

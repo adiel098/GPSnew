@@ -1,6 +1,6 @@
 KML Validation Report
 ===================
-Generated at: 2025-04-23T13:07:43.049626
+Generated at: 2025-04-23T16:31:21.0853714
 
 Building KML Validation Report
 ============================
@@ -40,7 +40,7 @@ Building 4:
   * Altitude: 53.36 to 53.36 meters
 
 Building 5:
-- Number of vertices: 111
+- Number of vertices: 8
 - Height: 80.54 meters
 - Bounds:
   * Latitude: 32.083328 to 32.083514
@@ -48,7 +48,7 @@ Building 5:
   * Altitude: 80.54 to 80.54 meters
 
 Building 6:
-- Number of vertices: 121
+- Number of vertices: 12
 - Height: 235.19 meters
 - Bounds:
   * Latitude: 32.083159 to 32.083513
@@ -72,11 +72,11 @@ Building 8:
   * Altitude: 48.28 to 48.28 meters
 
 Building 9:
-- Number of vertices: 258
+- Number of vertices: 25
 - Height: 75.25 meters
 - Bounds:
   * Latitude: 32.084576 to 32.084973
-  * Longitude: 34.802330 to 34.802596
+  * Longitude: 34.802330 to 34.802595
   * Altitude: 75.25 to 75.25 meters
 
 Building 10:

@@ -38,25 +38,60 @@ public class Particle {
         this.losStatus = losStatus;
     }
 
-    public void move(Point3D direction, double noise) {
-        // Add random noise to movement
-        double noiseX = (Math.random() - 0.5) * noise;
-        double noiseY = (Math.random() - 0.5) * noise;
-        double noiseZ = (Math.random() - 0.5) * noise;
-        
-        Point3D noiseVector = new Point3D(noiseX, noiseY, noiseZ);
-        this.position = this.position.add(direction).add(noiseVector);
-    }
-
     public int matchingLosCount(Map<String, Boolean> referenceStatus) {
         int count = 0;
+        int totalSatellites = 0;
+        
         for (Map.Entry<String, Boolean> entry : referenceStatus.entrySet()) {
             String satelliteId = entry.getKey();
+            totalSatellites++;
+            
+            // בדיקה האם מצב ה-LOS של הלוויין זהה בחלקיק ובמצב האמיתי
             if (losStatus.containsKey(satelliteId) && 
                 losStatus.get(satelliteId).equals(entry.getValue())) {
                 count++;
             }
         }
+        
+        // החזרת אחוז ההתאמה
         return count;
+    }
+
+    /**
+     * מחזיר את אחוז ההתאמה בין מצב ה-LOS של החלקיק למצב האמיתי
+     */
+    public double getLosMatchPercentage(Map<String, Boolean> referenceStatus) {
+        int matches = matchingLosCount(referenceStatus);
+        return (double) matches / referenceStatus.size();
+    }
+
+    /**
+     * מחזיר את מספר הלוויינים שהם LOS ו-NLOS
+     */
+    public String getLosNlosCount() {
+        if (losStatus == null) return "No LOS status";
+        
+        int losCount = 0;
+        int nlosCount = 0;
+        
+        for (Boolean isLos : losStatus.values()) {
+            if (isLos) {
+                losCount++;
+            } else {
+                nlosCount++;
+            }
+        }
+        
+        return String.format("LOS: %d, NLOS: %d", losCount, nlosCount);
+    }
+
+    // עדכון פונקציית התנועה לעבוד עם מרחק וזווית
+    public void move(double distance, double azimuth, double noise) {
+        // הוספת רעש למרחק ולזווית
+        double noisyDistance = distance + (Math.random() - 0.5) * noise;
+        double noisyAzimuth = azimuth + (Math.random() - 0.5) * noise;
+
+        // הזזת החלקיק למיקום החדש
+        this.position = this.position.moveByDistanceAndAzimuth(noisyDistance, noisyAzimuth);
     }
 }

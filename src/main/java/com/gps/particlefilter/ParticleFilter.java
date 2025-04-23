@@ -41,20 +41,53 @@ public class ParticleFilter {
     }
 
     public void updateWeights(Point3D originalPoint) {
+        // חישוב מצב ה-LOS/NLOS עבור הנקודה האמיתית
         Map<String, Boolean> referenceStatus = losCalculator.calculateLOS(originalPoint);
         
-        // Calculate weights based on matching LOS/NLOS status
+        // הדפסת מצב LOS/NLOS של הנקודה האמיתית
+        int refLosCount = 0;
+        for (Boolean isLos : referenceStatus.values()) {
+            if (isLos) refLosCount++;
+        }
+        System.out.println("\nReference point LOS/NLOS: " + 
+            String.format("LOS: %d, NLOS: %d", refLosCount, referenceStatus.size() - refLosCount));
+        
+        // עדכון המשקולות עבור כל החלקיקים
         double totalWeight = 0;
+        int particleIndex = 0;
         for (Particle particle : particles) {
+            // חישוב מצב ה-LOS/NLOS עבור החלקיק
+            Map<String, Boolean> particleLosStatus = losCalculator.calculateLOS(particle.getPosition());
+            particle.setLosStatus(particleLosStatus);
+            
+            // חישוב מספר ההתאמות בין החלקיק למצב האמיתי
             int matches = particle.matchingLosCount(referenceStatus);
-            double weight = Math.pow(2, matches); // Exponential weighting
+            
+            // חישוב המשקל החדש - ככל שיש יותר התאמות, המשקל גבוה יותר
+            double weight = Math.pow(2, matches); // משקל אקספוננציאלי לפי מספר ההתאמות
             particle.setWeight(weight);
             totalWeight += weight;
+            
+            // הדפסת מצב LOS/NLOS של החלקיק
+            if (particleIndex < 10) { // מדפיס רק את 10 החלקיקים הראשונים כדי לא להציף את המסך
+                System.out.println("Particle " + particleIndex + " - " + 
+                    particle.getLosNlosCount() + 
+                    String.format(", Matches: %d, Weight: %.4f", matches, weight));
+            }
+            particleIndex++;
         }
 
-        // Normalize weights
-        for (Particle particle : particles) {
-            particle.setWeight(particle.getWeight() / totalWeight);
+        // נרמול המשקולות כך שסכומם יהיה 1
+        if (totalWeight > 0) {
+            for (Particle particle : particles) {
+                particle.setWeight(particle.getWeight() / totalWeight);
+            }
+        } else {
+            // אם אין התאמות בכלל, ניתן משקל שווה לכל החלקיקים
+            double equalWeight = 1.0 / particles.size();
+            for (Particle particle : particles) {
+                particle.setWeight(equalWeight);
+            }
         }
     }
 
@@ -87,11 +120,17 @@ public class ParticleFilter {
         particles = newParticles;
     }
 
+    /**
+     * מזיז את כל החלקיקים בהתאם למרחק והזווית שנמדדו בין שתי נקודות במסלול המקורי
+     */
     public void move(Point3D from, Point3D to) {
-        Point3D direction = to.subtract(from);
+        // חישוב המרחק והזווית בין הנקודות
+        double distance = from.distanceTo(to);
+        double azimuth = from.azimuthTo(to);
         
+        // הזזת כל החלקיקים באותו מרחק וזווית (עם רעש)
         for (Particle particle : particles) {
-            particle.move(direction, movementNoise);
+            particle.move(distance, azimuth, movementNoise);
             particle.setLosStatus(losCalculator.calculateLOS(particle.getPosition()));
         }
     }
