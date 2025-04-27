@@ -53,17 +53,11 @@ public class ParticleFilter {
         // חישוב מצב ה-LOS/NLOS עבור הנקודה האמיתית
         Map<String, Boolean> referenceStatus = losCalculator.calculateLOS(originalPoint);
         
-        // הדפסת מצב LOS/NLOS של הנקודה האמיתית
-        int refLosCount = 0;
-        for (Boolean isLos : referenceStatus.values()) {
-            if (isLos) refLosCount++;
-        }
-        System.out.println("\nReference point LOS/NLOS: " + 
-            String.format("LOS: %d, NLOS: %d", refLosCount, referenceStatus.size() - refLosCount));
-        
         // עדכון המשקולות עבור כל החלקיקים
         double totalWeight = 0;
         int particleIndex = 0;
+        
+        // First pass - calculate initial weights based on matches
         for (Particle particle : particles) {
             // חישוב מצב ה-LOS/NLOS עבור החלקיק
             Map<String, Boolean> particleLosStatus = losCalculator.calculateLOS(particle.getPosition());
@@ -76,31 +70,14 @@ public class ParticleFilter {
             double weight = Math.pow(2, matches); // משקל אקספוננציאלי לפי מספר ההתאמות
             particle.setWeight(weight);
             totalWeight += weight;
-            
-            // הדפסת מצב LOS/NLOS של החלקיק
-            if (particleIndex < 10) { // מדפיס רק את 10 החלקיקים הראשונים כדי לא להציף את המסך
-                System.out.println("Particle " + particleIndex + " - " + 
-                    particle.getLosNlosCount() + 
-                    String.format(", Matches: %d, Weight: %.4f", matches, weight));
-            }
-            particleIndex++;
         }
 
-        // נרמול המשקולות כך שסכומם יהיה 1
-        if (totalWeight > 0) {
-            for (Particle particle : particles) {
-                particle.setWeight(particle.getWeight() / totalWeight);
-            }
-        } else {
-            // אם אין התאמות בכלל, ניתן משקל שווה לכל החלקיקים
-            double equalWeight = 1.0 / particles.size();
-            for (Particle particle : particles) {
-                particle.setWeight(equalWeight);
-            }
+        // Second pass - normalize weights
+        for (Particle particle : particles) {
+            // נרמול המשקל כך שסך כל המשקלים יהיה 1
+            double normalizedWeight = totalWeight > 0 ? particle.getWeight() / totalWeight : 1.0 / particles.size();
+            particle.setWeight(normalizedWeight);
         }
-        
-        // Save current state to history
-        particleHistory.add(new ArrayList<>(particles));
     }
 
     public void resample() {
@@ -120,11 +97,12 @@ public class ParticleFilter {
         int j = 0;
         
         for (int i = 0; i < n; i++) {
-            while (u > cumulativeWeights[j]) {
+            while (j < n-1 && u > cumulativeWeights[j]) {
                 j++;
             }
             Particle newParticle = new Particle(particles.get(j).getPosition());
-            newParticle.setLosStatus(particles.get(j).getLosStatus());
+            newParticle.setLosStatus(new HashMap<>(particles.get(j).getLosStatus()));
+            newParticle.setWeight(particles.get(j).getWeight());
             newParticles.add(newParticle);
             u += step;
         }
@@ -142,9 +120,6 @@ public class ParticleFilter {
             particle.move(distance, azimuth, movementNoise);
             particle.setLosStatus(losCalculator.calculateLOS(particle.getPosition()));
         }
-        
-        // Save current state to history
-        particleHistory.add(new ArrayList<>(particles));
     }
 
     public void update(Point3D currentPoint, long timestamp) {
@@ -153,6 +128,10 @@ public class ParticleFilter {
         }
         updateWeights(currentPoint);
         resample();
+        
+        // Save current state to history and timestamp
+        particleHistory.add(new ArrayList<>(particles));
+        timestamps.add(timestamp);
         
         previousPoint = currentPoint;
     }

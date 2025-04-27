@@ -142,7 +142,7 @@ public class Main {
                             System.out.println("LOS");
                         }
                     }
-                    System.out.println("LOS count: " + losCount + ", NLOS count: " + nlosCount);
+                    System.out.println("Point " + (1+1) + "/" + route.size() + " - LOS count: " + losCount + ", NLOS count: " + nlosCount);
                 }
             }
             
@@ -198,6 +198,33 @@ public class Main {
                 if ((i + 1) % 10 == 0) {
                     System.out.printf("Processed %d/%d points. Current error: %.2f meters%n", 
                         i + 1, route.size(), error * 111000);
+                }
+                
+                // Calculate LOS/NLOS counts for reference point
+                Map<String, Boolean> referenceLosStatus = losCalculator.calculateLOS(currentPoint);
+                int losCount = 0;
+                int nlosCount = 0;
+                for (Boolean isLos : referenceLosStatus.values()) {
+                    if (isLos) losCount++;
+                    else nlosCount++;
+                }
+
+                // Print reference point LOS/NLOS status
+                System.out.println("\nPoint " + (i+1) + "/" + route.size() + " - Reference point LOS/NLOS: LOS: " + losCount + ", NLOS: " + nlosCount);
+
+                // Print particle information
+                for (int j = 0; j < Math.min(10, particleFilter.getParticles().size()); j++) {
+                    Particle p = particleFilter.getParticles().get(j);
+                    Map<String, Boolean> particleLosStatus = p.getLosStatus();
+                    int particleLosCount = 0;
+                    int particleNlosCount = 0;
+                    for (Boolean isLos : particleLosStatus.values()) {
+                        if (isLos) particleLosCount++;
+                        else particleNlosCount++;
+                    }
+                    System.out.printf("Point %d/%d - Particle %d - LOS: %d, NLOS: %d, Matches: %d, Weight: %.4f%n",
+                        i+1, route.size(), j, particleLosCount, particleNlosCount,
+                        p.matchingLosCount(referenceLosStatus), p.getWeight());
                 }
             }
             
