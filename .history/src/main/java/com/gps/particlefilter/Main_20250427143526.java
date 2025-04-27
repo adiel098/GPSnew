@@ -23,7 +23,6 @@ public class Main {
             List<Building> buildings = new ArrayList<>();
             List<Satellite> satellites = new ArrayList<>();
             List<Point3D> route = new ArrayList<>();
-            List<Long> timestamps = new ArrayList<>();
             
             boolean success = true;
             
@@ -49,7 +48,6 @@ public class Main {
             try {
                 System.out.println("Reading original_route.kml...");
                 route = routeReader.readRoute("original_route.kml");
-                timestamps = routeReader.readTimestamps("original_route.kml");
                 System.out.println("Found " + route.size() + " route points.");
             } catch (Exception e) {
                 System.err.println("Error reading original_route.kml: " + e.getMessage());
@@ -157,52 +155,59 @@ public class Main {
             // Initialize particle filter with the real LOS calculator
             ParticleFilter particleFilter = new ParticleFilter(new LosCalculator(buildings, satellites), gridSize, movementNoise);
             
-            // Initialize particle filter with the first point
+            // Initialize particles at the first route point
             Point3D startPoint = route.get(0);
+            System.out.println("Initializing particle filter at: " + startPoint);
             particleFilter.initializeParticles(startPoint, particleCount);
             
-            // Add initial state to history with first timestamp
-            particleFilter.getParticleHistory().add(new ArrayList<>(particleFilter.getParticles()));
-            particleFilter.getTimestamps().add(timestamps.get(0));
+            // Store for estimated positions and error stats
+            List<Point3D> estimatedRoute = new ArrayList<>();
+            Map<Integer, Double> positionErrors = new HashMap<>();
             
             // Add initial estimate
-            List<Point3D> estimatedRoute = new ArrayList<>();
             estimatedRoute.add(calculateEstimatedPosition(particleFilter.getParticles()));
             
-            // Store for error stats
-            double totalError = 0;
-            double maxError = 0;
+            // Track the previous point for motion updates
+            Point3D previousPoint = startPoint;
             
-            // Process each point in the route
+            // Process subsequent route points
             for (int i = 1; i < route.size(); i++) {
                 Point3D currentPoint = route.get(i);
-                long timestamp = timestamps.get(i);
                 
-                // Update particle filter with current point
-                particleFilter.update(currentPoint, timestamp);
+                // Move particles according to observed motion
+                particleFilter.move(previousPoint, currentPoint);
                 
-                // Save current state to history before calculating estimated position
-                particleFilter.getParticleHistory().add(new ArrayList<>(particleFilter.getParticles()));
-                particleFilter.getTimestamps().add(timestamp);
+                // Update weights based on LOS/NLOS matching
+                particleFilter.updateWeights(currentPoint);
+                
+                // Resample particles
+                particleFilter.resample();
                 
                 // Calculate estimated position
                 Point3D estimatedPosition = calculateEstimatedPosition(particleFilter.getParticles());
                 estimatedRoute.add(estimatedPosition);
                 
-                // Calculate error for this point
+                // Calculate error
                 double error = calculateError(currentPoint, estimatedPosition);
-                totalError += error;
-                maxError = Math.max(maxError, error);
+                positionErrors.put(i, error);
                 
-                // Print progress
-                if ((i + 1) % 10 == 0) {
-                    System.out.printf("Processed %d/%d points. Current error: %.2f meters%n", 
-                        i + 1, route.size(), error * 111000);
-                }
+                // Print progress and current error
+                System.out.printf("\nPoint %d/%d - Error: %.2f meters\n", 
+                    i, route.size()-1, error * 111000);
+                System.out.println("LOS Status: " + losCalculator.getLosStatusString(currentPoint));
+                
+                // Update previous point for next iteration
+                previousPoint = currentPoint;
             }
             
             // Calculate overall error statistics
-            double avgError = totalError / (route.size() - 1);
+            double totalError = 0;
+            double maxError = 0;
+            for (Double error : positionErrors.values()) {
+                totalError += error;
+                maxError = Math.max(maxError, error);
+            }
+            double avgError = totalError / positionErrors.size();
             
             System.out.println("\n=== Simulation Summary ===");
             System.out.println("Total points: " + route.size());
@@ -212,20 +217,15 @@ public class Main {
             // Write results to KML
             System.out.println("\nWriting results to KML files...");
             KMLWriter kmlWriter = new KMLWriter();
+            kmlWriter.writeParticleHistoryToKML(particleFilter.getParticleHistory(), "particles.kml");
             
-            // Debug info
-            System.out.println("Particle history size: " + particleFilter.getParticleHistory().size());
-            System.out.println("Timestamps size: " + particleFilter.getTimestamps().size());
-            
-            kmlWriter.writeParticleHistoryToKML(particleFilter.getParticleHistory(), particleFilter.getTimestamps(), "particles.kml");
-            
-            // Write estimated route with timestamps
+            // Write estimated route
             System.out.println("Writing estimated route to KML...");
-            kmlWriter.writeRouteToKML(estimatedRoute, timestamps, "estimated_route.kml", false);
+            kmlWriter.writeRouteToKML(estimatedRoute, "estimated_route.kml", "yellow");
             
-            // Write actual route
+            // Write actual route for comparison
             System.out.println("Writing actual route to KML...");
-            kmlWriter.writeRouteToKML(route, timestamps, "actual_route.kml", true);
+            kmlWriter.writeRouteToKML(route, "actual_route.kml", "red");
             
             System.out.println("\nProcessing complete! KML files generated.");
             

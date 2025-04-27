@@ -4,6 +4,7 @@ import com.gps.particlefilter.model.*;
 import de.micromata.opengis.kml.v_2_2_0.*;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -105,6 +106,43 @@ public class RouteKMLReader {
         }
 
         return report.toString();
+    }
+
+    public List<Long> readTimestamps(String filename) throws Exception {
+        List<Long> timestamps = new ArrayList<>();
+        Kml kml = Kml.unmarshal(new File(filename));
+        Document document = (Document) kml.getFeature();
+        
+        // Find all timestamps from Placemarks
+        for (Feature feature : document.getFeature()) {
+            if (feature instanceof Placemark) {
+                Placemark placemark = (Placemark) feature;
+                if (placemark.getTimePrimitive() instanceof TimeStamp) {
+                    TimeStamp timeStamp = (TimeStamp) placemark.getTimePrimitive();
+                    String whenStr = timeStamp.getWhen();
+                    try {
+                        long timestamp = Long.parseLong(whenStr);
+                        timestamps.add(timestamp * 1000L); // Convert to milliseconds
+                    } catch (NumberFormatException e) {
+                        // If it's not a number, try to parse as ISO 8601
+                        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
+                        long timestamp = sdf.parse(whenStr).getTime();
+                        timestamps.add(timestamp);
+                    }
+                }
+            }
+        }
+        
+        // If no timestamps found, create artificial ones
+        if (timestamps.isEmpty()) {
+            long startTime = 0;
+            List<Point3D> route = readRoute(filename);
+            for (int i = 0; i < route.size(); i++) {
+                timestamps.add(startTime + i * 1000L); // Add 1 second per point
+            }
+        }
+        
+        return timestamps;
     }
 
     private double calculateDistance(Point3D p1, Point3D p2) {

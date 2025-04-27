@@ -11,6 +11,9 @@ public class ParticleFilter {
     private RandomDataGenerator random;
     private double gridSize;
     private double movementNoise;
+    private List<List<Particle>> particleHistory;
+    private List<Long> timestamps;
+    private Point3D previousPoint;
 
     public ParticleFilter(LosCalculator losCalculator, double gridSize, double movementNoise) {
         this.losCalculator = losCalculator;
@@ -18,21 +21,27 @@ public class ParticleFilter {
         this.movementNoise = movementNoise;
         this.particles = new ArrayList<>();
         this.random = new RandomDataGenerator();
+        this.particleHistory = new ArrayList<>();
+        this.timestamps = new ArrayList<>();
+        this.previousPoint = null;
     }
 
     public void initializeParticles(Point3D center, int particleCount) {
-        double halfGrid = gridSize / 2;
-        
-        // Create a grid of particles around the center point
-        int side = (int) Math.sqrt(particleCount);
-        double step = gridSize / side;
-        
-        for (int i = 0; i < side; i++) {
-            for (int j = 0; j < side; j++) {
-                double x = center.getX() - halfGrid + i * step;
-                double y = center.getY() - halfGrid + j * step;
-                Point3D position = new Point3D(x, y, center.getZ());
-                
+        particles.clear();
+        double minLat = center.getY() - gridSize;
+        double maxLat = center.getY() + gridSize;
+        double minLon = center.getX() - gridSize;
+        double maxLon = center.getX() + gridSize;
+        double alt = center.getZ();
+
+        int particlesPerRow = (int) Math.sqrt(particleCount);
+        double latStep = (maxLat - minLat) / (particlesPerRow - 1);
+        double lonStep = (maxLon - minLon) / (particlesPerRow - 1);
+
+        for (double lat = minLat; lat <= maxLat; lat += latStep) {
+            for (double lon = minLon; lon <= maxLon; lon += lonStep) {
+                if (particles.size() >= particleCount) break;
+                Point3D position = new Point3D(lon, lat, alt);
                 Particle particle = new Particle(position);
                 particle.setLosStatus(losCalculator.calculateLOS(position));
                 particles.add(particle);
@@ -89,6 +98,9 @@ public class ParticleFilter {
                 particle.setWeight(equalWeight);
             }
         }
+        
+        // Save current state to history
+        particleHistory.add(new ArrayList<>(particles));
     }
 
     public void resample() {
@@ -120,9 +132,6 @@ public class ParticleFilter {
         particles = newParticles;
     }
 
-    /**
-     * מזיז את כל החלקיקים בהתאם למרחק והזווית שנמדדו בין שתי נקודות במסלול המקורי
-     */
     public void move(Point3D from, Point3D to) {
         // חישוב המרחק והזווית בין הנקודות
         double distance = from.distanceTo(to);
@@ -133,9 +142,30 @@ public class ParticleFilter {
             particle.move(distance, azimuth, movementNoise);
             particle.setLosStatus(losCalculator.calculateLOS(particle.getPosition()));
         }
+        
+        // Save current state to history
+        particleHistory.add(new ArrayList<>(particles));
+    }
+
+    public void update(Point3D currentPoint, long timestamp) {
+        if (previousPoint != null) {
+            move(previousPoint, currentPoint);
+        }
+        updateWeights(currentPoint);
+        resample();
+        
+        previousPoint = currentPoint;
     }
 
     public List<Particle> getParticles() {
         return particles;
+    }
+
+    public List<List<Particle>> getParticleHistory() {
+        return particleHistory;
+    }
+    
+    public List<Long> getTimestamps() {
+        return timestamps;
     }
 }
