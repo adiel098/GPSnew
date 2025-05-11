@@ -1,6 +1,7 @@
 package com.gps.particlefilter.kml;
 
 import com.gps.particlefilter.model.*;
+import com.gps.particlefilter.util.CoordinateSystemManager;
 import de.micromata.opengis.kml.v_2_2_0.*;
 
 import java.io.File;
@@ -11,6 +12,8 @@ import java.util.List;
 public class RouteKMLReader {
     public List<Point3D> readRoute(String filename) {
         List<Point3D> route = new ArrayList<>();
+        CoordinateSystemManager coordManager = CoordinateSystemManager.getInstance();
+        
         try {
             Kml kml = Kml.unmarshal(new File(filename));
             Document document = (Document) kml.getFeature();
@@ -25,18 +28,29 @@ public class RouteKMLReader {
                         List<Coordinate> coordinates = lineString.getCoordinates();
                         
                         for (Coordinate coord : coordinates) {
-                            route.add(new Point3D(coord.getLongitude(), 
-                                                coord.getLatitude(), 
-                                                coord.getAltitude()));
+                            // Create geographic point (lon, lat, alt) with 1.8 meters added for user height
+                            Point3D geoPoint = new Point3D(coord.getLongitude(), 
+                                                     coord.getLatitude(), 
+                                                     coord.getAltitude() + 1.8);
+                            
+                            // Convert to current coordinate system (UTM if enabled)
+                            Point3D convertedPoint = coordManager.convertFromGeographic(geoPoint);
+                            route.add(convertedPoint);
                         }
                     }
                     // Handle Point geometry
                     else if (placemark.getGeometry() instanceof Point) {
                         Point point = (Point) placemark.getGeometry();
                         Coordinate coord = point.getCoordinates().get(0);
-                        route.add(new Point3D(coord.getLongitude(), 
-                                            coord.getLatitude(), 
-                                            coord.getAltitude()));
+                        
+                        // Create geographic point (lon, lat, alt) with 1.8 meters added for user height
+                        Point3D geoPoint = new Point3D(coord.getLongitude(), 
+                                                 coord.getLatitude(), 
+                                                 coord.getAltitude() + 1.8);
+                        
+                        // Convert to current coordinate system (UTM if enabled)
+                        Point3D convertedPoint = coordManager.convertFromGeographic(geoPoint);
+                        route.add(convertedPoint);
                     }
                 }
             }
@@ -52,6 +66,7 @@ public class RouteKMLReader {
         StringBuilder report = new StringBuilder();
         report.append("Route KML Validation Report\n");
         report.append("=========================\n\n");
+        CoordinateSystemManager coordManager = CoordinateSystemManager.getInstance();
 
         try {
             List<Point3D> route = readRoute(filename);
@@ -59,17 +74,17 @@ public class RouteKMLReader {
 
             if (!route.isEmpty()) {
                 // Calculate route bounds and statistics
-                double minLat = Double.MAX_VALUE, maxLat = -Double.MAX_VALUE;
-                double minLon = Double.MAX_VALUE, maxLon = -Double.MAX_VALUE;
+                double minY = Double.MAX_VALUE, maxY = -Double.MAX_VALUE;
+                double minX = Double.MAX_VALUE, maxX = -Double.MAX_VALUE;
                 double minAlt = Double.MAX_VALUE, maxAlt = -Double.MAX_VALUE;
                 double totalDistance = 0.0;
 
                 Point3D previousPoint = null;
                 for (Point3D point : route) {
-                    minLat = Math.min(minLat, point.getY());
-                    maxLat = Math.max(maxLat, point.getY());
-                    minLon = Math.min(minLon, point.getX());
-                    maxLon = Math.max(maxLon, point.getX());
+                    minY = Math.min(minY, point.getY());
+                    maxY = Math.max(maxY, point.getY());
+                    minX = Math.min(minX, point.getX());
+                    maxX = Math.max(maxX, point.getX());
                     minAlt = Math.min(minAlt, point.getZ());
                     maxAlt = Math.max(maxAlt, point.getZ());
 
@@ -78,12 +93,24 @@ public class RouteKMLReader {
                     }
                     previousPoint = point;
                 }
-
-                report.append("Route bounds:\n");
-                report.append("- Latitude: ").append(String.format("%.6f", minLat)).append(" to ")
-                      .append(String.format("%.6f", maxLat)).append("\n");
-                report.append("- Longitude: ").append(String.format("%.6f", minLon)).append(" to ")
-                      .append(String.format("%.6f", maxLon)).append("\n");
+                
+                // Report coordinates in current coordinate system
+                if (coordManager.isUsingUtm()) {
+                    report.append("Route bounds (UTM):\n");
+                    report.append("- Northing (Y): ").append(String.format("%.2f", minY)).append(" to ")
+                          .append(String.format("%.2f", maxY)).append(" meters\n");
+                    report.append("- Easting (X): ").append(String.format("%.2f", minX)).append(" to ")
+                          .append(String.format("%.2f", maxX)).append(" meters\n");
+                    report.append("- UTM Zone: ").append(coordManager.getDefaultUtmZone())
+                          .append(coordManager.isNorthernHemisphere() ? " North" : " South").append("\n");
+                } else {
+                    report.append("Route bounds (Geographic):\n");
+                    report.append("- Latitude (Y): ").append(String.format("%.6f", minY)).append(" to ")
+                          .append(String.format("%.6f", maxY)).append("\n");
+                    report.append("- Longitude (X): ").append(String.format("%.6f", minX)).append(" to ")
+                          .append(String.format("%.6f", maxX)).append("\n");
+                }
+                
                 report.append("- Altitude: ").append(String.format("%.2f", minAlt)).append(" to ")
                       .append(String.format("%.2f", maxAlt)).append(" meters\n\n");
 
@@ -97,8 +124,13 @@ public class RouteKMLReader {
                 int maxSamplePoints = Math.min(5, route.size());
                 for (int i = 0; i < maxSamplePoints; i++) {
                     Point3D point = route.get(i);
-                    report.append(String.format("Point %d: (%.6f, %.6f, %.2f)\n", 
-                                i + 1, point.getX(), point.getY(), point.getZ()));
+                    if (coordManager.isUsingUtm()) {
+                        report.append(String.format("Point %d (UTM): (Easting: %.2f, Northing: %.2f, Alt: %.2f)\n", 
+                                  i + 1, point.getX(), point.getY(), point.getZ()));
+                    } else {
+                        report.append(String.format("Point %d (Geo): (Lon: %.6f, Lat: %.6f, Alt: %.2f)\n", 
+                                  i + 1, point.getX(), point.getY(), point.getZ()));
+                    }
                 }
             }
         } catch (Exception e) {

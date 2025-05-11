@@ -1,6 +1,6 @@
 KML Validation Report
 ===================
-Generated at: 2025-04-27T16:42:10.4148947
+Generated at: 2025-05-11T13:33:10.3864936
 
 Building KML Validation Report
 ============================
@@ -366,16 +366,16 @@ Total route points: 184
 Route bounds:
 - Latitude: 32.083704 to 32.084029
 - Longitude: 34.802489 to 34.802641
-- Altitude: 1.80 to 1.80 meters
+- Altitude: 3.60 to 3.60 meters
 
 Route statistics:
 - Total distance: 0.00 meters
-- Average altitude: 1.80 meters
+- Average altitude: 3.60 meters
 
 Sample points:
-Point 1: (34.802510, 32.083704, 1.80)
-Point 2: (34.802522, 32.083705, 1.80)
-Point 3: (34.802534, 32.083705, 1.80)
-Point 4: (34.802546, 32.083706, 1.80)
-Point 5: (34.802557, 32.083706, 1.80)
+Point 1: (34.802510, 32.083704, 3.60)
+Point 2: (34.802522, 32.083705, 3.60)
+Point 3: (34.802534, 32.083705, 3.60)
+Point 4: (34.802546, 32.083706, 3.60)
+Point 5: (34.802557, 32.083706, 3.60)
 

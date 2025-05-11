@@ -26,7 +26,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80251,32.083704,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80251,32.083704,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -36,7 +36,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802522,32.083705,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802522,32.083705,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -46,7 +46,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802534,32.083705,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802534,32.083705,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -56,7 +56,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802546,32.083706,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802546,32.083706,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -66,7 +66,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802557,32.083706,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802557,32.083706,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -76,7 +76,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802569,32.083707,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802569,32.083707,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -86,7 +86,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802581,32.083708,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802581,32.083708,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -96,7 +96,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802593,32.083708,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802593,32.083708,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -106,7 +106,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802605,32.083709,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802605,32.083709,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -116,7 +116,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802617,32.083709,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802617,32.083709,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -126,7 +126,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802629,32.08371,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802629,32.08371,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -136,7 +136,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802641,32.083711,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802641,32.083711,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -146,7 +146,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80264,32.08372,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80264,32.08372,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -156,7 +156,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802639,32.083729,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802639,32.083729,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -166,7 +166,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802638,32.083739,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802638,32.083739,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -176,7 +176,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802638,32.083748,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802638,32.083748,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -186,7 +186,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802637,32.083757,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802637,32.083757,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -196,7 +196,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802636,32.083767,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802636,32.083767,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -206,7 +206,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802635,32.083776,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802635,32.083776,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -216,7 +216,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802635,32.083785,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802635,32.083785,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -226,7 +226,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802634,32.083795,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802634,32.083795,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -236,7 +236,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802633,32.083804,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802633,32.083804,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -246,7 +246,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802632,32.083814,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802632,32.083814,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -256,7 +256,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802631,32.083823,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802631,32.083823,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -266,7 +266,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802631,32.083832,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802631,32.083832,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -276,7 +276,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80263,32.083842,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80263,32.083842,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -286,7 +286,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802629,32.083851,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802629,32.083851,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -296,7 +296,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802628,32.08386,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802628,32.08386,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -306,7 +306,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802627,32.08387,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802627,32.08387,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -316,7 +316,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802627,32.083879,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802627,32.083879,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -326,7 +326,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802626,32.083888,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802626,32.083888,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -336,7 +336,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802625,32.083898,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802625,32.083898,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -346,7 +346,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802624,32.083907,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802624,32.083907,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -356,7 +356,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802624,32.083916,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802624,32.083916,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -366,7 +366,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802623,32.083926,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802623,32.083926,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -376,7 +376,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802622,32.083935,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802622,32.083935,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -386,7 +386,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802621,32.083944,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802621,32.083944,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -396,7 +396,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80262,32.083954,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80262,32.083954,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -406,7 +406,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80262,32.083963,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80262,32.083963,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -416,7 +416,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802619,32.083973,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802619,32.083973,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -426,7 +426,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802618,32.083982,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802618,32.083982,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -436,7 +436,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802617,32.083991,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802617,32.083991,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -446,7 +446,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802617,32.084001,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802617,32.084001,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -456,7 +456,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802616,32.08401,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802616,32.08401,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -466,7 +466,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802615,32.084019,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802615,32.084019,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -476,7 +476,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802614,32.084029,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802614,32.084029,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -486,7 +486,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802599,32.084028,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802599,32.084028,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -496,7 +496,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802583,32.084027,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802583,32.084027,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -506,7 +506,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802567,32.084026,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802567,32.084026,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -516,7 +516,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802552,32.084026,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802552,32.084026,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -526,7 +526,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802536,32.084025,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802536,32.084025,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -536,7 +536,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80252,32.084024,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80252,32.084024,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -546,7 +546,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802505,32.084024,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802505,32.084024,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -556,7 +556,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802489,32.084023,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802489,32.084023,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -566,7 +566,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249,32.084014,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80249,32.084014,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -576,7 +576,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249,32.084005,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80249,32.084005,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -586,7 +586,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802491,32.083995,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802491,32.083995,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -596,7 +596,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802491,32.083986,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802491,32.083986,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -606,7 +606,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802492,32.083977,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802492,32.083977,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -616,7 +616,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802493,32.083968,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802493,32.083968,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -626,7 +626,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802493,32.083959,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802493,32.083959,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -636,7 +636,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802494,32.08395,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802494,32.08395,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -646,7 +646,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802494,32.083941,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802494,32.083941,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -656,7 +656,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802495,32.083932,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802495,32.083932,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -666,7 +666,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802496,32.083923,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802496,32.083923,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -676,7 +676,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802496,32.083913,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802496,32.083913,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -686,7 +686,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802497,32.083904,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802497,32.083904,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -696,7 +696,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802497,32.083895,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802497,32.083895,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -706,7 +706,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802498,32.083886,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802498,32.083886,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -716,7 +716,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802499,32.083877,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802499,32.083877,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -726,7 +726,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802499,32.083868,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802499,32.083868,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -736,7 +736,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8025,32.083859,1.8</ns2:coordinates>
+                <ns2:coordinates>34.8025,32.083859,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -746,7 +746,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8025,32.08385,1.8</ns2:coordinates>
+                <ns2:coordinates>34.8025,32.08385,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -756,7 +756,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802501,32.083841,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802501,32.083841,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -766,7 +766,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802501,32.083831,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802501,32.083831,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -776,7 +776,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802502,32.083822,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802502,32.083822,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -786,7 +786,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802503,32.083813,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802503,32.083813,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -796,7 +796,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802503,32.083804,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802503,32.083804,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -806,7 +806,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802504,32.083795,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802504,32.083795,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -816,7 +816,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802504,32.083786,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802504,32.083786,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -826,7 +826,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802505,32.083777,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802505,32.083777,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -836,7 +836,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802506,32.083768,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802506,32.083768,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -846,7 +846,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802506,32.083759,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802506,32.083759,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -856,7 +856,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802507,32.083749,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802507,32.083749,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -866,7 +866,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802507,32.08374,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802507,32.08374,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -876,7 +876,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802508,32.083731,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802508,32.083731,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -886,7 +886,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802509,32.083722,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802509,32.083722,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -896,7 +896,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802509,32.083713,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802509,32.083713,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -906,7 +906,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80251,32.083704,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80251,32.083704,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -916,7 +916,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802521,32.083704,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802521,32.083704,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -926,7 +926,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802532,32.083705,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802532,32.083705,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -936,7 +936,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802543,32.083706,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802543,32.083706,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -946,7 +946,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802553,32.083706,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802553,32.083706,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -956,7 +956,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802564,32.083707,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802564,32.083707,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -966,7 +966,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802575,32.083707,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802575,32.083707,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -976,7 +976,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802586,32.083708,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802586,32.083708,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -986,7 +986,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802597,32.083708,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802597,32.083708,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -996,7 +996,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802608,32.083709,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802608,32.083709,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1006,7 +1006,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802619,32.083709,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802619,32.083709,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1016,7 +1016,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80263,32.08371,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80263,32.08371,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1026,7 +1026,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802641,32.083711,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802641,32.083711,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1036,7 +1036,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80264,32.083719,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80264,32.083719,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1046,7 +1046,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802639,32.083728,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802639,32.083728,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1056,7 +1056,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802639,32.083737,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802639,32.083737,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1066,7 +1066,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802638,32.083746,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802638,32.083746,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1076,7 +1076,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802637,32.083755,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802637,32.083755,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1086,7 +1086,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802636,32.083764,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802636,32.083764,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1096,7 +1096,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802636,32.083772,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802636,32.083772,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1106,7 +1106,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802635,32.083781,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802635,32.083781,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1116,7 +1116,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802634,32.08379,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802634,32.08379,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1126,7 +1126,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802633,32.083799,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802633,32.083799,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1136,7 +1136,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802633,32.083808,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802633,32.083808,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1146,7 +1146,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802632,32.083817,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802632,32.083817,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1156,7 +1156,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802631,32.083825,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802631,32.083825,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1166,7 +1166,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80263,32.083834,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80263,32.083834,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1176,7 +1176,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80263,32.083843,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80263,32.083843,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1186,7 +1186,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802629,32.083852,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802629,32.083852,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1196,7 +1196,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802628,32.083861,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802628,32.083861,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1206,7 +1206,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802627,32.08387,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802627,32.08387,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1216,7 +1216,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802627,32.083878,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802627,32.083878,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1226,7 +1226,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802626,32.083887,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802626,32.083887,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1236,7 +1236,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802625,32.083896,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802625,32.083896,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1246,7 +1246,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802625,32.083905,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802625,32.083905,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1256,7 +1256,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802624,32.083914,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802624,32.083914,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1266,7 +1266,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802623,32.083923,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802623,32.083923,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1276,7 +1276,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802622,32.083931,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802622,32.083931,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1286,7 +1286,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802622,32.08394,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802622,32.08394,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1296,7 +1296,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802621,32.083949,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802621,32.083949,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1306,7 +1306,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80262,32.083958,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80262,32.083958,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1316,7 +1316,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802619,32.083967,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802619,32.083967,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1326,7 +1326,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802619,32.083976,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802619,32.083976,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1336,7 +1336,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802618,32.083984,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802618,32.083984,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1346,7 +1346,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802617,32.083993,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802617,32.083993,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1356,7 +1356,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802616,32.084002,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802616,32.084002,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1366,7 +1366,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802616,32.084011,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802616,32.084011,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1376,7 +1376,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802615,32.08402,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802615,32.08402,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1386,7 +1386,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802614,32.084029,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802614,32.084029,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1396,7 +1396,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802603,32.084028,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802603,32.084028,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1406,7 +1406,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802591,32.084028,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802591,32.084028,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1416,7 +1416,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80258,32.084027,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80258,32.084027,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1426,7 +1426,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802569,32.084027,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802569,32.084027,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1436,7 +1436,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802557,32.084026,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802557,32.084026,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1446,7 +1446,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802546,32.084025,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802546,32.084025,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1456,7 +1456,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802535,32.084025,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802535,32.084025,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1466,7 +1466,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802523,32.084024,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802523,32.084024,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1476,7 +1476,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802512,32.084024,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802512,32.084024,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1486,7 +1486,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8025,32.084023,1.8</ns2:coordinates>
+                <ns2:coordinates>34.8025,32.084023,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1496,7 +1496,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802489,32.084023,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802489,32.084023,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1506,7 +1506,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249,32.084014,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80249,32.084014,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1516,7 +1516,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249,32.084006,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80249,32.084006,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1526,7 +1526,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802491,32.083997,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802491,32.083997,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1536,7 +1536,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802491,32.083988,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802491,32.083988,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1546,7 +1546,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802492,32.08398,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802492,32.08398,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1556,7 +1556,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802492,32.083971,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802492,32.083971,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1566,7 +1566,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802493,32.083962,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802493,32.083962,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1576,7 +1576,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802494,32.083954,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802494,32.083954,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1586,7 +1586,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802494,32.083945,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802494,32.083945,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1596,7 +1596,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802495,32.083937,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802495,32.083937,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1606,7 +1606,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802495,32.083928,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802495,32.083928,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1616,7 +1616,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802496,32.083919,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802496,32.083919,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1626,7 +1626,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802496,32.083911,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802496,32.083911,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1636,7 +1636,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802497,32.083902,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802497,32.083902,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1646,7 +1646,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802497,32.083894,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802497,32.083894,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1656,7 +1656,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802498,32.083885,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802498,32.083885,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1666,7 +1666,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802499,32.083876,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802499,32.083876,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1676,7 +1676,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802499,32.083868,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802499,32.083868,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1686,7 +1686,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8025,32.083859,1.8</ns2:coordinates>
+                <ns2:coordinates>34.8025,32.083859,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1696,7 +1696,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8025,32.08385,1.8</ns2:coordinates>
+                <ns2:coordinates>34.8025,32.08385,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1706,7 +1706,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802501,32.083842,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802501,32.083842,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1716,7 +1716,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802501,32.083833,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802501,32.083833,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1726,7 +1726,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802502,32.083825,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802502,32.083825,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1736,7 +1736,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802502,32.083816,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802502,32.083816,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1746,7 +1746,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802503,32.083807,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802503,32.083807,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1756,7 +1756,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802504,32.083799,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802504,32.083799,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1766,7 +1766,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802504,32.08379,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802504,32.08379,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1776,7 +1776,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802505,32.083781,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802505,32.083781,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1786,7 +1786,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802505,32.083773,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802505,32.083773,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1796,7 +1796,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802506,32.083764,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802506,32.083764,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1806,7 +1806,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802506,32.083756,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802506,32.083756,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1816,7 +1816,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802507,32.083747,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802507,32.083747,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1826,7 +1826,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802508,32.083738,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802508,32.083738,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1836,7 +1836,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802508,32.08373,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802508,32.08373,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1846,7 +1846,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802509,32.083721,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802509,32.083721,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1856,7 +1856,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802509,32.083713,1.8</ns2:coordinates>
+                <ns2:coordinates>34.802509,32.083713,3.6</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
@@ -1864,7 +1864,7 @@
             <ns2:LineString>
                 <ns2:extrude>1</ns2:extrude>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80251,32.083704,1.8 34.802522,32.083705,1.8 34.802534,32.083705,1.8 34.802546,32.083706,1.8 34.802557,32.083706,1.8 34.802569,32.083707,1.8 34.802581,32.083708,1.8 34.802593,32.083708,1.8 34.802605,32.083709,1.8 34.802617,32.083709,1.8 34.802629,32.08371,1.8 34.802641,32.083711,1.8 34.80264,32.08372,1.8 34.802639,32.083729,1.8 34.802638,32.083739,1.8 34.802638,32.083748,1.8 34.802637,32.083757,1.8 34.802636,32.083767,1.8 34.802635,32.083776,1.8 34.802635,32.083785,1.8 34.802634,32.083795,1.8 34.802633,32.083804,1.8 34.802632,32.083814,1.8 34.802631,32.083823,1.8 34.802631,32.083832,1.8 34.80263,32.083842,1.8 34.802629,32.083851,1.8 34.802628,32.08386,1.8 34.802627,32.08387,1.8 34.802627,32.083879,1.8 34.802626,32.083888,1.8 34.802625,32.083898,1.8 34.802624,32.083907,1.8 34.802624,32.083916,1.8 34.802623,32.083926,1.8 34.802622,32.083935,1.8 34.802621,32.083944,1.8 34.80262,32.083954,1.8 34.80262,32.083963,1.8 34.802619,32.083973,1.8 34.802618,32.083982,1.8 34.802617,32.083991,1.8 34.802617,32.084001,1.8 34.802616,32.08401,1.8 34.802615,32.084019,1.8 34.802614,32.084029,1.8 34.802599,32.084028,1.8 34.802583,32.084027,1.8 34.802567,32.084026,1.8 34.802552,32.084026,1.8 34.802536,32.084025,1.8 34.80252,32.084024,1.8 34.802505,32.084024,1.8 34.802489,32.084023,1.8 34.80249,32.084014,1.8 34.80249,32.084005,1.8 34.802491,32.083995,1.8 34.802491,32.083986,1.8 34.802492,32.083977,1.8 34.802493,32.083968,1.8 34.802493,32.083959,1.8 34.802494,32.08395,1.8 34.802494,32.083941,1.8 34.802495,32.083932,1.8 34.802496,32.083923,1.8 34.802496,32.083913,1.8 34.802497,32.083904,1.8 34.802497,32.083895,1.8 34.802498,32.083886,1.8 34.802499,32.083877,1.8 34.802499,32.083868,1.8 34.8025,32.083859,1.8 34.8025,32.08385,1.8 34.802501,32.083841,1.8 34.802501,32.083831,1.8 34.802502,32.083822,1.8 34.802503,32.083813,1.8 34.802503,32.083804,1.8 34.802504,32.083795,1.8 34.802504,32.083786,1.8 34.802505,32.083777,1.8 34.802506,32.083768,1.8 34.802506,32.083759,1.8 34.802507,32.083749,1.8 34.802507,32.08374,1.8 34.802508,32.083731,1.8 34.802509,32.083722,1.8 34.802509,32.083713,1.8 34.80251,32.083704,1.8 34.802521,32.083704,1.8 34.802532,32.083705,1.8 34.802543,32.083706,1.8 34.802553,32.083706,1.8 34.802564,32.083707,1.8 34.802575,32.083707,1.8 34.802586,32.083708,1.8 34.802597,32.083708,1.8 34.802608,32.083709,1.8 34.802619,32.083709,1.8 34.80263,32.08371,1.8 34.802641,32.083711,1.8 34.80264,32.083719,1.8 34.802639,32.083728,1.8 34.802639,32.083737,1.8 34.802638,32.083746,1.8 34.802637,32.083755,1.8 34.802636,32.083764,1.8 34.802636,32.083772,1.8 34.802635,32.083781,1.8 34.802634,32.08379,1.8 34.802633,32.083799,1.8 34.802633,32.083808,1.8 34.802632,32.083817,1.8 34.802631,32.083825,1.8 34.80263,32.083834,1.8 34.80263,32.083843,1.8 34.802629,32.083852,1.8 34.802628,32.083861,1.8 34.802627,32.08387,1.8 34.802627,32.083878,1.8 34.802626,32.083887,1.8 34.802625,32.083896,1.8 34.802625,32.083905,1.8 34.802624,32.083914,1.8 34.802623,32.083923,1.8 34.802622,32.083931,1.8 34.802622,32.08394,1.8 34.802621,32.083949,1.8 34.80262,32.083958,1.8 34.802619,32.083967,1.8 34.802619,32.083976,1.8 34.802618,32.083984,1.8 34.802617,32.083993,1.8 34.802616,32.084002,1.8 34.802616,32.084011,1.8 34.802615,32.08402,1.8 34.802614,32.084029,1.8 34.802603,32.084028,1.8 34.802591,32.084028,1.8 34.80258,32.084027,1.8 34.802569,32.084027,1.8 34.802557,32.084026,1.8 34.802546,32.084025,1.8 34.802535,32.084025,1.8 34.802523,32.084024,1.8 34.802512,32.084024,1.8 34.8025,32.084023,1.8 34.802489,32.084023,1.8 34.80249,32.084014,1.8 34.80249,32.084006,1.8 34.802491,32.083997,1.8 34.802491,32.083988,1.8 34.802492,32.08398,1.8 34.802492,32.083971,1.8 34.802493,32.083962,1.8 34.802494,32.083954,1.8 34.802494,32.083945,1.8 34.802495,32.083937,1.8 34.802495,32.083928,1.8 34.802496,32.083919,1.8 34.802496,32.083911,1.8 34.802497,32.083902,1.8 34.802497,32.083894,1.8 34.802498,32.083885,1.8 34.802499,32.083876,1.8 34.802499,32.083868,1.8 34.8025,32.083859,1.8 34.8025,32.08385,1.8 34.802501,32.083842,1.8 34.802501,32.083833,1.8 34.802502,32.083825,1.8 34.802502,32.083816,1.8 34.802503,32.083807,1.8 34.802504,32.083799,1.8 34.802504,32.08379,1.8 34.802505,32.083781,1.8 34.802505,32.083773,1.8 34.802506,32.083764,1.8 34.802506,32.083756,1.8 34.802507,32.083747,1.8 34.802508,32.083738,1.8 34.802508,32.08373,1.8 34.802509,32.083721,1.8 34.802509,32.083713,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80251,32.083704,3.6 34.802522,32.083705,3.6 34.802534,32.083705,3.6 34.802546,32.083706,3.6 34.802557,32.083706,3.6 34.802569,32.083707,3.6 34.802581,32.083708,3.6 34.802593,32.083708,3.6 34.802605,32.083709,3.6 34.802617,32.083709,3.6 34.802629,32.08371,3.6 34.802641,32.083711,3.6 34.80264,32.08372,3.6 34.802639,32.083729,3.6 34.802638,32.083739,3.6 34.802638,32.083748,3.6 34.802637,32.083757,3.6 34.802636,32.083767,3.6 34.802635,32.083776,3.6 34.802635,32.083785,3.6 34.802634,32.083795,3.6 34.802633,32.083804,3.6 34.802632,32.083814,3.6 34.802631,32.083823,3.6 34.802631,32.083832,3.6 34.80263,32.083842,3.6 34.802629,32.083851,3.6 34.802628,32.08386,3.6 34.802627,32.08387,3.6 34.802627,32.083879,3.6 34.802626,32.083888,3.6 34.802625,32.083898,3.6 34.802624,32.083907,3.6 34.802624,32.083916,3.6 34.802623,32.083926,3.6 34.802622,32.083935,3.6 34.802621,32.083944,3.6 34.80262,32.083954,3.6 34.80262,32.083963,3.6 34.802619,32.083973,3.6 34.802618,32.083982,3.6 34.802617,32.083991,3.6 34.802617,32.084001,3.6 34.802616,32.08401,3.6 34.802615,32.084019,3.6 34.802614,32.084029,3.6 34.802599,32.084028,3.6 34.802583,32.084027,3.6 34.802567,32.084026,3.6 34.802552,32.084026,3.6 34.802536,32.084025,3.6 34.80252,32.084024,3.6 34.802505,32.084024,3.6 34.802489,32.084023,3.6 34.80249,32.084014,3.6 34.80249,32.084005,3.6 34.802491,32.083995,3.6 34.802491,32.083986,3.6 34.802492,32.083977,3.6 34.802493,32.083968,3.6 34.802493,32.083959,3.6 34.802494,32.08395,3.6 34.802494,32.083941,3.6 34.802495,32.083932,3.6 34.802496,32.083923,3.6 34.802496,32.083913,3.6 34.802497,32.083904,3.6 34.802497,32.083895,3.6 34.802498,32.083886,3.6 34.802499,32.083877,3.6 34.802499,32.083868,3.6 34.8025,32.083859,3.6 34.8025,32.08385,3.6 34.802501,32.083841,3.6 34.802501,32.083831,3.6 34.802502,32.083822,3.6 34.802503,32.083813,3.6 34.802503,32.083804,3.6 34.802504,32.083795,3.6 34.802504,32.083786,3.6 34.802505,32.083777,3.6 34.802506,32.083768,3.6 34.802506,32.083759,3.6 34.802507,32.083749,3.6 34.802507,32.08374,3.6 34.802508,32.083731,3.6 34.802509,32.083722,3.6 34.802509,32.083713,3.6 34.80251,32.083704,3.6 34.802521,32.083704,3.6 34.802532,32.083705,3.6 34.802543,32.083706,3.6 34.802553,32.083706,3.6 34.802564,32.083707,3.6 34.802575,32.083707,3.6 34.802586,32.083708,3.6 34.802597,32.083708,3.6 34.802608,32.083709,3.6 34.802619,32.083709,3.6 34.80263,32.08371,3.6 34.802641,32.083711,3.6 34.80264,32.083719,3.6 34.802639,32.083728,3.6 34.802639,32.083737,3.6 34.802638,32.083746,3.6 34.802637,32.083755,3.6 34.802636,32.083764,3.6 34.802636,32.083772,3.6 34.802635,32.083781,3.6 34.802634,32.08379,3.6 34.802633,32.083799,3.6 34.802633,32.083808,3.6 34.802632,32.083817,3.6 34.802631,32.083825,3.6 34.80263,32.083834,3.6 34.80263,32.083843,3.6 34.802629,32.083852,3.6 34.802628,32.083861,3.6 34.802627,32.08387,3.6 34.802627,32.083878,3.6 34.802626,32.083887,3.6 34.802625,32.083896,3.6 34.802625,32.083905,3.6 34.802624,32.083914,3.6 34.802623,32.083923,3.6 34.802622,32.083931,3.6 34.802622,32.08394,3.6 34.802621,32.083949,3.6 34.80262,32.083958,3.6 34.802619,32.083967,3.6 34.802619,32.083976,3.6 34.802618,32.083984,3.6 34.802617,32.083993,3.6 34.802616,32.084002,3.6 34.802616,32.084011,3.6 34.802615,32.08402,3.6 34.802614,32.084029,3.6 34.802603,32.084028,3.6 34.802591,32.084028,3.6 34.80258,32.084027,3.6 34.802569,32.084027,3.6 34.802557,32.084026,3.6 34.802546,32.084025,3.6 34.802535,32.084025,3.6 34.802523,32.084024,3.6 34.802512,32.084024,3.6 34.8025,32.084023,3.6 34.802489,32.084023,3.6 34.80249,32.084014,3.6 34.80249,32.084006,3.6 34.802491,32.083997,3.6 34.802491,32.083988,3.6 34.802492,32.08398,3.6 34.802492,32.083971,3.6 34.802493,32.083962,3.6 34.802494,32.083954,3.6 34.802494,32.083945,3.6 34.802495,32.083937,3.6 34.802495,32.083928,3.6 34.802496,32.083919,3.6 34.802496,32.083911,3.6 34.802497,32.083902,3.6 34.802497,32.083894,3.6 34.802498,32.083885,3.6 34.802499,32.083876,3.6 34.802499,32.083868,3.6 34.8025,32.083859,3.6 34.8025,32.08385,3.6 34.802501,32.083842,3.6 34.802501,32.083833,3.6 34.802502,32.083825,3.6 34.802502,32.083816,3.6 34.802503,32.083807,3.6 34.802504,32.083799,3.6 34.802504,32.08379,3.6 34.802505,32.083781,3.6 34.802505,32.083773,3.6 34.802506,32.083764,3.6 34.802506,32.083756,3.6 34.802507,32.083747,3.6 34.802508,32.083738,3.6 34.802508,32.08373,3.6 34.802509,32.083721,3.6 34.802509,32.083713,3.6</ns2:coordinates>
             </ns2:LineString>
         </ns2:Placemark>
     </ns2:Document>

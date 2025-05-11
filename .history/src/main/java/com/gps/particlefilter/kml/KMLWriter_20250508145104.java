@@ -1,12 +1,12 @@
 package com.gps.particlefilter.kml;
 
 import com.gps.particlefilter.model.*;
-import com.gps.particlefilter.util.CoordinateSystemManager;
 import de.micromata.opengis.kml.v_2_2_0.*;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
-import java.util.Map;
 
 public class KMLWriter {
     
@@ -27,14 +27,11 @@ public class KMLWriter {
             Particle particle = particles.get(i);
             Point3D position = particle.getPosition();
             
-            // Convert to geographic coordinates for KML (KML uses WGS84 lon/lat/alt)
-            Point3D geoPosition = CoordinateSystemManager.getInstance().convertToGeographic(position);
-            
             Placemark placemark = document.createAndAddPlacemark();
             placemark.setStyleUrl("#particleStyle");
             
             Point point = placemark.createAndSetPoint();
-            point.addToCoordinates(geoPosition.getX(), geoPosition.getY(), geoPosition.getZ());
+            point.addToCoordinates(position.getX(), position.getY(), position.getZ());
             
             // Add weight information
             ExtendedData extendedData = placemark.createAndSetExtendedData();
@@ -58,37 +55,25 @@ public class KMLWriter {
             Kml kml = KmlFactory.createKml();
             Document document = kml.createAndSetDocument();
 
-            // Create styles for different match counts
-            // Green for 100% matches (N)
+            // Create styles for different weight ranges
             Style greenStyle = document.createAndAddStyle();
-            greenStyle.setId("fullMatchStyle");
+            greenStyle.setId("highWeightStyle");
             IconStyle greenIcon = greenStyle.createAndSetIconStyle();
             greenIcon.setScale(0.5);
             greenIcon.setColor("ff00ff00"); // Green (aabbggrr format)
             Icon greenIconHref = greenIcon.createAndSetIcon();
             greenIconHref.setHref("http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png");
 
-            // Blue for N-1 matches
-            Style blueStyle = document.createAndAddStyle();
-            blueStyle.setId("nMinus1MatchStyle");
-            IconStyle blueIcon = blueStyle.createAndSetIconStyle();
-            blueIcon.setScale(0.5);
-            blueIcon.setColor("ffff0000"); // Blue (aabbggrr format)
-            Icon blueIconHref = blueIcon.createAndSetIcon();
-            blueIconHref.setHref("http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png");
-
-            // Yellow for N-2 matches
             Style yellowStyle = document.createAndAddStyle();
-            yellowStyle.setId("nMinus2MatchStyle");
+            yellowStyle.setId("medWeightStyle");
             IconStyle yellowIcon = yellowStyle.createAndSetIconStyle();
             yellowIcon.setScale(0.5);
             yellowIcon.setColor("ff00ffff"); // Yellow
             Icon yellowIconHref = yellowIcon.createAndSetIcon();
             yellowIconHref.setHref("http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png");
 
-            // Red for N-3 matches and lower
             Style redStyle = document.createAndAddStyle();
-            redStyle.setId("nMinus3AndLowerMatchStyle");
+            redStyle.setId("lowWeightStyle");
             IconStyle redIcon = redStyle.createAndSetIconStyle();
             redIcon.setScale(0.5);
             redIcon.setColor("ff0000ff"); // Red
@@ -96,7 +81,7 @@ public class KMLWriter {
             redIconHref.setHref("http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png");
 
             // Create a folder only for specific time points (1, 75, 160)
-            int[] timePointsToShow = {75, 160};
+            int[] timePointsToShow = {1, 75, 160};
             
             for (int timeIndex : timePointsToShow) {
                 // Skip if the timeIndex is out of bounds
@@ -108,32 +93,13 @@ public class KMLWriter {
                 List<Particle> particles = particleHistory.get(timeIndex);
                 long timestamp = timestamps.get(timeIndex);
                 
-                // Find the reference LOS/NLOS statuses to compare against
-                // Use a central particle as reference point
-                Map<String, Boolean> referenceStatus = null;
-                int totalSatellites = 0;
-                
-                // Find particle with highest weight to use as reference
-                double maxWeight = -1;
-                int refIndex = -1;
-                
-                for (int i = 0; i < particles.size(); i++) {
-                    if (particles.get(i).getWeight() > maxWeight) {
-                        maxWeight = particles.get(i).getWeight();
-                        refIndex = i;
-                    }
-                }
-                
-                if (refIndex >= 0) {
-                    referenceStatus = particles.get(refIndex).getLosStatus();
-                    totalSatellites = referenceStatus.size();
-                    System.out.println("Using particle " + refIndex + " with weight " + maxWeight + " as reference");
-                } else if (!particles.isEmpty()) {
-                    // Fallback to first particle
-                    referenceStatus = particles.get(0).getLosStatus();
-                    totalSatellites = referenceStatus.size();
-                    System.out.println("Using first particle as reference");
-                }
+                // Calculate weight thresholds for this timestep
+                double[] weights = particles.stream()
+                    .mapToDouble(Particle::getWeight)
+                    .sorted()
+                    .toArray();
+                double lowThreshold = weights[(int)(weights.length * 0.33)];
+                double highThreshold = weights[(int)(weights.length * 0.66)];
                 
                 // Create a folder for this timestep
                 Folder timeFolder = document.createAndAddFolder();
@@ -147,47 +113,25 @@ public class KMLWriter {
                 for (Particle p : particles) {
                     Placemark placemark = timeFolder.createAndAddPlacemark();
                     
-                    // Get the matches for this particle against the reference particle
-                    int matches = 0;
-                    
-                    if (referenceStatus != null) {
-                        // Compare each satellite's LOS/NLOS status with the reference
-                        for (Map.Entry<String, Boolean> entry : referenceStatus.entrySet()) {
-                            String satelliteId = entry.getKey();
-                            Boolean refStatus = entry.getValue();
-                            
-                            // Check if this particle has the same LOS/NLOS status for this satellite
-                            if (p.getLosStatus().containsKey(satelliteId) && 
-                                p.getLosStatus().get(satelliteId).equals(refStatus)) {
-                                matches++;
-                            }
-                        }
+                    // Set style based on weight
+                    double weight = p.getWeight();
+                    if (weight >= highThreshold) {
+                        placemark.setStyleUrl("#highWeightStyle");
+                    } else if (weight >= lowThreshold) {
+                        placemark.setStyleUrl("#medWeightStyle");
+                    } else {
+                        placemark.setStyleUrl("#lowWeightStyle");
                     }
                     
-                    // Set style based on match count compared to total possible matches
-                    if (matches == totalSatellites) { // 100% match (N matches)
-                        placemark.setStyleUrl("#fullMatchStyle");
-                    } else if (matches == totalSatellites - 1) { // N-1 matches
-                        placemark.setStyleUrl("#nMinus1MatchStyle");
-                    } else if (matches == totalSatellites - 2) { // N-2 matches
-                        placemark.setStyleUrl("#nMinus2MatchStyle");
-                    } else { // N-3 matches or lower
-                        placemark.setStyleUrl("#nMinus3AndLowerMatchStyle");
-                    }
-                    
-                    placemark.setDescription("Matches: " + matches + "/" + totalSatellites + 
-                        "\nWeight: " + p.getWeight() + 
-                        "\nLOS/NLOS: " + p.getLosNlosCount() + 
-                        "\nMatch level: " + (matches == totalSatellites ? "100% (N)" : 
-                                           matches == totalSatellites - 1 ? "N-1" : 
-                                           matches == totalSatellites - 2 ? "N-2" : "N-3 or lower"));
+                    placemark.setDescription("Weight: " + weight + 
+                        "\nRange: " + (weight >= highThreshold ? "High" : 
+                                     weight >= lowThreshold ? "Medium" : "Low"));
 
-                    // Add coordinates (convert to geographic for KML)
+                    // Add coordinates
                     Point point = placemark.createAndSetPoint();
                     point.setAltitudeMode(AltitudeMode.RELATIVE_TO_GROUND);
                     Point3D pos = p.getPosition();
-                    Point3D geoPos = CoordinateSystemManager.getInstance().convertToGeographic(pos);
-                    point.addToCoordinates(geoPos.getX(), geoPos.getY(), geoPos.getZ());
+                    point.addToCoordinates(pos.getX(), pos.getY(), pos.getZ());
                 }
             }
 
@@ -242,8 +186,7 @@ public class KMLWriter {
                 Point kmlPoint = placemark.createAndSetPoint();
                 kmlPoint.setAltitudeMode(AltitudeMode.RELATIVE_TO_GROUND);
                 Point3D point = route.get(i);
-                Point3D geoPoint = CoordinateSystemManager.getInstance().convertToGeographic(point);
-                kmlPoint.addToCoordinates(geoPoint.getX(), geoPoint.getY(), geoPoint.getZ());
+                kmlPoint.addToCoordinates(point.getX(), point.getY(), point.getZ());
             }
 
             // Add line if requested
@@ -251,14 +194,12 @@ public class KMLWriter {
                 Placemark linePlacemark = document.createAndAddPlacemark();
                 linePlacemark.setStyleUrl("#lineStyle");
                 
-                LineString ls = linePlacemark.createAndSetLineString();
-                ls.setAltitudeMode(AltitudeMode.RELATIVE_TO_GROUND);
-                ls.setExtrude(true);
+                LineString lineString = linePlacemark.createAndSetLineString();
+                lineString.setAltitudeMode(AltitudeMode.RELATIVE_TO_GROUND);
+                lineString.setExtrude(true);
                 
-                // Convert route points to geographic coordinates for KML
                 for (Point3D point : route) {
-                    Point3D geoPoint = CoordinateSystemManager.getInstance().convertToGeographic(point);
-                    ls.addToCoordinates(geoPoint.getX(), geoPoint.getY(), geoPoint.getZ());
+                    lineString.addToCoordinates(point.getX(), point.getY(), point.getZ());
                 }
             }
 

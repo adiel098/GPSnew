@@ -1,6 +1,7 @@
 package com.gps.particlefilter;
 
 import com.gps.particlefilter.model.*;
+import com.gps.particlefilter.util.CoordinateSystemManager;
 import org.apache.commons.math3.random.RandomDataGenerator;
 import java.util.*;
 
@@ -14,6 +15,7 @@ public class ParticleFilter {
     private List<List<Particle>> particleHistory;
     private List<Long> timestamps;
     private Point3D previousPoint;
+    private CoordinateSystemManager coordManager;
 
     public ParticleFilter(LosCalculator losCalculator, double gridSize, double movementNoise) {
         this.losCalculator = losCalculator;
@@ -24,24 +26,27 @@ public class ParticleFilter {
         this.particleHistory = new ArrayList<>();
         this.timestamps = new ArrayList<>();
         this.previousPoint = null;
+        this.coordManager = CoordinateSystemManager.getInstance();
     }
 
     public void initializeParticles(Point3D center, int particleCount) {
         particles.clear();
-        double minLat = center.getY() - gridSize;
-        double maxLat = center.getY() + gridSize;
-        double minLon = center.getX() - gridSize;
-        double maxLon = center.getX() + gridSize;
-        double alt = center.getZ();
+        // When using UTM, gridSize is already in meters
+        double minY = center.getY() - gridSize;
+        double maxY = center.getY() + gridSize;
+        double minX = center.getX() - gridSize;
+        double maxX = center.getX() + gridSize;
+        // עדכון גובה החלקיקים ל-1.8 מטר מעל גובה הקרקע
+        double alt = 1.8; // גובה אדם ממוצע
 
         int particlesPerRow = (int) Math.sqrt(particleCount);
-        double latStep = (maxLat - minLat) / (particlesPerRow - 1);
-        double lonStep = (maxLon - minLon) / (particlesPerRow - 1);
+        double yStep = (maxY - minY) / (particlesPerRow - 1);
+        double xStep = (maxX - minX) / (particlesPerRow - 1);
 
-        for (double lat = minLat; lat <= maxLat; lat += latStep) {
-            for (double lon = minLon; lon <= maxLon; lon += lonStep) {
+        for (double y = minY; y <= maxY; y += yStep) {
+            for (double x = minX; x <= maxX; x += xStep) {
                 if (particles.size() >= particleCount) break;
-                Point3D position = new Point3D(lon, lat, alt);
+                Point3D position = new Point3D(x, y, alt);
                 Particle particle = new Particle(position);
                 particle.setLosStatus(losCalculator.calculateLOS(position));
                 particles.add(particle);
@@ -111,13 +116,28 @@ public class ParticleFilter {
     }
 
     public void move(Point3D from, Point3D to) {
-        // חישוב המרחק והזווית בין הנקודות
+        // חישוב המרחק והזווית בין הנקודות (בקואורדינטות הנוכחיות - UTM או גיאוגרפיות)
         double distance = from.distanceTo(to);
         double azimuth = from.azimuthTo(to);
         
+        System.out.println("Moving from: " + from + " to: " + to);
+        System.out.println("Distance: " + distance + "m, Azimuth: " + azimuth + "°");
+        
+        // וידוא מערכת הקואורדינטות הנוכחית
+        if (coordManager.isUsingUtm()) {
+            System.out.println("Moving in UTM coordinate system (easting/northing) in Zone " + 
+                    coordManager.getDefaultUtmZone() + 
+                    (coordManager.isNorthernHemisphere() ? " North" : " South"));
+        } else {
+            System.out.println("Moving in Geographic coordinate system (lon/lat)");
+        }
+        
         // הזזת כל החלקיקים באותו מרחק וזווית (עם רעש)
         for (Particle particle : particles) {
+            // תנועה ישירה ב-UTM (העדפה לתנועה קרטזית במטרים)
             particle.move(distance, azimuth, movementNoise);
+            
+            // עדכון מצב ה-LOS/NLOS
             particle.setLosStatus(losCalculator.calculateLOS(particle.getPosition()));
         }
     }
@@ -133,7 +153,16 @@ public class ParticleFilter {
         particleHistory.add(new ArrayList<>(particles));
         timestamps.add(timestamp);
         
+        // Store the current point for next update (in current coordinate system)
         previousPoint = currentPoint;
+        
+        // Debug information about coordinate system
+        if (coordManager.isUsingUtm()) {
+            System.out.println("Using UTM coordinate system (Zone: " + coordManager.getDefaultUtmZone() + 
+                    (coordManager.isNorthernHemisphere() ? " North" : " South") + ")");
+        } else {
+            System.out.println("Using Geographic coordinate system (Latitude/Longitude)");
+        }
     }
 
     public List<Particle> getParticles() {

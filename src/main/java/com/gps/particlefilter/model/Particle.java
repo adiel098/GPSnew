@@ -2,6 +2,7 @@ package com.gps.particlefilter.model;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 public class Particle {
     private Point3D position;
@@ -85,13 +86,31 @@ public class Particle {
         return String.format("LOS: %d, NLOS: %d", losCount, nlosCount);
     }
 
-    // עדכון פונקציית התנועה לעבוד עם מרחק וזווית
+    /**
+     * עדכון פונקציית התנועה לעבוד עם מרחק וזווית - מותאם במיוחד למערכת קואורדינטות UTM
+     * 
+     * @param distance - המרחק לתנועה במטרים
+     * @param azimuth - הזווית (אזימוט) בדרגות
+     * @param noise - רמת הרעש למרחק ולזווית
+     */
     public void move(double distance, double azimuth, double noise) {
-        // הוספת רעש למרחק ולזווית
-        double noisyDistance = distance + (Math.random() - 0.5) * noise;
-        double noisyAzimuth = azimuth + (Math.random() - 0.5) * noise;
+        Random random = new Random();
+        
+        // הוספת רעש גאוסיאני למרחק ולזווית (מתאים יותר לתנועה בקואורדינטות UTM)
+        double noisyDistance = distance + random.nextGaussian() * noise * 0.5;
+        double noisyAzimuth = azimuth + random.nextGaussian() * noise * 2.0;
 
-        // הזזת החלקיק למיקום החדש
-        this.position = this.position.moveByDistanceAndAzimuth(noisyDistance, noisyAzimuth);
+        // חישוב ישיר של הקואורדינטות החדשות ב-UTM
+        double azimuthRad = Math.toRadians(noisyAzimuth);
+        double dx = noisyDistance * Math.cos(azimuthRad);
+        double dy = noisyDistance * Math.sin(azimuthRad);
+        
+        // במערכת UTM, x מייצג easting, y מייצג northing
+        double newX = position.getX() + dx;
+        double newY = position.getY() + dy;
+        double newZ = position.getZ(); // גובה נשאר קבוע
+        
+        // עדכון מיקום החלקיק
+        this.position = new Point3D(newX, newY, newZ);
     }
 }
