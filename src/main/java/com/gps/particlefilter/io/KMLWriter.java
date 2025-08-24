@@ -59,44 +59,44 @@ public class KMLWriter {
             Document document = kml.createAndSetDocument();
 
             // Create styles for different match counts
-            // Green for 100% matches (N)
+            // Green for 100% matches (N) - Perfect matching
             Style greenStyle = document.createAndAddStyle();
             greenStyle.setId("fullMatchStyle");
             IconStyle greenIcon = greenStyle.createAndSetIconStyle();
-            greenIcon.setScale(0.5);
+            greenIcon.setScale(0.7);
             greenIcon.setColor("ff00ff00"); // Green (aabbggrr format)
             Icon greenIconHref = greenIcon.createAndSetIcon();
             greenIconHref.setHref("http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png");
 
-            // Blue for N-1 matches
+            // Blue for N-1 matches - Very good matching
             Style blueStyle = document.createAndAddStyle();
             blueStyle.setId("nMinus1MatchStyle");
             IconStyle blueIcon = blueStyle.createAndSetIconStyle();
-            blueIcon.setScale(0.5);
+            blueIcon.setScale(0.6);
             blueIcon.setColor("ffff0000"); // Blue (aabbggrr format)
             Icon blueIconHref = blueIcon.createAndSetIcon();
             blueIconHref.setHref("http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png");
 
-            // Yellow for N-2 matches
+            // Yellow for N-2 matches - Good matching
             Style yellowStyle = document.createAndAddStyle();
             yellowStyle.setId("nMinus2MatchStyle");
             IconStyle yellowIcon = yellowStyle.createAndSetIconStyle();
             yellowIcon.setScale(0.5);
-            yellowIcon.setColor("ff00ffff"); // Yellow
+            yellowIcon.setColor("ff00ffff"); // Yellow (aabbggrr format)
             Icon yellowIconHref = yellowIcon.createAndSetIcon();
             yellowIconHref.setHref("http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png");
 
-            // Red for N-3 matches and lower
+            // Red for N-3 matches and lower - Poor matching
             Style redStyle = document.createAndAddStyle();
             redStyle.setId("nMinus3AndLowerMatchStyle");
             IconStyle redIcon = redStyle.createAndSetIconStyle();
-            redIcon.setScale(0.5);
-            redIcon.setColor("ff0000ff"); // Red
+            redIcon.setScale(0.4);
+            redIcon.setColor("ff0000ff"); // Red (aabbggrr format)
             Icon redIconHref = redIcon.createAndSetIcon();
             redIconHref.setHref("http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png");
 
-            // Create a folder only for specific time points (1, 75, 160)
-            int[] timePointsToShow = {75, 160};
+            // Show particles at multiple time points to visualize evolution
+            int[] timePointsToShow = {1, 25, 50, 75, 100, 125, 150, 175};
             
             for (int timeIndex : timePointsToShow) {
                 // Skip if the timeIndex is out of bounds
@@ -175,12 +175,30 @@ public class KMLWriter {
                         placemark.setStyleUrl("#nMinus3AndLowerMatchStyle");
                     }
                     
-                    placemark.setDescription("Matches: " + matches + "/" + totalSatellites + 
-                        "\nWeight: " + p.getWeight() + 
-                        "\nLOS/NLOS: " + p.getLosNlosCount() + 
-                        "\nMatch level: " + (matches == totalSatellites ? "100% (N)" : 
-                                           matches == totalSatellites - 1 ? "N-1" : 
-                                           matches == totalSatellites - 2 ? "N-2" : "N-3 or lower"));
+                    // Create descriptive text for particle
+                    String colorDescription = "";
+                    String matchLevel = "";
+                    if (matches == totalSatellites) {
+                        colorDescription = "GREEN - Perfect Matching";
+                        matchLevel = "100% (N matches)";
+                    } else if (matches == totalSatellites - 1) {
+                        colorDescription = "BLUE - Very Good Matching";
+                        matchLevel = "N-1 matches";
+                    } else if (matches == totalSatellites - 2) {
+                        colorDescription = "YELLOW - Good Matching";
+                        matchLevel = "N-2 matches";
+                    } else {
+                        colorDescription = "RED - Poor Matching";
+                        matchLevel = "N-3 or lower matches";
+                    }
+                    
+                    placemark.setDescription(
+                        colorDescription + "\n" +
+                        "Satellite Matches: " + matches + "/" + totalSatellites + "\n" +
+                        "Match Level: " + matchLevel + "\n" +
+                        "Particle Weight: " + String.format("%.6f", p.getWeight()) + "\n" +
+                        "Position Accuracy: " + (matches >= totalSatellites - 1 ? "High" : 
+                                                matches >= totalSatellites - 2 ? "Medium" : "Low"));
 
                     // Add coordinates (convert to geographic for KML)
                     Point point = placemark.createAndSetPoint();
@@ -211,12 +229,13 @@ public class KMLWriter {
             Kml kml = KmlFactory.createKml();
             Document document = kml.createAndSetDocument();
             
-            // Create style for points
+            // Create style for points (yellow tacks for all routes)
             Style pointStyle = document.createAndAddStyle();
             pointStyle.setId("pointStyle");
             IconStyle iconStyle = pointStyle.createAndSetIconStyle();
-            iconStyle.setScale(0.5);
+            iconStyle.setScale(0.6);
             Icon icon = iconStyle.createAndSetIcon();
+            // Always use yellow pushpin for all routes
             icon.setHref("http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png");
 
             // Create style for line
@@ -224,20 +243,31 @@ public class KMLWriter {
                 Style lineStyle = document.createAndAddStyle();
                 lineStyle.setId("lineStyle");
                 LineStyle kmlLineStyle = lineStyle.createAndSetLineStyle();
-                kmlLineStyle.setColor("ff0000ff");
-                kmlLineStyle.setWidth(2.0);
+                // Use green line for estimated route, red for actual
+                if (filename.contains("estimated")) {
+                    kmlLineStyle.setColor("ff00ff00"); // Green (aabbggrr format)
+                    kmlLineStyle.setWidth(3.0);
+                } else {
+                    kmlLineStyle.setColor("ff0000ff"); // Red
+                    kmlLineStyle.setWidth(2.0);
+                }
             }
 
-            // Add points with timestamps
-            for (int i = 0; i < route.size() && (timestamps == null || i < timestamps.size()); i++) {
+            // Add ALL points with timestamps (ensure no limiting conditions)
+            for (int i = 0; i < route.size(); i++) {
                 Placemark placemark = document.createAndAddPlacemark();
                 placemark.setStyleUrl("#pointStyle");
+                placemark.setName("Point " + (i + 1));
                 
-                // Add time information if available
-                if (timestamps != null) {
+                // Add time information if available and index is within bounds
+                if (timestamps != null && i < timestamps.size()) {
                     TimeStamp timeStamp = placemark.createAndSetTimeStamp();
                     timeStamp.setWhen(String.valueOf(timestamps.get(i) / 1000));
                 }
+                
+                // Add description with point information
+                String routeType = filename.contains("estimated") ? "Estimated" : "Actual";
+                placemark.setDescription(routeType + " Route Point " + (i + 1) + "/" + route.size());
                 
                 Point kmlPoint = placemark.createAndSetPoint();
                 kmlPoint.setAltitudeMode(AltitudeMode.RELATIVE_TO_GROUND);

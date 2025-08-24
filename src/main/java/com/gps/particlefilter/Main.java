@@ -196,7 +196,7 @@ public class Main {
             System.out.println("\n=== Starting Particle Filter Simulation ===");
             
             // Parameters for particle filter (now properly in UTM meters!)
-            double gridSize = 50.0;       // 50 meters grid size (was 0.0005° ≈ 50m)
+            double gridSize = 25.0;       // 25 meters grid size - reduced from 50m for more focused initialization
             double movementNoise = config.getParticleMeasurementNoise();  // From configuration
             int particleCount = config.getParticleCount();  // From configuration
             
@@ -297,7 +297,7 @@ public class Main {
             
             kmlWriter.writeParticleHistoryToKML(particleFilter.getParticleHistory(), particleFilter.getTimestamps(), config.getOutputParticlesKml());
             
-            // Write estimated route with timestamps
+            // Write estimated route with timestamps (yellow tacks only, no line)
             System.out.println("Writing estimated route to KML...");
             kmlWriter.writeRouteToKML(estimatedRoute, timestamps, config.getOutputEstimatedRouteKml(), false);
             
