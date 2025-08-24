@@ -12,9 +12,10 @@ echo 4. Accuracy Test Demo
 echo 5. Generate Fig 14 Convergence Chart
 echo 6. Generate Fig 15 Naive vs Bayesian Chart
 echo 7. Generate Fig 19 LOS/NLOS Misclassification Chart
-echo 8. Exit
+echo 8. Compile Whole Project (Build)
+echo 9. Exit
 echo.
-set /p choice="Enter your choice (1-8): "
+set /p choice="Enter your choice (1-9): "
 
 if "%choice%"=="1" goto :main
 if "%choice%"=="2" goto :lostest
@@ -23,7 +24,8 @@ if "%choice%"=="4" goto :accdemo
 if "%choice%"=="5" goto :fig14
 if "%choice%"=="6" goto :fig15
 if "%choice%"=="7" goto :fig19
-if "%choice%"=="8" goto :end
+if "%choice%"=="8" goto :build
+if "%choice%"=="9" goto :end
 
 echo Invalid choice. Please try again.
 pause
@@ -330,6 +332,14 @@ if exist "charts\output\fig19_los_nlos_misclassification.png" (
     start "" "charts\output\fig19_los_nlos_misclassification.png"
 )
 
+pause
+goto :end
+
+:build
+echo.
+echo Compiling Whole Project...
+echo ========================================
+call build.bat
 pause
 goto :end
 
