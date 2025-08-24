@@ -64,6 +64,12 @@ echo.
 echo 4. Accuracy Test Demo (if available):
 echo    java -cp "lib/*;classes" AccuracyTestDemo
 echo.
+echo 5. Batch Runner for Chart Data Generation:
+echo    java -cp "lib/*;classes" com.gps.particlefilter.ParticleFilterBatchRunner [convergence^|naive-bayesian^|los-nlos]
+echo    - convergence: Generate Fig 14 data
+echo    - naive-bayesian: Generate Fig 15 data  
+echo    - los-nlos: Generate Fig 19 data
+echo.
 echo Note: If you encounter errors with newer Java versions, add:
 echo    --add-opens java.base/java.lang=ALL-UNNAMED
 echo.

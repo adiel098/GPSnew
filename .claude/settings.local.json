@@ -15,7 +15,9 @@
       "Bash(timeout 60 java:*)",
       "Read(/c:\\Users\\A\\Desktop\\Univers\\GPSnew\\github2\\GPSnew\\article/**)",
       "Read(/c:\\Users\\A\\Desktop\\Univers\\GPSnew\\github2\\GPSnew\\article/**)",
-      "Read(/c:\\Users\\A\\Desktop\\Univers\\GPSnew\\github2\\GPSnew\\article/**)"
+      "Read(/c:\\Users\\A\\Desktop\\Univers\\GPSnew\\github2\\GPSnew\\article/**)",
+      "Bash(del generate_fig14.bat)",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": [],

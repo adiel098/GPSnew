@@ -38,6 +38,10 @@ public class LosCalculator {
     }
     
     private ClassificationMode classificationMode;
+    
+    // Misclassification error simulation
+    private double misclassificationErrorPercentage = 0.0;
+    private java.util.Random misclassificationRandom;
 
     public LosCalculator(List<Building> buildings, List<Satellite> satellites) {
         this.buildings = buildings;
@@ -54,6 +58,9 @@ public class LosCalculator {
         this.rayShooting = config.isLosRayShootingEnabled();
         this.losTolerance = config.getLosTolerance();
         this.cnThreshold = config.getLosSignalThreshold();
+        
+        // Initialize misclassification random generator
+        this.misclassificationRandom = new java.util.Random();
         
         // Initialize Ray-Shooting optimization
         initializeRayShooting();
@@ -123,6 +130,13 @@ public class LosCalculator {
                     // Combine both: if either suggests NLOS, classify as NLOS
                     isLos = signalLos && geometricLos;
                     break;
+            }
+            
+            // Apply misclassification error if enabled
+            if (misclassificationErrorPercentage > 0.0) {
+                if (misclassificationRandom.nextDouble() * 100.0 < misclassificationErrorPercentage) {
+                    isLos = !isLos;  // Flip the classification
+                }
             }
             
             result.put(satellite.getName(), isLos);
@@ -251,6 +265,26 @@ public class LosCalculator {
     public void setClassificationMode(ClassificationMode mode) {
         this.classificationMode = mode;
         System.out.println("LOS/NLOS Classification mode set to: " + mode);
+    }
+    
+    /**
+     * Set the misclassification error percentage for Fig 19 analysis
+     * @param percentage Error percentage (0.0-100.0)
+     */
+    public void setMisclassificationErrorPercentage(double percentage) {
+        this.misclassificationErrorPercentage = percentage;
+        if (percentage > 0.0) {
+            System.out.println("LOS/NLOS Misclassification error set to: " + percentage + "%");
+        } else {
+            System.out.println("LOS/NLOS Misclassification error disabled");
+        }
+    }
+    
+    /**
+     * Get the current misclassification error percentage
+     */
+    public double getMisclassificationErrorPercentage() {
+        return misclassificationErrorPercentage;
     }
     
     /**
