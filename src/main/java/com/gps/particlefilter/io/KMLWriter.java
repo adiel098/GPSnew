@@ -96,7 +96,7 @@ public class KMLWriter {
             redIconHref.setHref("http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png");
 
             // Show particles at multiple time points to visualize evolution
-            int[] timePointsToShow = {1, 25, 50, 75, 100, 125, 150, 175};
+            int[] timePointsToShow = {1, 25, 50, 100, 150, 183};
             
             for (int timeIndex : timePointsToShow) {
                 // Skip if the timeIndex is out of bounds
@@ -257,7 +257,10 @@ public class KMLWriter {
             for (int i = 0; i < route.size(); i++) {
                 Placemark placemark = document.createAndAddPlacemark();
                 placemark.setStyleUrl("#pointStyle");
-                placemark.setName("Point " + (i + 1));
+                // Only add names for actual route, not estimated route
+                if (!filename.contains("estimated")) {
+                    placemark.setName("Point " + (i + 1));
+                }
                 
                 // Add time information if available and index is within bounds
                 if (timestamps != null && i < timestamps.size()) {

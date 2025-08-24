@@ -12,7 +12,10 @@
       "Bash(find:*)",
       "Bash(jar:*)",
       "Bash(dir:*)",
-      "Bash(timeout 60 java:*)"
+      "Bash(timeout 60 java:*)",
+      "Read(/c:\\Users\\A\\Desktop\\Univers\\GPSnew\\github2\\GPSnew\\article/**)",
+      "Read(/c:\\Users\\A\\Desktop\\Univers\\GPSnew\\github2\\GPSnew\\article/**)",
+      "Read(/c:\\Users\\A\\Desktop\\Univers\\GPSnew\\github2\\GPSnew\\article/**)"
     ],
     "deny": [],
     "ask": [],
