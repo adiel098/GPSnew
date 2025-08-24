@@ -31,10 +31,10 @@
   </LineStyle>
 </Style>
 <Placemark>
-  <name>Observer (83.30 m)</name>
+  <name>Observer (87.00 m)</name>
   <Point>
     <altitudeMode>relativeToGround</altitudeMode>
-    <coordinates>35.217018,31.771959,83.3</coordinates>
+    <coordinates>35.217018,31.771959,87.0</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -57,13 +57,13 @@
   </Polygon>
 </Placemark>
 <Placemark>
-  <name>Line of Sight (NLOS)</name>
-  <styleUrl>#nlosStyle</styleUrl>
+  <name>Line of Sight (LOS)</name>
+  <styleUrl>#losStyle</styleUrl>
   <LineString>
     <altitudeMode>relativeToGround</altitudeMode>
     <coordinates>
-      35.217018,31.771959,83.3
-      35.22075449180427,31.77513558032878,583.3
+      35.217018,31.771959,87.0
+      35.22075449180427,31.77513558032878,587.0
     </coordinates>
   </LineString>
 </Placemark>
@@ -79,7 +79,7 @@
   </Style>
   <Point>
     <altitudeMode>relativeToGround</altitudeMode>
-    <coordinates>35.22075449180427,31.77513558032878,583.3</coordinates>
+    <coordinates>35.22075449180427,31.77513558032878,587.0</coordinates>
   </Point>
 </Placemark>
 </Document>

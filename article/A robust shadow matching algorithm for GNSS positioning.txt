@@ -1,0 +1,1208 @@
+1
+
+A Robust Shadow Matching Algorithm for GNSS
+Positioning
+Roi Yozevitch Department of Electrical Engineering
+Ariel University Boaz Ben Moshe Department of Computer Science
+Ariel University
+
+Abstract—Commercial GNSS devices tend to perform poorly in
+urban canyon environments. The dense and tall buildings block
+the signals from many of the satellites.
+In this work, we present a particle filter algorithm for Shadow
+Matching framework to face this problem.
+Given a 3D city map and given the satellites’ signal properties,
+the algorithm calculates in real-time invalid regions inside the
+Region Of Interest (ROI). This approach reduces the ROI to a
+fraction of its original size. We present a general framework
+for Shadow Matching positioning algorithm based on a modified
+particle filter. Using simulation experiments we have shown that
+the suggested method can improve the accuracy of existing GNSS
+devices in urban regions. Moreover, the proposed algorithm can
+be efficiently extended to 3D positioning in high sampling rate,
+inherently applicable for UAVs and Drones.
+
+position and the GNSS’s computed position are typically
+between 30 − 50 meters with peaks up to 100 meters and
+more (σ=45.37 meters).
+
+I. I NTRODUCTION
+Dense urban canyons (e.g. downtown Tokyo) navigation
+is a known problem in the world of Commercial Global
+Navigation Satellite systems (GNSS) devices. A GNSS receiver
+approximates its position by extracting pseudoranges from
+each navigation satellite. If the satellites’ position and the
+pseudoranges are known, one can compute the receiver’s
+position by means of triangulation. This method of operation
+assumes line-of-sight (LOS) to the satellites [1], [2]. Since
+urban canyons are characterized by man-made obstructions
+(buildings), many satellites signals are either blocked by the
+buildings or reach the receiver via non-line-of-sight reception ,
+hence a wrong (longer) pseudorange. For a detailed discussion
+of the difference between a blocked and multipath signal see
+[3]. Moreover, the signal-strength of satellites in those areas is
+usually significantly lower, and special algorithms are needed
+[4].
+One major property of urban environments is the rapid
+change between LOS and NLOS states of satellites as the
+GNSS receiver moves due to building obstructions. This is
+in contrary to the open sky scenario where satellites tend to
+slowly shine/decline (LOS/NLOS). The ramification is that the
+position computation is done with different satellites, hence,
+there are jumps in the estimated position.
+In urban regions, the use of built-in Extended Kalman Filters
+(EKF) may help eliminate discontinuity in the positions yet
+the positioning accuracy tends to drift - leading to significant
+position errors. Figure 1 shows a blue rectangle, representing
+a trajectory in urban canyons. The red tacks are the GNSS’s
+estimated position. The average errors between the actual
+
+Fig. 1. Typical GNSS errors in urban canyons. In blue: The real path. In
+Red : The recordings from the device. Notice some of the path intersects the
+buildings. The recording was conducted in Ramat Gan commercial center,
+Israel in july, 2012.
+
+Fig. 2. A recording of a stationary device over a period of 20 minutes. The
+yellow line represents a 200 meter ”jump” during 1 second. The recording’s
+constellation is seen on the right. The recording was conducted in Ramat Gan
+commercial center, Israel in June, 2014.
+
+Moreover, figure 2 shows a 20 minute of stationary recoding
+(the GNSS device does not move) in the same region using
+both GPS and GLONASS satellites. Although the device remained stationary throughout the entire recording, significant
+drifts were recorded. The yellow line in this figure represents
+
+2
+
+shown in section IV-C. Statistical analysis shows that both
+the average and maximum cell size degraded exponentially as
+a function of the number of satellites (figure 4). In reality,
+GNSS signals are not sharp and can be partially diffracted.
+[10] have reported that satellites up to three-degree behind
+a building can be classified as LOS. However, over a certain
+diffraction threshold, a sharp signal degradation/intensification
+can be detected in LOS/NLOS transition (figure 8).
+70
+
+60
+
+Average cell size (in %)
+
+a 200 meter ”jump” over the course of one second. This figure
+clearly shows that the receiver inherent filters cannot cope well
+with the urban scenario.
+The classic approach to deal with this problem is to preform
+information fusion of the GNSS data with road-map database
+(i.e., Map-matching) and to estimate the location via the
+velocity (Dead Reckoning) [5], [6]. Map-matching, however,
+requires directional constrains such as roads and specific lanes
+and Dead Reckoning requires appropriate sensors, such as
+odometry in cars and accelerometers used for step detection
+on pedestrians[2], [7], [8]. Recently, a new approach has been
+introduced to tackle this issue: Shadow Matching, originally
+introduced by [9]. This method is based on reducing the
+possible locations by adding geometrical constrains of the
+buildings’ shadows. The novelty of this approach lies in three
+key elements: First, the ability to utilize the NLOS satellites.
+Second, estimation accuracy can increased as the Regionof-interest (ROI) becomes denser. However, above a certain
+building density, the estimation accuracy will decrease due to
+lack of LOS visibility. Third, data fusion from other GNSS
+(such as GLONASS and Galileo) can be simply achieved by
+adding shadow constrains and not by solving more position
+equations[10], [11].
+
+50
+
+40
+
+30
+
+20
+
+10
+
+0
+
+0
+
+5
+
+10
+
+15
+
+Number of sattelites
+
+Fig. 4. The added value of additional satellites to the decreasing of the
+average cell size. The simulation was calculated using only 7 buildings.
+
+Fig. 3. Shadow arrangement within a 100×100 meter2 . Each line represents
+a shadow border of a building. 5 walls and 20 satellites are involved.
+
+Figure 5 shows the computed shades of two satellites. The
+green and red shades represent two satellites in azimuth 90
+and 270 degrees respectively. Both elevations are 40 degrees.
+The yellow mark is LOS for both satellites, where the red
+mark is NLOS for both of them. When a transition from LOS
+to NLOS (or vice versa) is detected in the green satellite, the
+receiver can only be in the green border - all the places where
+such a transition is viable. The right side of figure 5 shows in
+yellow lines the border of the green satellite. The left side of
+the figure demonstrates the strength of the border detection
+: when a green border is detected and simultaneously the
+red satellite is classified as NLOS (for example) the border
+decreases dramatically. Utilizing information from the red
+satellite reduces the possible ROI to ≈ 25% from the ROI
+in the right size of the figure (which, in turn, is a fraction
+from the original ROI).
+
+3D city models are now available (e.g., Google Earth)
+and 3D Geographic information systems (GIS) become more
+accurate. These 3D city models provide the capability to
+predict a satellite LOS/NLOS state given its estimated position.
+This method divides the ROI to shading regions where each
+satellite causes different shading. Figure 3 demonstrates the
+efficiency of this method. Only five walls and 20 satellites
+were used in order to construct this figure.
+Assuming GNSS signals are sharp (ray model), one can see
+different polygons (cells) within the ROI. Each cell is a continuous region which holds a unique LOS/NLOS state for each
+of the satellites. Thus, each cell can be uniquely determined.
+There is an inverse ration between the average cell size and
+the number of available satellites. The more satellites are
+available, the smaller the cell. This method does not restricted
+to 2D navigation and can be extended to 3D navigation as
+
+Fig. 5. The Shading Algorithm. The green and red areas are the shadows of
+the ’right’ and ’left’ satellites, respectively. The right side shows the borders
+of the green satellite. The left side shows the borders of the green satellite
+fused with the classification of the red satellite as NLOS. Using the left figure
+less than 1% of the ROI should be considered.
+
+3
+
+II. R ELATED W ORKS
+The concept of utilizing Shadow Matching (SM) to urban
+canyons positioning was first introduced by [9], followed by
+[12]. Although very similar, the difference is in the representation of the buildings - 2.5D1 polygons([12]) versus elevation
+angle([9]). SM was further expanded in [3], [10], [13], [14],
+[15]. The main challenge those works deal with is a correct
+classification of LOS-NLOS signals. [10], [16], [17] utilized
+a scoring (weights) techniques for signal classification. [3]
+devised an intelligent urban position solution (IUP) which
+comprised of the following steps - use all available signals
+(LOS & NLOS) to compute an approximate position and then,
+by SM techniques, eliminate the NLOS signals and compute
+again a refined solution with the LOS satellites solely. Moreover, [13] has utilized the concept of LOS-NLOS transitions
+(borders). The idea of utilize particle filter as a plausible
+solution in the context of GNSS navigation is mentioned in
+[10]. That paper, however, focuses on a different approach
+- a sophisticated scoring based on the k-nearest neighbors
+algorithm. Utilizing particle filter for SM was mentioned
+in[18].
+
+a LOS satellite and any value below 25 usually indicates a
+NLOS satellite. Experiments we have conducted shown that
+any strength above 40dB − Hz distinguishes with high probability a LOS satellite. For a detailed survey regarding GNSS
+RF propagation model, refer to . LOS/NLOS classification
+in the mid-range (below 40 and above 25) is much more
+uncertain. Previous works [9][12] tackled this problem by
+using a threshold in order to distinguish between LOS/NLOS.
+This approach, although simple to implement is not sufficient
+in real world conditions. Urban environments’ measurements
+hold many mid-range values and a naive threshold is not
+enough. One solution is using an external antenna to capture
+the GNSS signals. Open sky Experiments with our receiver
+have clearly shown distinguished results for LOS/NLOS. i.e.,
+there is no measurement in the mid-range. Those experiments
+have motivated us to use this receiver and antenna. Figure
+6 shows GPS recording in open-sky scenario. Almost all the
+values are above 40 dB −Hz. The elevation of the exceptional
+satellite is 6 degrees. Figure 8 shows a recorded C/N0 value
+of a satellite with an elevation of 64 degrees over time while
+walking against a shading wall using our receiver. This graph
+shows a clear distinction between LOS/NLOS states.
+
+A. Our contribution
+
+50
+45
+40
+
+C/No [dB−Hz]
+
+In this paper we present a simple yet powerful framework
+for Shadow Matching based positioning algorithms. The novelty of the suggested framework lies in the following:
+First, the particle filter algorithm allows a robust and accurate
+positioning in urban regions, similar to open-sky accuracy
+level.
+Second, to our knowledge, this is the first time Shadow Matching techniques are utilized for 3D positioning, applicable for
+UAVs (Unmanned Aerial Vehicle) and drones.
+Third, utilizing our algorithm, a tight error bound estimation
+can be computed.
+Fourth, one can better predict and estimate the receiver’s
+velocity (both magnitude and heading). This in turn, can be
+further used to refine the position computation, mainly for
+highly dynamic vehicles.
+Finally, the suggested algorithm has an efficient-practical runtime which allows high sampling rate (10Hz and above) even
+on low-end or low computing power mobile devices. However,
+in this paper we mainly assume 1Hz sampling rate.
+
+35
+30
+25
+20
+15
+10
+
+Fig. 6.
+
+0
+
+50
+
+100
+
+150
+t [0.1 sec]
+
+200
+
+250
+
+Open sky experiments - all visible satellites are above 40dB − Hz
+
+III. LOS/NLOS CLASSIFICATION
+Given a 3D map of the terrain and buildings and given an
+exact method to estimate LOS/NLOS to a specific satellite,
+The GNSS accuracy can be improved significantly utilizing
+SM techniques. The denser the region is, the more accurate the
+results. A correct LOS/NLOS classification is the heart of every
+SM algorithm. A naive approach to face this classification task
+is utilizing the SN R of the received signal [13], [19]. Since
+NLOS signals are blocked, the SN R of those signals tends
+to degraded dramatically. Typical values of C/N0 range from
+20dB−Hz to 45dB−Hz where signal strength of 45 indicates
+1 for each 2D point (x, y) ∈ ROI there is only a single height (z).
+
+Alas, for most real world shadow matching application an
+external antenna is unrealistic privilege. Figure 7 shows the
+same walking against a shading wall scenario as figure 6
+recorded with smart phone via Android app. One can see that
+contemporary smart phones are sensitive enough to distinguish
+between LOS and NLOS signals. Although noisier, the shaded
+areas characterized by a clear lower SN R.
+
+4
+
+45
+40
+35
+
+C/No [dB−Hz]
+
+30
+25
+20
+15
+10
+5
+0
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+t[sec]
+
+Fig. 7. Smart-Phone C/N 0 measurement over time. The recording was
+done while walking in front of a building. In green, a simple threshold for
+LOS/NLOS classification.
+
+50
+45
+40
+
+A. LOS/NLOS Mis-Classification and State vectors
+In a naive Shadow Matching algorithm, one needs an
+accurate LOS/NLOS classification. An error in the LOS/NLOS
+state of just one satellite can cause a massive error (dozens
+of meters)[13]. [10] have tackled this problem by treating
+LOS/NLOS mis-classifications as statistical noise as part of
+their scoring algorithm. Moreover, they have introduced the
+concept of utilizing a scoring grid of candidate positions.
+One important feature of the proposed framework is its ability
+to simply deal with even massive real world LOS/NLOS misclassifications (up to 40% and more - see section V-B) and
+its extension to 3D navigation. Given an estimation position
+pos(t), the algorithm calculates a boolean LOS vector. This
+vector indicates for that specific location which satellites
+are LOS (TRUE) and which are NLOS (FALSE). This LOS
+vector serves an important role later on in evaluation each
+candidate position. An example can be seen in the middle
+column in figure 9. The black cell represents a particle.
+For the particle in the figure, satellites SV1 and SV2 were
+measured (classified) as LOS while satellites SV8 and SV12
+were measured (classified) as NLOS. Note that in the general
+case the particles do not apply to the grid restriction and spread
+in a continuous 3D space as shown in section V.
+
+C/No [dB−Hz]
+
+35
+30
+25
+20
+15
+10
+5
+0
+
+0
+
+100
+
+200
+
+300
+400
+t [0.1 sec]
+
+500
+
+600
+
+700
+
+Fig. 8.
+C/N 0 measurement over time. The recording was done while
+walking in front of a building. In green, a simple threshold for LOS/NLOS
+classification. Empirical experiments show 37dB − Hz as a threshold gives
+good results.
+Fig. 9. An example of both 2D and 3D LOS vector of a particle. The size
+of each vector is k - number of received satellites.
+
+This section focuses on LOS/NLOS classification. We assume the buildings are presented as 2.5D elevation model
+(straight lines walls). Later on, an algorithm to cope with
+city model inaccuracy will be presented. The carrier frequency
+of any GNSS is around 1.2 − 1.6 GHz(λ ≈ 20cm)[2][20].
+Such wave-length suffers from signal attenuation in NLOS
+conditions. This is mainly due to the obstruction of relatively
+wide buildings with respect to the signal wave-length (for
+a detail survey regrading the GNSS RF prorogation model
+please refer to [21], [22]). Furthermore, although the GPS
+satellite send its time every 30 seconds [20], the signal strength
+is a continuous data and can be extrapolated in 10Hz and
+even faster. Commercial GNSS devices (e.g. Sirf-Star) allow
+to extract the receiver’s carrier power to noise density, C/N0,
+measurement in 10Hz (SiRF output message 4 [23]). Although 1Hz SN R measurements are sufficient for pedestrian
+or slow-vehicle applications, 10Hz is mandatory for high-way
+scenarios[24] and UAVs.
+
+The above approach assumes only one valid z value
+(ground). For 3D navigation, the right column in figure 9
+should be implemented. For a specific particle (the black cell),
+SV3 and SV8 are LOS from the ground (z = 0). For SV5 ,
+there is a NLOS-LOS transition at 13 meters etc. Each particle
+holds a k length vector where k, the number of satellites, is
+relatively small (k < 30). This approach allows an efficient
+representation of complex 2.5D surfaces. The needed storage
+is O(k × kP k) where kP k is the number of particles. Observe
+that this method allows us to compute such LOS/NLOS vectors
+to any set of particles without the grid restriction, a feature
+that allows higher and more flexible resolution. This is a
+very efficient (in memory terms) way to hold the surfaces in
+any desired resolution. Once having the 3D LOS vector for
+each particle, the following queries can be computed: Given
+a measurement LOS-NLOS vector, what is the optimal z for a
+given location - the height value which satisfies the maximal
+number of satellites.
+
+5
+
+Figure 10 shows a typical Matlab output. One can interpret
+this figure as a visual likelihood 2D vector. The original
+position is represented by the peak. The red region is all the
+valid points (places). By valid, we mean a perfect alignment
+with the measured LOS vector. This new ROI is a fraction
+of the original size. The yellow regions represent all the
+’almost’ valid point, i.e., all the points that a single misclassification occurred. In other words, given an error in
+LOS/NLOS classification in one satellite, the ROI is the yellow
+one. This way, we can determine the penalty in LOS/NLOS
+classification errors.
+
+A. Modified Particle Filter
+A particle filter is nonparametric multi-modal implementation of Bayesian filter. Similarly to histogram filters, PF
+estimate the posterior by a finite number of parameters. The
+samples of the posterior distribution are called particles and
+[1]
+[2]
+[M ]
+represented as χt := xt , xt , ..., xt where M is the number
+of particles. Each particle is represented by a belief function
+bel(xt ). This belief function serves as a weight (importance)
+(L)
+(L)
+of each particle. Thus, {(wt , xt ) : L ∈ {1, ...., M }}.
+The importance weight is proportional to the likelihood of
+a specific particle: [27]
+
+45
+40
+35
+30
+25
+20
+15
+10
+5
+
+100
+80
+
+100
+60
+
+80
+60
+
+40
+40
+20
+
+20
+
+Fig. 10.
+3D representation of the ROI. The peak is the real position.
+The height of each point represents the number of correct LOS/NLOS
+classifications.
+
+Previous works [19], [15] have modeled the relation between the SN R (signal strength) and the LOS-NLOS likelihood according to Rician/log-Normal distributions (figure 11).
+In practice, a LOS satellite can be recorded with a low SN R
+due to momentary obstructions, hence the Rician distribution
+of the NLOS signal. Moreover, the Rician/log-Normal model
+assumes a good antenna and very different results are obtained
+using smart-phone antenna.
+
+Fig. 11.
+strength
+
+and later on extend it to allow an accurate 3D positioning
+(applicable for UAVs).
+Given a satellite position s and a 2.5D building map, the
+shadow of s can be computed efficiently. Moreover given a
+3D query point q, Computing if there is a LOS between q
+and s can be done efficiently using well-known visibility or
+shading algorithms (for more information regarding shadow
+and LOS, NLOS computation see[25], [26]).
+
+A LOS/NLOS likelihood probabilistic model of satellite’s signal
+
+IV. T HE A LGORITHM
+In this section we first present a simple 2D modified particle
+filter (PF) accuracy improvement algorithm for GNSS devices
+
+[L]
+
+xt
+
+(L)
+
+∼ p(xt | z1:t , u1:t ) × wt
+
+(1)
+
+where z1:t and u1:t are the sense and action functions
+respectively. The Bayesian property implies that the estimation
+in t1 is derived from the estimation in Ft0 . The multi-modal
+feature implies that unlike Kalman filters, there can be more
+than a single plausible solution as can been seen in figure 22.
+Thus, PF is well suited for scenarios where one need to estimate its location within a specific ROI. Each Particle is a set of
+−−−−−→
+[L]
+a position and a velocity vector. xt = {position, velocity}.
+B. Simple Particle Filter Algorithm
+Algorithm 1: Simple Particle Filter Algorithm
+Data: GN SS-data, Building map
+Result: Improved GN SS position
+1. Init : Distribute a set P of M particles in the ROI;
+2. Classify the signals S of the satellites into LOS,NLOS
+denoted as LOS(S);
+3. Estimate the velocity vt from the GNSS measurements;
+4. for each particle p ∈ P do
+5. Approximate the action function ut (p);
+6. Update p-position according ut (p);
+7. Compute the LOS,NLOS vector from p to each
+satellite denoted as los(p);
+8. Evaluate the weight: w(p) based on the similarity
+between los(p) and LOS(S);
+9. Re-sample P according the the likelihood (weight) of
+each particle;
+10. Compute weighted center of P ∈ ROI as pos(P );
+11. Report pos(P );
+12. Approximate the error estimation err(P );
+13. if(err(P ) < ROI) goto 2 else goto 1;
+
+6
+
+In order to implement algorithm 1 two subroutines must be
+determined : The weight function (likelihood of each particle)
+and the action function (and the error model) ut .
+1) The action function: Previous works had showed that
+in urban environments the magnitude of the velocity is more
+accurate than the heading[13]. Thus, the error model we have
+[L]
+utilized in this work is the following: given a particle xt with
+→
+−
+post and given the velocity vector v from the receiver, the
+−
+algorithm calculates a new position post+1 = post + →
+v . One
+can model the error radius as R = c × kvk. The new position
+is determined as a random point in a circle with radius R and
+center of post+1 . Figure 12 demonstrates the error model for
+different c values. In this figure three c values were chosen
+:0.5, 1.0 and 1.5. In field experiments we have found that for
+small values of v, c should be 2. For example, for walking
+speed of 1m/s, c should be 1 − 1.5 and for driving speed, c
+should be 0.5 − 1.
+
+v
+
+v
+pt
+
+pt+1
+
+R = 0.5 ∗ |V |
+
+pt
+
+pt
+
+pt+1
+
+R = 1.0 ∗ |V |
+
+v
+
+pt+1
+
+R = 1.5 ∗ |V |
+
+Fig. 12. Various error scenarios. The position is determined by a random
+point inside the circle (using uniform, Gaussian or quadratics distribution).
+Increasing c will increase the error.
+
+2) The weight function: Unlike the classic PF localization
+algorithm where the measurements function (zt ) computes
+distances from known landmarks[27], the proposed implementation of PF has no landmarks. The likelihood (weight) of each
+particle can be estimated by the number of xor-like difference
+between it’s LOS vector and the measured LOS vector; The
+smaller the difference, the greater the likelihood. Suppose N
+satellites are being tracked, a naive (unnormalized) weight
+function may be 0 ≤ n ≤ N - where n is the number of
+matchings between each particle LOS vector and the measured
+LOS vector (section III). the number of matching LOS states.
+The larger n, the likelihood of the specific particle increases.
+Empirical experiments, however, led us to utilize the following
+modified Sigmoid function.
+1
+
+[L]
+
+W eight(xt ) = N ×
+
+1 + eN/4−n/2
+
+[L]
+
+(2)
+
+Let us assume that a particle xt with pos(t) is positioned
+next to the true position at time t and there are no LOS/NLOS
+misclassifications. The weight function will get its maximum
+value (n = N ). The incentive for utilizing that function lies
+in the fact that inevitable LOS/NLOS misclassifications which
+decrease n still produce a rather high value (weight) due to the
+Sigmoid. On the other hand, particles far from pos(t), hence
+n  N will get very low value.
+
+This naive approach has one big ramification - since the
+optimal reported position computed as a weighted center-ofmass of all the particles, every time a LOS/NLOS transition
+is detected in one (or more) satellites, the geometry of the
+cells changes the distribution of the particles and the reported
+position may ’jump’, causing discontinuity in the solution.
+Moreover, since momentary misclassifications can happen
+(e,g blocked GNSS signal caused by trees) there is an importance to incorporate the history of the particle into the current
+weight equation.
+C. 3D Particle Filter Algorithm
+The above algorithm can be extended to 3D navigation.
+[L]
+The main difference from the 2D algorithm is that xt =
+−−−−−→
+{position, velocity} both the position and velocity are in 3D.
+Two modifications are needed in order to generalize the
+algorithm for 3D navigation:
+• 3D − ROI: defining the initial 2D ROI can be done
+using a coarse estimation of 100×100m2 while the initial
+z − ROI can be building there is computed as the height
+of the tallest building. Above the tallest building Shadow
+Matching is irrelevant since no shadows exists. However,
+with no obstruction, GNSS receiver works rather well.
+This method can be further improved using the following
+sampling technique: First sample the position of the
+particles in 2D. Then for each particle approximate its
+z value according to its probability to be at each height
+as shown in the right column of figure 9. One can treat
+this problem as : find the z value which satisfies most
+satellites LOS/NLOS states. Naturally, this process can
+be filtered to deal with outliers.
+to the number of LOS/NLOS aliments of each height to
+the current LOS/NLOS status (see figure 9). .
+• 3D-Velocity: estimating a GNSS device velocity (especially the heading) requires a sensitive Doppler-shift analysis over the GNSS signals. Such estimation tends to be
+inaccurate in urban regions where multipath effect influence the Doppler-shift values of moving receivers. Using
+the ability to differ between LOS/NLOS we can perform a
+weighted velocity estimation which favor LOS Dopplershifts over NLOS Doppler-shifts w.r.t. the likelihood of
+the LOS/NLOS classification. The method of favoring
+LOS satellites in the solution of the position equations
+was suggested in [3]. We suggest to utilize this method
+for more accurate Doppler estimation −→ more precise
+velocity estimation. Estimating the vertical velocity can
+also be done using any commercial barometer sensor.
+Such sensors are very common in smart-phones these
+days. The barometer is very sensitive to changes in height,
+thus,one can obtain an z-resolution of 0.3-1.0 meters[28].
+An example of 3D solution can be seen in figure 20.
+D. Advanced Algorithm
+Few other modifications can be implemented in the suggested algorithm in order to allow more accurate and robust
+results given LOS/NLOS misclassifications.
+
+7
+
+and simulation were implemented in JAV A 1.7 (off-line
+A Bayesian Weight function.
+Since momentary misclassifications can happen (e,g computing).
+blocked GNSS signal caused by trees) there is an imThe simulation scenario is the following: 17 satellites (both
+portance to incorporate the history of the particle into
+GPS
+and GLONASS) are being used. Their exact positions
+the weight function. This approach has two strengths.
+(azimuth,
+elevation) were recorded by our GNSS receivers.
+First, a ’good’ particle will become better in time .
+The
+simulation
+creates an imaginary route (i.e., a unique
+second, momentary errors can be easily eliminated. We
+position
+for
+each
+time-stamp). Then, for each time-stamp in
+denote c as the ratio between the history weight and the
+the
+trajectory
+LOS/NLOS
+satellite vector is calculated. The
+current measurement. Noisy environments should favor
+chosen
+trajectory
+was
+the
+original
+rectangle as described by the
+the history. One can treat the c as the equivalent to the
+yellow
+tacks
+in
+the
+results
+section.
+The simulation’s objective
+Kalman constants where determining the specific values
+is
+to
+correctly
+estimate
+the
+original
+route based only on
+is a matter of delicate engineering.
+the LOS/NLOS vector (with errors). Each LOS/NLOS vector
+1
+[L]
+[L]
++(1−c)×W eight(xt−1
+)
+W eight(xt ) = c×N ×
+represents
+a unique time-stamp. As explained above, The
+N/4−n/2
+1+e
+[m]
+(3) weight (bel(xt ) is a function of the number of matched
+satellites. The initial particles distribution within the ROI is
+• Improved error estimation: One major challenge in GNSS
+navigation is to correctly estimate the solution error. uniform. The optimal weighted position is reported each timeIn the example of figure 1, the average error was 50 stamp
+meters while the device reported a wrong average estimated error of 5 meters (figure 13). Using our algorithm
+for positioning, one can more intelligently estimate the
+reported solution error, and more important, the error
+bound. Figure 22 clarifies this point. In this figure one
+can see two clusters of plausible solutions. If either one
+of those solutions is reported, the error can be as large
+as the distance between them. A tight error bound can
+B. Particle Filter efficiency
+be achieved by reporting a wrong position in the middle
+of those two. However, this approach reduces the error
+bound by factor 2.
+•
+
+Fig. 13. GNSS (GPS and GLONASS) device reports an estimate error of 15
+feet (≈ 5m). In reality, the error was around 50 meters
+
+V. R ESULTS
+In this section we present simulation results of both algorithms and experimental results of the 2D algorithm. We focus
+on the average position error in different scenarios.
+A. Implementation details
+The 2.5D map of the terrain was obtained from a IRIS ltd
+and Google Earth was used as GIS software. The algorithm
+
+Given the number of particles M → ∞, there is a mathematical proof of the convergence of the filter [27]. However,
+’infinite’ number of particles is neither practical nor efficient...
+One should seek for the minimum optimal number of particles
+and the rigorous methods for determining that number are rare.
+We have used 100, 500, 1000 and 2500 particles throughout
+the experiments. Figure 14 demonstrates how the more particles being used, the smaller the average (steady) error is.
+We denote ’average error’ as the average weighed distance
+between all the particles and the true position. Moreover,
+as elaborated in section IV-B2, since each particle holds no
+memory of its last weight, the border transition can cause
+discontinuities which lead to a bigger error as seen in the
+figure. We consider 100 particles as an practical lower bound
+in the sense that for N < 100 particles, the solution often
+diverges. 5000 particles, on the other hand, produce error
+very similar to 2500 particles. In a nutshell, there is a simple
+trade-off between the number of particles and the algorithm’s
+accuracy.
+This trade-off, however, can be reduced by implementing
+the advanced Bayesian weight function (equation 3). By
+incorporating each particle’s history into the current weight,
+one can overcome the errors caused by the small amount
+of particles. Figure 15 demonstrates this phenomena. Given
+the number of particles N = 100, one can clearly see the
+improvement of the Bayesian weight function over the simple
+one. This improvement diminishes for N = 1000.
+
+8
+
+Converenge error for diffrent number of particles
+35
+2500 Particles
+1000 Particles
+500 Particles
+100 Particles
+
+30
+
+Average Error [m]
+
+25
+
+20
+
+15
+
+10
+
+5
+
+0
+
+0
+
+20
+
+40
+
+60
+80
+100
+Time from initialization [s]
+
+120
+
+140
+
+160
+
+Fig. 16. 2500 particles results: the yellow tacks represent the original route
+and the red tacks represent the estimated constructed route. Each solution tack
+is computed as the weighted center-of-mass of all the particles.
+
+Fig. 14. Average error for different numbers of particles. The more particles
+being used, the smaller the average error.
+
+Navie vs Bayesian weight function
+Average Error [m]
+
+40
+100 Particles with memory
+100 particles without memory
+
+30
+20
+10
+0
+
+0
+
+20
+
+40
+
+60
+80
+100
+Time from initialization [s]
+
+120
+
+140
+
+160
+
+Average Error [m]
+
+30
+1000 Particles with memory
+1000 particles without memory
+20
+
+10
+
+0
+
+0
+
+20
+
+40
+
+60
+80
+100
+Time from initialization [s]
+
+120
+
+140
+
+160
+
+Fig. 15. Naive vs Bayesian weight function. For small number of particles
+(100), the use of each particle history improves the solution and reduces the
+average error. For 1000 particles, the difference is unnoticed.
+Fig. 17. 100 particles result: the yellow tacks represent the original route
+and the red tacks represent the estimated constructed route. Each solution tack
+is computed as the weighted center-of-mass of all the particles. One can see
+the convergence time is longer.
+
+C. 2D Results
+
+In this section we limit ourselves to 2D navigation (vehiclepedestrian navigation). Figure 16 shows a 2500 particles result
+while figure 17 shows a 100. The yellow route is the original
+one while the red route is the estimated reported solution.
+Each red tack represents the weighted center-of-mass of all
+the particles. The solution in figure 17 converges after ≈ 40
+iterations. One can see the convergence time increases as the
+particle number decreases which aligns with theory[27].
+
+Figure 18 shows time-stamp 76 and 138. The green tacks
+represent particles with N LOS/NLOS matchings. The blue
+tacks represent N − 1 matchings. The yellow tacks represent
+N − 2 matchings and the red tacks represent N − 3 matchings
+and lower. The true positions are indicated by the white
+balloons. One can see that given 2500 particles, all of them
+are rather close to the solution.
+
+9
+
+try where obstacle avoiding is must. The 3D scenario is very
+similar to the 2D scenario with one difference : the original
+route has a changing z value. Figure 20 shows the results.
+The red route is the original route where the green route is
+the constructed estimated route. As explained in section IV-C,
+the initial particle distribution is grid based.
+
+Fig. 18. Time-stamp no. 76 and 138. The green tacks represent particles with
+N LOS/NLOS matchings. The right side represents the naive algorithm while
+the left side represents the Bayesian one. The blue tacks represent N − 1
+matchings. The yellow tacks represent N − 2 matchings and the red tacks
+represent N − 3 matchings and lower.
+
+LOS/NLOS mis−classifications − 2500 Particles
+
+Fig. 20. 3D Particle filter results: the red tacks represent the original route
+while the green and yellow tacks represents routes computed by the P F
+algorithms. Left: a simple implementation of the 3D particle filter. Right: an
+advanced implementation of the 3D P F .
+
+50
+p=0%
+p=10%
+p=20%
+p=45%
+
+45
+40
+
+Figure 21 shows a micro drone weighting 280 grams, which
+uses an Android based flight controller. The watch allows 1Hz
+GPS sampling rate of position and signals strength, which is
+sufficient for accuracy improvement by the suggested particle
+filter algorithm.
+
+Average Error [m]
+
+35
+30
+25
+20
+15
+10
+5
+0
+
+0
+
+20
+
+40
+
+60
+80
+100
+Time from initialization [s]
+
+120
+
+140
+
+160
+
+Fig. 19. The average error as a function of p - the error percentage of
+LOS/NLOS misclassifications.
+
+LOS/NLOS (momentary) misclassifications are inevitable
+and therefor, must be modeled. The error model we have
+utilized is very strict: each satellite has a probability p to be
+misclassified. Figure 19 demonstrates the average error for
+different p values. One can see that for p ≤ 20% the average
+error converges rather fast. The case of p = 45% is interesting
+since it assumes almost no knowledge of the satellites’ state
+(flip-a-coin model). However, one can see that the solution
+still (slowly) converges and the error level decreases. The
+convergence can be explained by the fact that even when
+n ≈ N2 some particles will still (randomly) get good weight.
+Those particles, in turn, will be much more likely to be resampled again since the average weight of each particle is
+low. The convergence is viable since p < 50% and there are
+many particles. By the process of evolution those particles will
+eventually survive.
+D. 3D Results
+In this section we extend the ROI to 3D. The immediate
+implementation for the 3D algorithm is the drone-UAV indus-
+
+Fig. 21. A micro drone weighting 280 grams, which uses Android watch
+(Motorola ACTV) as a navigation flight controller.
+
+E. Experimental Results
+In this section we present real world experimental results
+of the particle filter algorithm restricted to 2D. Two scenarios
+were chosen: Stationary recording in the course of 20 minutes
+(figure 2) and a walking rectangle (figure 1). The GNSS
+modules we have utilized are ORG4572 and ORG4472 from
+OrigingGPS. Although those devices can detect 18 satellites
+and more, a satellite SN R value is only recorded for 12
+channels (P RN s). The action function ut (p) was derived
+from the SOG (Speed Over Ground) and the COG (Course
+
+10
+
+Over Ground) values. Since velocity evaluation is done via
+Doppler shift, this method is more accurate than deriving the
+velocity from position differentiation. We have utilized 10Hz
+SNR sampling rate in this section. A naive SN R threshold
+of 37 dB − Hz was chosen for LOS/NLOS classification[13].
+Below are the results of those two experiments:
+1) Stationary Scenario: During the course of 20 minutes,
+GNSS data was recorded by ORG4572 receiver. The receiver’s
+reported position can be seen in figure 2. The average position
+error is ≈ 40 meters where up to 200 meter position discontinuity were recorded. Figure 22 shows a sample time-stamp of
+the algorithm. 2500 particles are been used. One can see two
+clusters of viable solutions in the figure, one of them correct.
+
+SNR sampling rate, about a million atomic operations per
+second are computed, which can be performed on commercial
+embedded devices.
+
+Fig. 23. Real world particle filter results: the yellow tacks represent the
+original pedestrian route and the red tacks represent the estimated constructed
+route. Each solution tack is computed as the weighted center-of-mass of all
+the particles. The average error was reduced significantly from 30 − 50 to
+5 − 10 meters.
+
+VI. C ONCLUSIONS
+
+Fig. 22. Time-stamp 30 of real stationary recording. The real location is
+marked in white. The blue tacks represent N −1 matchings. The yellow tacks
+represent N − 2 matchings and the red tacks represent N − 3 matchings and
+lower. No green tacks (N matchings) are available.
+
+2) Rectangle Walking Scenario: In order to evaluated the
+suggested algorithm in real world walking scenarios, we have
+performed a pedestrian rectangle recoding (as described in
+figure 1). The algorithm’s reported path can be depicted in
+23. The average error was reduced from 30 − 50 meters
+down to 5 − 10 meters where the error converges with time.
+2500 particles are been used and the algorithm is capable of
+real-time computing. Nevertheless, the experimental result are
+inferior to the simulation results (figures 20,17). This is due
+to several factors. First, the 2.5D map is inaccurate (1 − 2
+meter resolution), thus inherent errors are inevitable. Second,
+we have used about half of the visible satellites. This is due
+to the receiver’s limitation of reporting GLONASS satellites
+SN R values.
+F. Run time analysis
+In each iteration, the algorithm runs over all the N particles
+and for each particle computes the LOS/NLOS state to each of
+the k satellites (a k size LOS vector). The LOS/NLOS state
+between a particle and a satellite can be computed by iterating
+all the B buildings in the ROI. Yet, by using Ray−Shooting
+algorithm the actual number of walls needed to be checked is
+only a logarithmic portion of B on average[29]. Therefore,
+each iteration requires O(N ∗ k ∗ log(B)) atomic operations.
+In practice, the number of walls needed to be tested is
+≈ 2 − 10 walls, k ≈ 20 and N ≈ 1000. Assuming 10Hz
+
+In this paper we have introduced a modified particle filter
+algorithm for GNSS Shadow Matching positioning problem
+in urban environments. The proposed framework allows a
+significant accuracy improvement. Our results clearly show
+that given a coarse method for LOS/NLOS signal classification
+and a rather accurate 2.5D terrain map, the proposed algorithm
+both converges and produces a relatively accurate error bound
+estimation. Real world experiments led us to the conclusion
+that accurate map is more important than accurate LOS/NLOS
+classification.
+An interesting conclusion is that considerable errors in
+LOS/NLOS classification practically do not harm the results.
+One can continue and fabricate a high speed filter to get the
+signal-strength in 50Hz or more[30]. In this case we can use
+the same algorithm to estimate more precisely the velocity
+vector (both magnitude and direction). Although Shadow
+Matching algorithm have already been implemented on smartphones[11], we believe the particle filter Bayesian approach
+can further improve the GNSS accuracy in commercial mobile
+devices[31].
+R EFERENCES
+[1] S. Gleason and D. Gebre-Egziabher, GNSS applications and methods.
+Artech House Publishers, 2009.
+[2] P. Groves, Principles of GNSS, inertial, and multisensor integrated
+navigation systems. Aartech house, 2008.
+[3] P. D. Groves, Z. Jiang, L. Wang, and M. K. Ziebart, “Intelligent urban
+positioning using multi-constellation gnss with 3d mapping and nlos
+signal detection,” in ION GNSS, 2012.
+[4] N. I. Ziedan, “Gnss receivers for weak signals,” Laser, vol. 2013, pp.
+02–18, 2006.
+[5] S. Liu, Z. Shi, M. Zhao, W. Xu, and K. Zhang, “An urban map matching
+algorithm using rough sensor data,” in Power Electronics and Intelligent
+Transportation System, 2008. PEITS’08. Workshop on. IEEE, 2008, pp.
+266–271.
+
+11
+
+[6] Y. Zhang and Y. Gao, “A fuzzy logic map matching algorithm,” in Fuzzy
+Systems and Knowledge Discovery, 2008. FSKD’08. Fifth International
+Conference on, vol. 3. IEEE, 2008, pp. 132–136.
+[7] P. Bissig, R. Wattenhofer, and S. Welten, “A pocket guide to indoor
+mapping,” in Positioning Navigation and Communication (WPNC), 2013
+10th Workshop on. IEEE, 2013, pp. 1–6.
+[8] C. Mather, P. Groves, and M. Carter, “A man motion navigation
+system using high sensitivity gps, mems imu and auxiliary sensors,” in
+Proceedings of the 19th international technical meeting of the Satellite
+Division of the Institute of Navigation (ION GNSS 2006), 2001, pp.
+2704–2714.
+[9] P. Groves, “Shadow matching: A new gnss positioning technique for
+urban canyons,” Journal of Navigation, vol. 64, no. 03, pp. 417–430,
+2011.
+[10] L. Wang, P. D. Groves, and M. K. Ziebart, “Multi-constellation gnss
+performance evaluation for urban canyons using large virtual reality city
+models,” Journal of Navigation, vol. 65, no. 03, pp. 459–476, 2012.
+[11] ——, “Shadow matching: Improving smartphone gnss positioning in
+urban environments,” in China Satellite Navigation Conference (CSNC)
+2013 Proceedings. Springer, 2013, pp. 613–621.
+[12] B. Ben-Moshe, E. Elkin, H. Levi, and A. Weissman, “Improving
+accuracy of gnss devices in urban canyons.” in CCCG, 2011.
+[13] R. Yozevitch, B. Ben Moshe, and H. Levy, “Breaking the 1 meter
+accuracy bound in commercial gnss devices,” in Electrical & Electronics
+Engineers in Israel (IEEEI), 2012 IEEE 27th Convention of. IEEE,
+2012, pp. 1–5.
+[14] L. Wang, P. D. Groves, and M. K. Ziebart, “Urban positioning on a
+smartphone: Real-time shadow matching using gnss and 3d city models,”
+in Proceedings of the 26th International Technical Meeting of The
+Satellite Division of the Institute of Navigation (ION GNSS+ 2013),
+2013, pp. 1606–1619.
+[15] A. T. Irish, J. T. Isaacs, F. Quitin, J. P. Hespanha, and U. Madhow, “Belief propagation based localization and mapping using sparsely sampled
+gnss snr measurements,” in Proc. of the International Conference on
+Robotics and Automation, 2014.
+[16] M. Obst, S. Bauer, and G. Wanielik, “Urban multipath detection and mitigation with dynamic 3d maps for reliable land vehicle localization,” in
+Position Location and Navigation Symposium (PLANS), 2012 IEEE/ION.
+IEEE, 2012, pp. 685–691.
+[17] S. Peyraud, D. Bétaille, S. Renault, M. Ortiz, F. Mougel, D. Meizel,
+and F. Peyret, “About non-line-of-sight satellite detection and exclusion
+in a 3d map-aided localization algorithm,” Sensors, vol. 13, no. 1, pp.
+829–847, 2013.
+[18] J. T. Isaacs, A. T. Irish, F. Quitin, U. Madhow, and J. P. Hespanha,
+“Bayesian localization and mapping using gnss snr measurements,”
+IEEE/ION Position Location and Navigation Symposium, 2014.
+[19] A. T. Irish, J. T. Isaacs, F. Quitin, J. P. Hespanha, and U. Madhow,
+“Probabilistic 3d mapping based on gnss snr measurements,” in IEEE
+International Conference on Acoustics, Speech, and Signal Processing,
+2014.
+[20] J. Zogg, “Gps–essentials of satellite navigation,” Compendium, 2009.
+[21] J. K. Holmes, Spread spectrum systems for GNSS and wireless communications. Artech House Boston, USA, 2007.
+[22] M. Irsigler, J. A. Avila-Rodriguez, and G. W. Hein, “Criteria for gnss
+multipath performance assessment,” in Proc. ION GNSS, 2005.
+[23] C. House and C. Park, “Sirfstariv one socket protocol interface control
+document,” 2009.
+[24] R. Yozevitch, B. Ben-Moshe, and A. Dvir, “Gnss accuracy improvement
+using rapid shadow transitions,” IEEE TRANSACTIONS ON INTELLIGENT TRANSPORTATION SYSTEMS, vol. 15, no. 3, pp. 1113–1122,
+2014.
+[25] F. Crow, “Shadow algorithms for computer graphics,” ACM SIGGRAPH
+Computer Graphics, vol. 11, no. 2, pp. 242–248, 1977.
+[26] A. Bourdeau, M. Sahmoudi, and J.-Y. Tourneret, “Constructive use of
+gnss nlos-multipath: Augmenting the navigation kalman filter with a 3d
+model of the environment,” in Information Fusion (FUSION), 2012 15th
+International Conference on. IEEE, 2012, pp. 2271–2276.
+[27] S. Thrun, W. Burgard, and D. Fox, Probabilistic robotics. MIT press,
+2005.
+[28] K. Muralidharan, A. J. Khan, A. Misra, R. K. Balan, and S. Agarwal,
+“Barometric phone sensors: more hype than hope!” in Proceedings of the
+15th Workshop on Mobile Computing Systems and Applications. ACM,
+2014, p. 12.
+[29] M. De Berg, M. Van Kreveld, M. Overmars, and O. C. Schwarzkopf,
+Computational geometry. Springer, 2000.
+
+[30] “Piksi : The rtk gps receiver,” https://www.kickstarter.com/projects/swiftnav/piksithe-rtk-gps-receiver, accessed: 2014-06-10.
+[31] B. Ben-Moshe, H. LEVI, and R. YOZEVITCH, “Methods
+and devices for improved position determination,” Jan. 3
+2014, wO Patent App. PCT/IB2013/055,224. [Online]. Available:
+https://www.google.com/patents/WO2014002018A1?cl=en
+
+

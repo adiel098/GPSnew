@@ -1,6 +1,7 @@
 package com.gps.particlefilter.util;
 
 import com.gps.particlefilter.model.Point3D;
+import com.gps.particlefilter.config.Configuration;
 
 /**
  * Manager class for handling coordinate system conversions throughout the application.
@@ -14,10 +15,18 @@ public class CoordinateSystemManager {
     private boolean isNorthernHemisphere;
     
     private CoordinateSystemManager() {
-        converter = new CoordinateConverter();
-        useUtm = true; // Default to using UTM coordinates
-        defaultUtmZone = 36; // Default zone (can be overridden based on initial coordinates)
-        isNorthernHemisphere = true; // Default to northern hemisphere
+        // Load configuration for coordinate system settings
+        Configuration config = Configuration.getInstance();
+        
+        // Initialize with configuration or defaults
+        useUtm = true; // Always use UTM for particle filter calculations
+        defaultUtmZone = parseUtmZoneFromEpsg(config.getCoordinatesTargetEpsg());
+        isNorthernHemisphere = parseHemisphereFromEpsg(config.getCoordinatesTargetEpsg());
+        
+        // Initialize converter with configured UTM zone
+        converter = new CoordinateConverter(defaultUtmZone, isNorthernHemisphere);
+        
+        System.out.println("Coordinate System initialized: " + converter.getCoordinateSystemInfo());
     }
     
     /**
@@ -138,5 +147,56 @@ public class CoordinateSystemManager {
      */
     public CoordinateConverter getConverter() {
         return converter;
+    }
+    
+    /**
+     * Parse UTM zone from EPSG code
+     * @param epsgCode EPSG code (e.g., 32636 for UTM 36N)
+     * @return UTM zone number (1-60)
+     */
+    private int parseUtmZoneFromEpsg(int epsgCode) {
+        if (epsgCode >= 32601 && epsgCode <= 32660) {
+            // Northern hemisphere UTM zones (326XX)
+            return epsgCode - 32600;
+        } else if (epsgCode >= 32701 && epsgCode <= 32760) {
+            // Southern hemisphere UTM zones (327XX)
+            return epsgCode - 32700;
+        } else {
+            // Default to Zone 36 for Israel if not UTM code
+            System.out.println("Warning: EPSG code " + epsgCode + " is not a UTM code. Using UTM Zone 36N as default.");
+            return 36;
+        }
+    }
+    
+    /**
+     * Parse hemisphere from EPSG code
+     * @param epsgCode EPSG code
+     * @return true if northern hemisphere, false if southern
+     */
+    private boolean parseHemisphereFromEpsg(int epsgCode) {
+        if (epsgCode >= 32601 && epsgCode <= 32660) {
+            return true; // Northern hemisphere
+        } else if (epsgCode >= 32701 && epsgCode <= 32760) {
+            return false; // Southern hemisphere
+        } else {
+            // Default to northern hemisphere
+            return true;
+        }
+    }
+    
+    /**
+     * Get the current EPSG code being used for UTM
+     * @return EPSG code as integer
+     */
+    public int getCurrentUtmEpsgCode() {
+        return converter.getCurrentZone() + (converter.isNorthern() ? 32600 : 32700);
+    }
+    
+    /**
+     * Get coordinate system information
+     * @return Description of current coordinate system setup
+     */
+    public String getCoordinateSystemInfo() {
+        return converter.getCoordinateSystemInfo();
     }
 }

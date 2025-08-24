@@ -1,0 +1,382 @@
+KML Validation Report
+===================
+Generated at: 2025-08-24T17:41:06.2812515
+
+Building KML Validation Report
+============================
+
+Total buildings found: 13
+
+Building 1:
+- Number of vertices: 5
+- Height: 120.22 meters
+- Bounds:
+  * Latitude: 3851452.806211 to 3851512.764758
+  * Longitude: 416190.566468 to 416215.659462
+  * Altitude: 120.22 to 120.22 meters
+
+Building 2:
+- Number of vertices: 5
+- Height: 58.33 meters
+- Bounds:
+  * Latitude: 3851499.508767 to 3851554.639419
+  * Longitude: 416144.445368 to 416163.408144
+  * Altitude: 58.33 to 58.33 meters
+
+Building 3:
+- Number of vertices: 16
+- Height: 75.90 meters
+- Bounds:
+  * Latitude: 3851541.766769 to 3851587.586015
+  * Longitude: 416189.948953 to 416228.046084
+  * Altitude: 75.90 to 75.90 meters
+
+Building 4:
+- Number of vertices: 5
+- Height: 53.36 meters
+- Bounds:
+  * Latitude: 3851539.544510 to 3851605.756092
+  * Longitude: 416251.392145 to 416270.692656
+  * Altitude: 53.36 to 53.36 meters
+
+Building 5:
+- Number of vertices: 111
+- Height: 80.54 meters
+- Bounds:
+  * Latitude: 3851382.802124 to 3851430.447255
+  * Longitude: 416149.183796 to 416166.592092
+  * Altitude: 80.54 to 80.54 meters
+
+Building 6:
+- Number of vertices: 121
+- Height: 235.19 meters
+- Bounds:
+  * Latitude: 3851643.187772 to 3851676.723994
+  * Longitude: 416136.221331 to 416168.517923
+  * Altitude: 235.19 to 235.19 meters
+
+Building 7:
+- Number of vertices: 14
+- Height: 121.89 meters
+- Bounds:
+  * Latitude: 3851637.289053 to 3851734.788462
+  * Longitude: 416134.944159 to 416179.281631
+  * Altitude: 121.89 to 121.89 meters
+
+Building 8:
+- Number of vertices: 21
+- Height: 48.28 meters
+- Bounds:
+  * Latitude: 3851459.288326 to 3851550.078628
+  * Longitude: 416235.559999 to 416302.344354
+  * Altitude: 48.28 to 48.28 meters
+
+Building 9:
+- Number of vertices: 258
+- Height: 75.25 meters
+- Bounds:
+  * Latitude: 3851504.241235 to 3851533.878883
+  * Longitude: 416264.540925 to 416300.848274
+  * Altitude: 75.25 to 75.25 meters
+
+Building 10:
+- Number of vertices: 23
+- Height: 79.89 meters
+- Bounds:
+  * Latitude: 3851686.228574 to 3851741.336786
+  * Longitude: 416263.224998 to 416297.124328
+  * Altitude: 79.89 to 79.89 meters
+
+Building 11:
+- Number of vertices: 14
+- Height: 24.29 meters
+- Bounds:
+  * Latitude: 3851638.057070 to 3851696.394284
+  * Longitude: 416181.266662 to 416264.036632
+  * Altitude: 24.29 to 24.29 meters
+
+Building 12:
+- Number of vertices: 26
+- Height: 86.99 meters
+- Bounds:
+  * Latitude: 3851718.221872 to 3851810.828174
+  * Longitude: 416216.748436 to 416290.398942
+  * Altitude: 86.99 to 86.99 meters
+
+Building 13:
+- Number of vertices: 23
+- Height: 85.13 meters
+- Bounds:
+  * Latitude: 3851727.916381 to 3851770.239178
+  * Longitude: 416301.785598 to 416338.992389
+  * Altitude: 85.13 to 85.13 meters
+
+
+Satellite KML Validation Report
+=============================
+
+Total satellites found: 30
+
+Satellite: Satellite 1
+- Position:
+  * Longitude: 910737.953353
+  * Latitude: 3773029.178958
+  * Altitude: 909272.32 meters
+- Azimuth: -7.50°
+- Elevation: 49.18°
+
+Satellite: Satellite 2
+- Position:
+  * Longitude: 838853.221223
+  * Latitude: 4251626.567271
+  * Altitude: 825550.68 meters
+- Azimuth: 33.42°
+- Elevation: 76.50°
+
+Satellite: Satellite 3
+- Position:
+  * Longitude: 682789.048208
+  * Latitude: 4115698.895120
+  * Altitude: 781833.26 meters
+- Azimuth: 33.66°
+- Elevation: 67.38°
+
+Satellite: Satellite 4
+- Position:
+  * Longitude: 667002.147941
+  * Latitude: 4166031.407659
+  * Altitude: 957823.22 meters
+- Azimuth: 39.80°
+- Elevation: 52.88°
+
+Satellite: Satellite 5
+- Position:
+  * Longitude: 713042.344147
+  * Latitude: 4033315.383662
+  * Altitude: 538271.11 meters
+- Azimuth: 22.70°
+- Elevation: 53.41°
+
+Satellite: Satellite 6
+- Position:
+  * Longitude: 753790.282877
+  * Latitude: 4476795.654172
+  * Altitude: 792594.30 meters
+- Azimuth: 51.29°
+- Elevation: 67.12°
+
+Satellite: Satellite 7
+- Position:
+  * Longitude: 514261.265106
+  * Latitude: 4019809.756801
+  * Altitude: 476970.35 meters
+- Azimuth: 42.56°
+- Elevation: 66.84°
+
+Satellite: Satellite 8
+- Position:
+  * Longitude: 251294.739383
+  * Latitude: 4328208.994647
+  * Altitude: 905998.94 meters
+- Azimuth: 107.85°
+- Elevation: 58.17°
+
+Satellite: Satellite 9
+- Position:
+  * Longitude: 149621.148047
+  * Latitude: 4424917.411157
+  * Altitude: 491808.44 meters
+- Azimuth: 116.99°
+- Elevation: 47.53°
+
+Satellite: Satellite 10
+- Position:
+  * Longitude: 119406.090170
+  * Latitude: 4171237.636048
+  * Altitude: 824264.42 meters
+- Azimuth: 135.02°
+- Elevation: 55.54°
+
+Satellite: Satellite 11
+- Position:
+  * Longitude: 356973.213095
+  * Latitude: 4761266.462582
+  * Altitude: 466718.27 meters
+- Azimuth: 91.78°
+- Elevation: 74.13°
+
+Satellite: Satellite 12
+- Position:
+  * Longitude: 220342.632458
+  * Latitude: 3997637.811633
+  * Altitude: 967516.08 meters
+- Azimuth: 141.37°
+- Elevation: 49.98°
+
+Satellite: Satellite 13
+- Position:
+  * Longitude: 292498.819335
+  * Latitude: 4025217.893713
+  * Altitude: 938268.36 meters
+- Azimuth: 117.66°
+- Elevation: 56.83°
+
+Satellite: Satellite 14
+- Position:
+  * Longitude: -21517.497051
+  * Latitude: 4416280.462753
+  * Altitude: 425663.09 meters
+- Azimuth: 132.88°
+- Elevation: 60.62°
+
+Satellite: Satellite 15
+- Position:
+  * Longitude: -359753.543190
+  * Latitude: 3908718.270437
+  * Altitude: 804385.48 meters
+- Azimuth: 178.87°
+- Elevation: 58.69°
+
+Satellite: Satellite 16
+- Position:
+  * Longitude: -22680.258908
+  * Latitude: 3903409.784684
+  * Altitude: 1044489.20 meters
+- Azimuth: 175.44°
+- Elevation: 57.62°
+
+Satellite: Satellite 17
+- Position:
+  * Longitude: -168511.111536
+  * Latitude: 3803870.369437
+  * Altitude: 1057344.94 meters
+- Azimuth: 186.34°
+- Elevation: 69.02°
+
+Satellite: Satellite 18
+- Position:
+  * Longitude: -285549.948612
+  * Latitude: 3413035.780499
+  * Altitude: 500073.78 meters
+- Azimuth: 212.21°
+- Elevation: 72.96°
+
+Satellite: Satellite 19
+- Position:
+  * Longitude: 184514.248461
+  * Latitude: 3820216.394762
+  * Altitude: 519153.45 meters
+- Azimuth: 189.53°
+- Elevation: 55.65°
+
+Satellite: Satellite 20
+- Position:
+  * Longitude: -213837.548964
+  * Latitude: 3376928.774882
+  * Altitude: 439667.76 meters
+- Azimuth: 217.18°
+- Elevation: 70.66°
+
+Satellite: Satellite 21
+- Position:
+  * Longitude: -33696.469882
+  * Latitude: 3533450.476607
+  * Altitude: 957449.50 meters
+- Azimuth: 215.85°
+- Elevation: 46.94°
+
+Satellite: Satellite 22
+- Position:
+  * Longitude: 318245.698378
+  * Latitude: 3538629.885981
+  * Altitude: 767149.73 meters
+- Azimuth: 261.49°
+- Elevation: 66.75°
+
+Satellite: Satellite 23
+- Position:
+  * Longitude: 476788.840510
+  * Latitude: 3178458.959480
+  * Altitude: 760046.38 meters
+- Azimuth: 281.75°
+- Elevation: 73.04°
+
+Satellite: Satellite 24
+- Position:
+  * Longitude: 271601.920185
+  * Latitude: 3013659.980547
+  * Altitude: 951187.16 meters
+- Azimuth: 263.92°
+- Elevation: 52.58°
+
+Satellite: Satellite 25
+- Position:
+  * Longitude: 518450.187958
+  * Latitude: 3434418.950459
+  * Altitude: 546242.76 meters
+- Azimuth: 294.26°
+- Elevation: 49.65°
+
+Satellite: Satellite 26
+- Position:
+  * Longitude: 547308.208269
+  * Latitude: 3308044.839054
+  * Altitude: 634227.53 meters
+- Azimuth: 292.11°
+- Elevation: 54.51°
+
+Satellite: Satellite 27
+- Position:
+  * Longitude: 611424.990328
+  * Latitude: 3280041.057296
+  * Altitude: 1093025.90 meters
+- Azimuth: 297.22°
+- Elevation: 46.22°
+
+Satellite: Satellite 28
+- Position:
+  * Longitude: 875432.497727
+  * Latitude: 3280824.936068
+  * Altitude: 820444.74 meters
+- Azimuth: 315.96°
+- Elevation: 75.93°
+
+Satellite: Satellite 29
+- Position:
+  * Longitude: 533608.262427
+  * Latitude: 3736269.797440
+  * Altitude: 554292.22 meters
+- Azimuth: 330.97°
+- Elevation: 59.52°
+
+Satellite: Satellite 30
+- Position:
+  * Longitude: 773195.862836
+  * Latitude: 3940229.186954
+  * Altitude: 720765.49 meters
+- Azimuth: 369.66°
+- Elevation: 62.11°
+
+
+Route KML Validation Report
+=========================
+
+Total route points: 184
+
+Route bounds (UTM):
+- Northing (Y): 3851522.47 to 3851539.59 meters
+- Easting (X): 416184.82 to 416214.66 meters
+- UTM Zone: 36 North
+- Altitude: 3.60 to 3.60 meters
+
+Route statistics:
+- Total distance: 173.29 meters
+- Average altitude: 3.60 meters
+
+Sample points:
+Point 1 (UTM): (Easting: 416184.82, Northing: 3851525.07, Alt: 3.60)
+Point 2 (UTM): (Easting: 416184.93, Northing: 3851526.40, Alt: 3.60)
+Point 3 (UTM): (Easting: 416184.94, Northing: 3851527.73, Alt: 3.60)
+Point 4 (UTM): (Easting: 416185.04, Northing: 3851529.06, Alt: 3.60)
+Point 5 (UTM): (Easting: 416185.05, Northing: 3851530.28, Alt: 3.60)
+

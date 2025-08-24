@@ -1,166 +1,146 @@
 package com.gps.particlefilter.util;
 
 import com.gps.particlefilter.model.Point3D;
+import org.geotools.referencing.CRS;
+import org.geotools.api.referencing.crs.CoordinateReferenceSystem;
+import org.geotools.api.referencing.operation.MathTransform;
+import org.geotools.api.referencing.operation.TransformException;
+import org.geotools.api.referencing.FactoryException;
 
 /**
- * Utility class for converting between geographic coordinates (latitude/longitude) and UTM coordinates
+ * Professional coordinate conversion utility using GeoTools library
+ * Supports conversion between Geographic (WGS84) and UTM coordinate systems
  */
 public class CoordinateConverter {
     
-    // Constants for UTM calculations
-    private static final double K0 = 0.9996;                  // Scale factor for UTM
-    private static final double E = 0.00669438;               // Square of eccentricity
-    private static final double E2 = E * E;                   // E squared
-    private static final double E3 = E2 * E;                  // E cubed
-    private static final double E_P2 = E / (1 - E);           // E prime squared
-    private static final double SQRT_E = Math.sqrt(1 - E);    // Sqrt(1 - e^2)
-    private static final double _E = (1 - SQRT_E) / (1 + SQRT_E); // e
-    private static final double _E2 = _E * _E;                // e squared
-    private static final double _E3 = _E2 * _E;               // e cubed
-    private static final double _E4 = _E3 * _E;               // e^4
-    private static final double _E5 = _E4 * _E;               // e^5
-    private static final double M1 = 1 - E / 4 - 3 * E2 / 64 - 5 * E3 / 256; // M1
-    private static final double M2 = 3 * E / 8 + 3 * E2 / 32 + 45 * E3 / 1024; // M2
-    private static final double M3 = 15 * E2 / 256 + 45 * E3 / 1024; // M3
-    private static final double M4 = 35 * E3 / 3072; // M4
-    private static final double P2 = 3 / 2.0 * _E - 27 / 32.0 * _E3 + 269 / 512.0 * _E5; // P2
-    private static final double P3 = 21 / 16.0 * _E2 - 55 / 32.0 * _E4; // P3
-    private static final double P4 = 151 / 96.0 * _E3 - 417 / 128.0 * _E5; // P4
-    private static final double P5 = 1097 / 512.0 * _E4; // P5
-    private static final double R = 6378137;              // Earth's radius in meters
-    private static final double ZONE_WIDTH = 6;           // Width of UTM zone in degrees
-
-    // Current UTM zone (for converting back to lat/lon)
-    private int currentZone = 0;
+    // Coordinate Reference Systems
+    private CoordinateReferenceSystem wgs84;
+    private CoordinateReferenceSystem utmCrs;
+    
+    // Math transforms for conversion
+    private MathTransform toUTM;
+    private MathTransform toWGS84;
+    
+    // Default UTM zone and hemisphere (Israel: UTM Zone 36N)
+    private int utmZone = 36;
     private boolean isNorthern = true;
-
+    
     /**
-     * Convert latitude/longitude to UTM coordinates
-     * 
+     * Constructor initializes GeoTools coordinate reference systems
+     */
+    public CoordinateConverter() {
+        try {
+            initializeCoordinateSystems();
+        } catch (FactoryException e) {
+            throw new RuntimeException("Failed to initialize coordinate systems: " + e.getMessage(), e);
+        }
+    }
+    
+    /**
+     * Constructor with custom UTM zone
+     * @param utmZone UTM zone (1-60)
+     * @param isNorthern true for northern hemisphere, false for southern
+     */
+    public CoordinateConverter(int utmZone, boolean isNorthern) {
+        this.utmZone = utmZone;
+        this.isNorthern = isNorthern;
+        try {
+            initializeCoordinateSystems();
+        } catch (FactoryException e) {
+            throw new RuntimeException("Failed to initialize coordinate systems: " + e.getMessage(), e);
+        }
+    }
+    
+    /**
+     * Initialize coordinate reference systems and transformations using GeoTools
+     */
+    private void initializeCoordinateSystems() throws FactoryException {
+        // WGS84 Geographic coordinate system (EPSG:4326)
+        wgs84 = CRS.decode("EPSG:4326");
+        
+        // UTM coordinate system (EPSG:326XX for northern, 327XX for southern hemisphere)
+        String utmEpsg;
+        if (isNorthern) {
+            utmEpsg = String.format("EPSG:326%02d", utmZone);
+        } else {
+            utmEpsg = String.format("EPSG:327%02d", utmZone);
+        }
+        utmCrs = CRS.decode(utmEpsg);
+        
+        // Create transformation objects
+        toUTM = CRS.findMathTransform(wgs84, utmCrs, false);
+        toWGS84 = CRS.findMathTransform(utmCrs, wgs84, false);
+    }
+    
+    /**
+     * Convert latitude/longitude to UTM coordinates using GeoTools
      * @param lat Latitude in decimal degrees
-     * @param lon Longitude in decimal degrees
+     * @param lon Longitude in decimal degrees  
      * @param alt Altitude in meters
      * @return Point3D with UTM easting (x), northing (y), and altitude (z) in meters
      */
     public Point3D latLonToUtm(double lat, double lon, double alt) {
-        // Determine the UTM zone and central meridian
-        int zone = (int) Math.floor((lon + 180) / ZONE_WIDTH) + 1;
-        double centralMeridian = (zone - 1) * ZONE_WIDTH - 177;
-        
-        // Store the zone for potential conversion back
-        currentZone = zone;
-        isNorthern = lat >= 0;
-        
-        // Convert lat/lon to radians
-        double latRad = Math.toRadians(lat);
-        double lonRad = Math.toRadians(lon);
-        
-        // Calculate UTM values
-        double N = R / Math.sqrt(1 - E * Math.sin(latRad) * Math.sin(latRad));
-        double T = Math.tan(latRad) * Math.tan(latRad);
-        double C = E_P2 * Math.cos(latRad) * Math.cos(latRad);
-        double A = Math.cos(latRad) * (lonRad - Math.toRadians(centralMeridian));
-        
-        // Calculate M (true distance along central meridian from equator)
-        double M = R * (
-                M1 * latRad - 
-                M2 * Math.sin(2 * latRad) + 
-                M3 * Math.sin(4 * latRad) - 
-                M4 * Math.sin(6 * latRad)
-        );
-        
-        // Calculate UTM coordinates
-        double x = K0 * N * (A + (1 - T + C) * Math.pow(A, 3) / 6 + 
-                (5 - 18 * T + T * T + 72 * C - 58 * E_P2) * Math.pow(A, 5) / 120) + 500000; // Easting with 500km false easting
-        
-        double y = K0 * (M + N * Math.tan(latRad) * (
-                A * A / 2 + 
-                (5 - T + 9 * C + 4 * C * C) * Math.pow(A, 4) / 24 + 
-                (61 - 58 * T + T * T + 600 * C - 330 * E_P2) * Math.pow(A, 6) / 720
-        ));
-        
-        // Add 10000km false northing for southern hemisphere
-        if (lat < 0) {
-            y += 10000000;
+        try {
+            // Create coordinate array (note: GeoTools uses lon,lat order for geographic coordinates)
+            double[] geoCoord = new double[] {lon, lat};
+            double[] utmCoord = new double[2];
+            
+            // Transform coordinate
+            toUTM.transform(geoCoord, 0, utmCoord, 0, 1);
+            
+            return new Point3D(utmCoord[0], utmCoord[1], alt);
+            
+        } catch (TransformException e) {
+            throw new RuntimeException("Failed to convert lat/lon to UTM: " + e.getMessage(), e);
         }
-        
-        return new Point3D(x, y, alt);
     }
     
     /**
-     * Convert UTM coordinates to latitude/longitude
-     * 
+     * Convert UTM coordinates to latitude/longitude using GeoTools
      * @param easting Easting in meters (x)
-     * @param northing Northing in meters (y)
+     * @param northing Northing in meters (y) 
      * @param zone UTM zone (1-60)
      * @param isNorthern true if in northern hemisphere, false for southern
      * @param alt Altitude in meters
      * @return Point3D with longitude (x), latitude (y), and altitude (z)
      */
     public Point3D utmToLatLon(double easting, double northing, int zone, boolean isNorthern, double alt) {
-        // Get central meridian for the zone
-        double centralMeridian = (zone - 1) * ZONE_WIDTH - 177;
-        
-        // Remove false easting and northing
-        double x = easting - 500000;
-        double y = northing;
-        
-        if (!isNorthern) {
-            y -= 10000000;
+        try {
+            // If zone or hemisphere differs from current, reinitialize
+            if (zone != this.utmZone || isNorthern != this.isNorthern) {
+                this.utmZone = zone;
+                this.isNorthern = isNorthern;
+                initializeCoordinateSystems();
+            }
+            
+            // Create UTM coordinate array
+            double[] utmCoord = new double[] {easting, northing};
+            double[] geoCoord = new double[2];
+            
+            // Transform coordinate
+            toWGS84.transform(utmCoord, 0, geoCoord, 0, 1);
+            
+            // Return as Point3D with longitude (x), latitude (y), altitude (z)
+            return new Point3D(geoCoord[0], geoCoord[1], alt);
+            
+        } catch (TransformException | FactoryException e) {
+            throw new RuntimeException("Failed to convert UTM to lat/lon: " + e.getMessage(), e);
         }
-        
-        // Calculate the meridional arc
-        double M = y / K0;
-        double mu = M / (R * M1);
-        
-        // Calculate footprint latitude
-        double latRad = mu + 
-                P2 * Math.sin(2 * mu) + 
-                P3 * Math.sin(4 * mu) + 
-                P4 * Math.sin(6 * mu) + 
-                P5 * Math.sin(8 * mu);
-        
-        double C1 = E_P2 * Math.cos(latRad) * Math.cos(latRad);
-        double T1 = Math.tan(latRad) * Math.tan(latRad);
-        double N1 = R / Math.sqrt(1 - E * Math.sin(latRad) * Math.sin(latRad));
-        double R1 = R * (1 - E) / Math.pow(1 - E * Math.sin(latRad) * Math.sin(latRad), 1.5);
-        double D = x / (N1 * K0);
-        
-        // Calculate latitude
-        double lat = latRad - (N1 * Math.tan(latRad) / R1) * (
-                D * D / 2 - 
-                (5 + 3 * T1 + 10 * C1 - 4 * C1 * C1 - 9 * E_P2) * Math.pow(D, 4) / 24 + 
-                (61 + 90 * T1 + 298 * C1 + 45 * T1 * T1 - 252 * E_P2 - 3 * C1 * C1) * Math.pow(D, 6) / 720
-        );
-        
-        // Calculate longitude
-        double lon = centralMeridian + Math.toDegrees(
-                (D - 
-                (1 + 2 * T1 + C1) * Math.pow(D, 3) / 6 + 
-                (5 - 2 * C1 + 28 * T1 - 3 * C1 * C1 + 8 * E_P2 + 24 * T1 * T1) * Math.pow(D, 5) / 120
-        ) / Math.cos(latRad));
-        
-        // Convert to degrees
-        lat = Math.toDegrees(lat);
-        
-        return new Point3D(lon, lat, alt);
     }
     
     /**
-     * Convert UTM coordinates to latitude/longitude using the stored zone and hemisphere
-     * 
+     * Convert UTM coordinates to latitude/longitude using current zone/hemisphere
      * @param easting Easting in meters (x)
      * @param northing Northing in meters (y)
      * @param alt Altitude in meters
      * @return Point3D with longitude (x), latitude (y), and altitude (z)
      */
     public Point3D utmToLatLon(double easting, double northing, double alt) {
-        return utmToLatLon(easting, northing, currentZone, isNorthern, alt);
+        return utmToLatLon(easting, northing, utmZone, isNorthern, alt);
     }
     
     /**
      * Convert a Point3D from lat/lon to UTM
-     * 
      * @param geoPoint Point3D with longitude (x), latitude (y), and altitude (z)
      * @return Point3D with UTM easting (x), northing (y), and altitude (z)
      */
@@ -169,8 +149,7 @@ public class CoordinateConverter {
     }
     
     /**
-     * Convert a Point3D from UTM to lat/lon
-     * 
+     * Convert a Point3D from UTM to lat/lon using current zone/hemisphere
      * @param utmPoint Point3D with UTM easting (x), northing (y), and altitude (z)
      * @return Point3D with longitude (x), latitude (y), and altitude (z)
      */
@@ -180,7 +159,6 @@ public class CoordinateConverter {
     
     /**
      * Convert a Point3D from UTM to lat/lon with specified zone and hemisphere
-     * 
      * @param utmPoint Point3D with UTM easting (x), northing (y), and altitude (z)
      * @param zone UTM zone (1-60)
      * @param isNorthern true if in northern hemisphere, false for southern
@@ -192,19 +170,57 @@ public class CoordinateConverter {
     
     /**
      * Get the current UTM zone
-     * 
      * @return Current UTM zone (1-60)
      */
     public int getCurrentZone() {
-        return currentZone;
+        return utmZone;
     }
     
     /**
      * Check if current coordinates are in northern hemisphere
-     * 
      * @return true if in northern hemisphere, false for southern
      */
     public boolean isNorthern() {
         return isNorthern;
+    }
+    
+    /**
+     * Set UTM zone and hemisphere
+     * @param zone UTM zone (1-60)
+     * @param isNorthern true for northern hemisphere, false for southern
+     */
+    public void setUtmZone(int zone, boolean isNorthern) {
+        if (zone != this.utmZone || isNorthern != this.isNorthern) {
+            this.utmZone = zone;
+            this.isNorthern = isNorthern;
+            try {
+                initializeCoordinateSystems();
+            } catch (FactoryException e) {
+                throw new RuntimeException("Failed to update UTM zone: " + e.getMessage(), e);
+            }
+        }
+    }
+    
+    /**
+     * Get the EPSG code for the current UTM coordinate system
+     * @return EPSG code as string (e.g., "EPSG:32636" for UTM 36N)
+     */
+    public String getUtmEpsgCode() {
+        if (isNorthern) {
+            return String.format("EPSG:326%02d", utmZone);
+        } else {
+            return String.format("EPSG:327%02d", utmZone);
+        }
+    }
+    
+    /**
+     * Get information about the coordinate systems being used
+     * @return String description of coordinate systems
+     */
+    public String getCoordinateSystemInfo() {
+        return String.format("WGS84 (EPSG:4326) ↔ UTM Zone %d%s (%s)", 
+                           utmZone, 
+                           isNorthern ? "N" : "S", 
+                           getUtmEpsgCode());
     }
 }

@@ -2,6 +2,7 @@ package com.gps.particlefilter;
 
 import com.gps.particlefilter.model.*;
 import com.gps.particlefilter.util.CoordinateSystemManager;
+import com.gps.particlefilter.los.LosCalculator;
 import org.apache.commons.math3.random.RandomDataGenerator;
 import java.util.*;
 
@@ -16,6 +17,10 @@ public class ParticleFilter {
     private List<Long> timestamps;
     private Point3D previousPoint;
     private CoordinateSystemManager coordManager;
+    private double velocity = 0.0; // Current velocity magnitude
+    private double c = 1.0; // Error model coefficient (from article)
+    private boolean useBayesianWeight = true; // Enable Bayesian weight function
+    private double bayesianC = 0.7; // Ratio between history and current measurement
 
     public ParticleFilter(LosCalculator losCalculator, double gridSize, double movementNoise) {
         this.losCalculator = losCalculator;
@@ -36,8 +41,8 @@ public class ParticleFilter {
         double maxY = center.getY() + gridSize;
         double minX = center.getX() - gridSize;
         double maxX = center.getX() + gridSize;
-        // עדכון גובה החלקיקים ל-1.8 מטר מעל גובה הקרקע
-        double alt = 1.8; // גובה אדם ממוצע
+        // Update particle altitude to 1.8 meters above ground level
+        double alt = 1.8; // Average human height
 
         int particlesPerRow = (int) Math.sqrt(particleCount);
         double yStep = (maxY - minY) / (particlesPerRow - 1);
@@ -55,31 +60,43 @@ public class ParticleFilter {
     }
 
     public void updateWeights(Point3D originalPoint) {
-        // חישוב מצב ה-LOS/NLOS עבור הנקודה האמיתית
+        // Calculate LOS/NLOS status for the reference point
         Map<String, Boolean> referenceStatus = losCalculator.calculateLOS(originalPoint);
         
-        // עדכון המשקולות עבור כל החלקיקים
+        int N = referenceStatus.size(); // Total number of satellites
         double totalWeight = 0;
-        int particleIndex = 0;
         
-        // First pass - calculate initial weights based on matches
+        // First pass - calculate weights using Modified Sigmoid function from the article
         for (Particle particle : particles) {
-            // חישוב מצב ה-LOS/NLOS עבור החלקיק
+            // Calculate LOS/NLOS status for the particle
             Map<String, Boolean> particleLosStatus = losCalculator.calculateLOS(particle.getPosition());
             particle.setLosStatus(particleLosStatus);
             
-            // חישוב מספר ההתאמות בין החלקיק למצב האמיתי
-            int matches = particle.matchingLosCount(referenceStatus);
+            // Count matching LOS states between particle and reference
+            int n = particle.matchingLosCount(referenceStatus);
             
-            // חישוב המשקל החדש - ככל שיש יותר התאמות, המשקל גבוה יותר
-            double weight = Math.pow(2, matches); // משקל אקספוננציאלי לפי מספר ההתאמות
-            particle.setWeight(weight);
-            totalWeight += weight;
+            // Modified Sigmoid weight function from article (Equation 2)
+            // Weight(x) = N × 1/(1 + e^(N/4-n/2))
+            double exponent = (N / 4.0) - (n / 2.0);
+            double sigmoidWeight = N * (1.0 / (1.0 + Math.exp(exponent)));
+            
+            // Apply Bayesian weight if enabled (Equation 3 from article)
+            double finalWeight;
+            if (useBayesianWeight && particle.getPreviousWeight() > 0) {
+                // Weight(x_t) = c × sigmoid + (1-c) × Weight(x_t-1)
+                finalWeight = bayesianC * sigmoidWeight + (1 - bayesianC) * particle.getPreviousWeight();
+            } else {
+                finalWeight = sigmoidWeight;
+            }
+            
+            // Store previous weight for next iteration
+            particle.setPreviousWeight(finalWeight);
+            particle.setWeight(finalWeight);
+            totalWeight += finalWeight;
         }
 
         // Second pass - normalize weights
         for (Particle particle : particles) {
-            // נרמול המשקל כך שסך כל המשקלים יהיה 1
             double normalizedWeight = totalWeight > 0 ? particle.getWeight() / totalWeight : 1.0 / particles.size();
             particle.setWeight(normalizedWeight);
         }
@@ -116,28 +133,57 @@ public class ParticleFilter {
     }
 
     public void move(Point3D from, Point3D to) {
-        // חישוב המרחק והזווית בין הנקודות (בקואורדינטות הנוכחיות - UTM או גיאוגרפיות)
+        // Calculate distance and azimuth between points
         double distance = from.distanceTo(to);
         double azimuth = from.azimuthTo(to);
         
-        System.out.println("Moving from: " + from + " to: " + to);
-        System.out.println("Distance: " + distance + "m, Azimuth: " + azimuth + "°");
+        // Calculate velocity magnitude (assuming 1 second between updates)
+        this.velocity = distance;
         
-        // וידוא מערכת הקואורדינטות הנוכחית
-        if (coordManager.isUsingUtm()) {
-            System.out.println("Moving in UTM coordinate system (easting/northing) in Zone " + 
-                    coordManager.getDefaultUtmZone() + 
-                    (coordManager.isNorthernHemisphere() ? " North" : " South"));
+        // Determine c coefficient based on velocity (from article)
+        // Walking speed: ~1-2 m/s → c = 1.0-1.5
+        // Driving speed: >5 m/s → c = 0.5-1.0  
+        // Slow/stationary: <0.5 m/s → c = 2.0
+        if (velocity < 0.5) {
+            c = 2.0;
+        } else if (velocity < 2.0) {
+            c = 1.5;
+        } else if (velocity < 5.0) {
+            c = 1.0;
         } else {
-            System.out.println("Moving in Geographic coordinate system (lon/lat)");
+            c = 0.5;
         }
         
-        // הזזת כל החלקיקים באותו מרחק וזווית (עם רעש)
+        System.out.println("Moving from: " + from + " to: " + to);
+        System.out.println("Distance: " + distance + "m, Azimuth: " + azimuth + "°");
+        System.out.println("Velocity: " + velocity + " m/s, Error coefficient c: " + c);
+        
+        // Article's error model: R = c × |v|
+        double errorRadius = c * velocity;
+        
+        // Move each particle with error model from article
         for (Particle particle : particles) {
-            // תנועה ישירה ב-UTM (העדפה לתנועה קרטזית במטרים)
-            particle.move(distance, azimuth, movementNoise);
+            // Sample random point within circle of radius R (uniform distribution)
+            double randomRadius = errorRadius * Math.sqrt(random.nextUniform(0, 1));
+            double randomAngle = random.nextUniform(0, 2 * Math.PI);
             
-            // עדכון מצב ה-LOS/NLOS
+            // Calculate expected movement
+            double dx = distance * Math.cos(Math.toRadians(azimuth));
+            double dy = distance * Math.sin(Math.toRadians(azimuth));
+            
+            // Add random error from circle
+            double errorX = randomRadius * Math.cos(randomAngle);
+            double errorY = randomRadius * Math.sin(randomAngle);
+            
+            // Update particle position with movement + error
+            Point3D currentPos = particle.getPosition();
+            Point3D newPos = new Point3D(
+                currentPos.getX() + dx + errorX,
+                currentPos.getY() + dy + errorY,
+                currentPos.getZ()
+            );
+            
+            particle.setPosition(newPos);
             particle.setLosStatus(losCalculator.calculateLOS(particle.getPosition()));
         }
     }
@@ -175,5 +221,22 @@ public class ParticleFilter {
     
     public List<Long> getTimestamps() {
         return timestamps;
+    }
+    
+    // Configuration methods for article-based features
+    public void setUseBayesianWeight(boolean useBayesianWeight) {
+        this.useBayesianWeight = useBayesianWeight;
+    }
+    
+    public void setBayesianC(double bayesianC) {
+        this.bayesianC = Math.max(0, Math.min(1, bayesianC)); // Clamp between 0 and 1
+    }
+    
+    public double getVelocity() {
+        return velocity;
+    }
+    
+    public double getErrorCoefficient() {
+        return c;
     }
 }

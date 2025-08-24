@@ -37,7 +37,7 @@ public class Point3D {
         );
     }
 
-    // מחשב את המרחק בין שתי נקודות
+    // Calculates the distance between two points
     public double distanceTo(Point3D other) {
         double dx = this.x - other.x;
         double dy = this.y - other.y;
@@ -45,7 +45,7 @@ public class Point3D {
         return Math.sqrt(dx*dx + dy*dy + dz*dz);
     }
 
-    // מחשב את הזווית (אזימוט) בין שתי נקודות
+    // Calculates the azimuth angle between two points
     public double azimuthTo(Point3D other) {
         double dx = other.x - this.x;
         double dy = other.y - this.y;
@@ -56,7 +56,7 @@ public class Point3D {
         return azimuth;
     }
 
-    // יוצר נקודה חדשה במרחק ובזווית נתונים
+    // Creates a new point at given distance and azimuth
     public Point3D moveByDistanceAndAzimuth(double distance, double azimuth) {
         double azimuthRad = Math.toRadians(azimuth);
         double dx = distance * Math.cos(azimuthRad);

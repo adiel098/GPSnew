@@ -7,11 +7,13 @@ import java.util.Random;
 public class Particle {
     private Point3D position;
     private double weight;
+    private double previousWeight; // For Bayesian weight function
     private Map<String, Boolean> losStatus;
 
     public Particle(Point3D position) {
         this.position = position;
         this.weight = 1.0;
+        this.previousWeight = 0.0; // Initialize previous weight
         this.losStatus = new HashMap<>();
     }
 
@@ -30,6 +32,14 @@ public class Particle {
     public void setWeight(double weight) {
         this.weight = weight;
     }
+    
+    public double getPreviousWeight() {
+        return previousWeight;
+    }
+    
+    public void setPreviousWeight(double previousWeight) {
+        this.previousWeight = previousWeight;
+    }
 
     public Map<String, Boolean> getLosStatus() {
         return losStatus;
@@ -47,19 +57,19 @@ public class Particle {
             String satelliteId = entry.getKey();
             totalSatellites++;
             
-            // בדיקה האם מצב ה-LOS של הלוויין זהה בחלקיק ובמצב האמיתי
+            // Check if satellite's LOS state matches between particle and real state
             if (losStatus.containsKey(satelliteId) && 
                 losStatus.get(satelliteId).equals(entry.getValue())) {
                 count++;
             }
         }
         
-        // החזרת אחוז ההתאמה
+        // Return match percentage
         return count;
     }
 
     /**
-     * מחזיר את אחוז ההתאמה בין מצב ה-LOS של החלקיק למצב האמיתי
+     * Returns the percentage match between particle's LOS state and real state
      */
     public double getLosMatchPercentage(Map<String, Boolean> referenceStatus) {
         int matches = matchingLosCount(referenceStatus);
@@ -67,7 +77,7 @@ public class Particle {
     }
 
     /**
-     * מחזיר את מספר הלוויינים שהם LOS ו-NLOS
+     * Returns the count of satellites that are LOS and NLOS
      */
     public String getLosNlosCount() {
         if (losStatus == null) return "No LOS status";
@@ -87,30 +97,30 @@ public class Particle {
     }
 
     /**
-     * עדכון פונקציית התנועה לעבוד עם מרחק וזווית - מותאם במיוחד למערכת קואורדינטות UTM
+     * Updated movement function to work with distance and angle - specially adapted for UTM coordinate system
      * 
-     * @param distance - המרחק לתנועה במטרים
-     * @param azimuth - הזווית (אזימוט) בדרגות
-     * @param noise - רמת הרעש למרחק ולזווית
+     * @param distance - the distance to move in meters
+     * @param azimuth - the azimuth angle in degrees
+     * @param noise - noise level for distance and angle
      */
     public void move(double distance, double azimuth, double noise) {
         Random random = new Random();
         
-        // הוספת רעש גאוסיאני למרחק ולזווית (מתאים יותר לתנועה בקואורדינטות UTM)
+        // Add Gaussian noise to distance and angle (more suitable for UTM coordinate movement)
         double noisyDistance = distance + random.nextGaussian() * noise * 0.5;
         double noisyAzimuth = azimuth + random.nextGaussian() * noise * 2.0;
 
-        // חישוב ישיר של הקואורדינטות החדשות ב-UTM
+        // Direct calculation of new coordinates in UTM
         double azimuthRad = Math.toRadians(noisyAzimuth);
         double dx = noisyDistance * Math.cos(azimuthRad);
         double dy = noisyDistance * Math.sin(azimuthRad);
         
-        // במערכת UTM, x מייצג easting, y מייצג northing
+        // In UTM system, x represents easting, y represents northing
         double newX = position.getX() + dx;
         double newY = position.getY() + dy;
-        double newZ = position.getZ(); // גובה נשאר קבוע
+        double newZ = position.getZ(); // Height remains constant
         
-        // עדכון מיקום החלקיק
+        // Update particle position
         this.position = new Point3D(newX, newY, newZ);
     }
 }
