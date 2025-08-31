@@ -14,7 +14,6 @@
             </ns2:IconStyle>
         </ns2:Style>
         <ns2:Placemark>
-            <ns2:name>Point 1</ns2:name>
             <ns2:description>Estimated Route Point 1/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>0</ns2:when>
@@ -22,11 +21,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8024992659779,32.0837041187901,1.7999999999999876</ns2:coordinates>
+                <ns2:coordinates>34.80250999999995,32.083703999999905,1.8000000000000016</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 2</ns2:name>
             <ns2:description>Estimated Route Point 2/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>1</ns2:when>
@@ -34,11 +32,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249700445919,32.083692114301016,1.799999999999998</ns2:coordinates>
+                <ns2:coordinates>34.802503370303185,32.08370670960184,1.7999999999999996</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 3</ns2:name>
             <ns2:description>Estimated Route Point 3/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>2</ns2:when>
@@ -46,11 +43,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80252445361548,32.083699796846936,1.800000000000004</ns2:coordinates>
+                <ns2:coordinates>34.802525897111636,32.0837146327037,1.7999999999999958</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 4</ns2:name>
             <ns2:description>Estimated Route Point 4/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>3</ns2:when>
@@ -58,11 +54,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80253803897792,32.08370077677468,1.8000000000000034</ns2:coordinates>
+                <ns2:coordinates>34.80253681024863,32.083719476247964,1.7999999999999985</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 5</ns2:name>
             <ns2:description>Estimated Route Point 5/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>4</ns2:when>
@@ -70,11 +65,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8025463315899,32.083702956841805,1.7999999999999947</ns2:coordinates>
+                <ns2:coordinates>34.80254926115536,32.08372075586737,1.7999999999999967</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 6</ns2:name>
             <ns2:description>Estimated Route Point 6/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>5</ns2:when>
@@ -82,11 +76,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80255318592511,32.083704138253154,1.8000000000000038</ns2:coordinates>
+                <ns2:coordinates>34.802559335425705,32.0837241623882,1.799999999999995</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 7</ns2:name>
             <ns2:description>Estimated Route Point 7/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>6</ns2:when>
@@ -94,11 +87,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80256129790511,32.08371160531502,1.8000000000000005</ns2:coordinates>
+                <ns2:coordinates>34.80257521909841,32.08373525237025,1.7999999999999965</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 8</ns2:name>
             <ns2:description>Estimated Route Point 8/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>7</ns2:when>
@@ -106,11 +98,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802568902414365,32.0837155406586,1.800000000000001</ns2:coordinates>
+                <ns2:coordinates>34.8025828383011,32.08373947314661,1.8000000000000003</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 9</ns2:name>
             <ns2:description>Estimated Route Point 9/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>8</ns2:when>
@@ -118,11 +109,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80257933835183,32.08371480696366,1.800000000000008</ns2:coordinates>
+                <ns2:coordinates>34.80259084785485,32.08374020598019,1.7999999999999985</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 10</ns2:name>
             <ns2:description>Estimated Route Point 10/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>9</ns2:when>
@@ -130,11 +120,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80258944435084,32.083711582595505,1.7999999999999996</ns2:coordinates>
+                <ns2:coordinates>34.80260515053307,32.08372890778037,1.7999999999999998</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 11</ns2:name>
             <ns2:description>Estimated Route Point 11/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>10</ns2:when>
@@ -142,11 +131,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259749478382,32.08371593922666,1.7999999999999996</ns2:coordinates>
+                <ns2:coordinates>34.80261025690295,32.08373742527254,1.7999999999999994</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 12</ns2:name>
             <ns2:description>Estimated Route Point 12/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>11</ns2:when>
@@ -154,11 +142,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8026065841415,32.083717793595426,1.7999999999999954</ns2:coordinates>
+                <ns2:coordinates>34.80261844547302,32.08373937258072,1.8000000000000018</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 13</ns2:name>
             <ns2:description>Estimated Route Point 13/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>12</ns2:when>
@@ -166,11 +153,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80260436744401,32.08372529671266,1.7999999999999927</ns2:coordinates>
+                <ns2:coordinates>34.80261620157217,32.083746737362,1.7999999999999972</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 14</ns2:name>
             <ns2:description>Estimated Route Point 14/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>13</ns2:when>
@@ -178,11 +164,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802601083942655,32.08373799090642,1.8000000000000014</ns2:coordinates>
+                <ns2:coordinates>34.802610384059776,32.08375060791225,1.8000000000000023</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 15</ns2:name>
             <ns2:description>Estimated Route Point 15/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>14</ns2:when>
@@ -190,11 +175,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259933322149,32.08374533181346,1.8000000000000056</ns2:coordinates>
+                <ns2:coordinates>34.8026083132682,32.0837601606226,1.7999999999999983</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 16</ns2:name>
             <ns2:description>Estimated Route Point 16/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>15</ns2:when>
@@ -202,11 +186,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802596183745315,32.083754927763806,1.800000000000006</ns2:coordinates>
+                <ns2:coordinates>34.802607293045625,32.08376455868894,1.8000000000000005</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 17</ns2:name>
             <ns2:description>Estimated Route Point 17/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>16</ns2:when>
@@ -214,11 +197,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259507222919,32.08376336307291,1.8000000000000007</ns2:coordinates>
+                <ns2:coordinates>34.80260957760752,32.083770103605616,1.8000000000000005</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 18</ns2:name>
             <ns2:description>Estimated Route Point 18/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>17</ns2:when>
@@ -226,11 +208,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259252169119,32.083775392341316,1.8000000000000003</ns2:coordinates>
+                <ns2:coordinates>34.8026096332664,32.08377628184844,1.8000000000000023</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 19</ns2:name>
             <ns2:description>Estimated Route Point 19/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>18</ns2:when>
@@ -238,11 +219,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259173596937,32.08378359091107,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80261225534099,32.08378352430076,1.799999999999998</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 20</ns2:name>
             <ns2:description>Estimated Route Point 20/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>19</ns2:when>
@@ -250,11 +230,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8025918424546,32.08379234164351,1.8000000000000087</ns2:coordinates>
+                <ns2:coordinates>34.80261188974515,32.08379030594749,1.800000000000005</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 21</ns2:name>
             <ns2:description>Estimated Route Point 21/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>20</ns2:when>
@@ -262,11 +241,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259149142285,32.083800763702726,1.8000000000000111</ns2:coordinates>
+                <ns2:coordinates>34.80261084063657,32.083798130658565,1.7999999999999985</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 22</ns2:name>
             <ns2:description>Estimated Route Point 22/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>21</ns2:when>
@@ -274,11 +252,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8025922392105,32.083811005294145,1.7999999999999958</ns2:coordinates>
+                <ns2:coordinates>34.80261095615784,32.083804944710316,1.7999999999999996</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 23</ns2:name>
             <ns2:description>Estimated Route Point 23/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>22</ns2:when>
@@ -286,11 +263,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802593963284934,32.08382028653643,1.800000000000003</ns2:coordinates>
+                <ns2:coordinates>34.80261065686327,32.08381257581133,1.7999999999999992</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 24</ns2:name>
             <ns2:description>Estimated Route Point 24/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>23</ns2:when>
@@ -298,11 +274,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259518316984,32.08382930080268,1.8000000000000078</ns2:coordinates>
+                <ns2:coordinates>34.8026139905478,32.083821884125605,1.7999999999999952</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 25</ns2:name>
             <ns2:description>Estimated Route Point 25/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>24</ns2:when>
@@ -310,11 +285,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8025951897719,32.08383982266541,1.8000000000000023</ns2:coordinates>
+                <ns2:coordinates>34.80261638709574,32.083829124096596,1.7999999999999947</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 26</ns2:name>
             <ns2:description>Estimated Route Point 26/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>25</ns2:when>
@@ -322,11 +296,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8025959437856,32.08385014357285,1.8000000000000012</ns2:coordinates>
+                <ns2:coordinates>34.80261556578759,32.08383855470326,1.7999999999999983</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 27</ns2:name>
             <ns2:description>Estimated Route Point 27/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>26</ns2:when>
@@ -334,11 +307,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259558977658,32.08386060082987,1.8000000000000045</ns2:coordinates>
+                <ns2:coordinates>34.80261264388933,32.08384999202226,1.8000000000000005</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 28</ns2:name>
             <ns2:description>Estimated Route Point 28/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>27</ns2:when>
@@ -346,11 +318,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259586208422,32.08387119876843,1.8000000000000018</ns2:coordinates>
+                <ns2:coordinates>34.80261093847601,32.08386216736934,1.7999999999999987</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 29</ns2:name>
             <ns2:description>Estimated Route Point 29/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>28</ns2:when>
@@ -358,11 +329,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259720979189,32.08388270603107,1.7999999999999996</ns2:coordinates>
+                <ns2:coordinates>34.802609254946404,32.08387349781063,1.800000000000001</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 30</ns2:name>
             <ns2:description>Estimated Route Point 30/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>29</ns2:when>
@@ -370,11 +340,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259837814763,32.083891190149046,1.7999999999999998</ns2:coordinates>
+                <ns2:coordinates>34.80260936259199,32.08388342002486,1.7999999999999994</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 31</ns2:name>
             <ns2:description>Estimated Route Point 31/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>30</ns2:when>
@@ -382,11 +351,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802598455598435,32.08389941202013,1.7999999999999892</ns2:coordinates>
+                <ns2:coordinates>34.802608114511855,32.0838922240126,1.7999999999999994</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 32</ns2:name>
             <ns2:description>Estimated Route Point 32/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>31</ns2:when>
@@ -394,11 +362,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259894617694,32.08390586427226,1.79999999999999</ns2:coordinates>
+                <ns2:coordinates>34.80260732170533,32.08390279404592,1.8000000000000012</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 33</ns2:name>
             <ns2:description>Estimated Route Point 33/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>32</ns2:when>
@@ -406,11 +373,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259936119056,32.08391237425658,1.7999999999999998</ns2:coordinates>
+                <ns2:coordinates>34.80260706018536,32.083911401050464,1.7999999999999987</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 34</ns2:name>
             <ns2:description>Estimated Route Point 34/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>33</ns2:when>
@@ -418,11 +384,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80260045718038,32.08392034998206,1.799999999999995</ns2:coordinates>
+                <ns2:coordinates>34.80260673342051,32.08392120512866,1.8</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 35</ns2:name>
             <ns2:description>Estimated Route Point 35/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>34</ns2:when>
@@ -430,11 +395,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8026013925933,32.08392785407127,1.7999999999999998</ns2:coordinates>
+                <ns2:coordinates>34.80260569303268,32.08393182303949,1.7999999999999963</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 36</ns2:name>
             <ns2:description>Estimated Route Point 36/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>35</ns2:when>
@@ -442,11 +406,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802601050734914,32.08393423434733,1.8000000000000023</ns2:coordinates>
+                <ns2:coordinates>34.80260479424042,32.083940611606515,1.8000000000000054</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 37</ns2:name>
             <ns2:description>Estimated Route Point 37/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>36</ns2:when>
@@ -454,11 +417,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80260012761717,32.08394329147314,1.7999999999999943</ns2:coordinates>
+                <ns2:coordinates>34.80260440886821,32.083948927451644,1.7999999999999983</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 38</ns2:name>
             <ns2:description>Estimated Route Point 38/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>37</ns2:when>
@@ -466,11 +428,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259942746509,32.08394924893003,1.7999999999999945</ns2:coordinates>
+                <ns2:coordinates>34.802603044535374,32.08395771954343,1.7999999999999985</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 39</ns2:name>
             <ns2:description>Estimated Route Point 39/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>38</ns2:when>
@@ -478,11 +439,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8025992825777,32.08395409011809,1.8000000000000052</ns2:coordinates>
+                <ns2:coordinates>34.802603189544094,32.08396624197328,1.7999999999999983</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 40</ns2:name>
             <ns2:description>Estimated Route Point 40/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>39</ns2:when>
@@ -490,11 +450,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259880519716,32.08396141325073,1.7999999999999965</ns2:coordinates>
+                <ns2:coordinates>34.80260233763615,32.083975786876984,1.7999999999999996</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 41</ns2:name>
             <ns2:description>Estimated Route Point 41/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>40</ns2:when>
@@ -502,11 +461,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259872841918,32.083967335799386,1.80000000000002</ns2:coordinates>
+                <ns2:coordinates>34.802601514637274,32.08398419570001,1.7999999999999996</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 42</ns2:name>
             <ns2:description>Estimated Route Point 42/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>41</ns2:when>
@@ -514,11 +472,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259822215465,32.083973920616124,1.8000000000000111</ns2:coordinates>
+                <ns2:coordinates>34.80259979232349,32.08399323040866,1.8000000000000007</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 43</ns2:name>
             <ns2:description>Estimated Route Point 43/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>42</ns2:when>
@@ -526,11 +483,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259851284174,32.08398298037066,1.8000000000000065</ns2:coordinates>
+                <ns2:coordinates>34.80260189926295,32.084000785059885,1.7999999999999996</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 44</ns2:name>
             <ns2:description>Estimated Route Point 44/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>43</ns2:when>
@@ -538,11 +494,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802598609494936,32.08398877799677,1.8000000000000023</ns2:coordinates>
+                <ns2:coordinates>34.80260129284831,32.084008981456044,1.8000000000000036</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 45</ns2:name>
             <ns2:description>Estimated Route Point 45/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>44</ns2:when>
@@ -550,11 +505,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802598880099694,32.08399546231182,1.7999999999999936</ns2:coordinates>
+                <ns2:coordinates>34.80260113239517,32.08401727944053,1.800000000000003</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 46</ns2:name>
             <ns2:description>Estimated Route Point 46/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>45</ns2:when>
@@ -562,11 +516,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802598227276704,32.08400207191563,1.800000000000011</ns2:coordinates>
+                <ns2:coordinates>34.802600944507674,32.08402545301664,1.799999999999999</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 47</ns2:name>
             <ns2:description>Estimated Route Point 47/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>46</ns2:when>
@@ -574,11 +527,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802582606382416,32.0839997292103,1.800000000000008</ns2:coordinates>
+                <ns2:coordinates>34.80258655528702,32.08402191429664,1.7999999999999998</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 48</ns2:name>
             <ns2:description>Estimated Route Point 48/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>47</ns2:when>
@@ -586,11 +538,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80256686997588,32.083995883575376,1.8000000000000085</ns2:coordinates>
+                <ns2:coordinates>34.80257233483122,32.08401967645131,1.8000000000000032</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 49</ns2:name>
             <ns2:description>Estimated Route Point 49/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>48</ns2:when>
@@ -598,11 +549,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802552477328184,32.083994766385835,1.8000000000000054</ns2:coordinates>
+                <ns2:coordinates>34.802558404945735,32.08401660919791,1.7999999999999998</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 50</ns2:name>
             <ns2:description>Estimated Route Point 50/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>49</ns2:when>
@@ -610,11 +560,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802536841310896,32.08399674784923,1.8000000000000076</ns2:coordinates>
+                <ns2:coordinates>34.80254575239951,32.08401422114094,1.7999999999999987</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 51</ns2:name>
             <ns2:description>Estimated Route Point 51/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>50</ns2:when>
@@ -622,11 +571,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80252114232853,32.08399576842959,1.8000000000000114</ns2:coordinates>
+                <ns2:coordinates>34.80252846267558,32.0840139481829,1.799999999999999</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 52</ns2:name>
             <ns2:description>Estimated Route Point 52/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>51</ns2:when>
@@ -634,11 +582,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80250496723125,32.08399735122,1.7999999999999956</ns2:coordinates>
+                <ns2:coordinates>34.80251087981978,32.084015967078436,1.8000000000000036</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 53</ns2:name>
             <ns2:description>Estimated Route Point 53/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>52</ns2:when>
@@ -646,11 +593,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80248886240303,32.08399974836209,1.799999999999998</ns2:coordinates>
+                <ns2:coordinates>34.80249426867256,32.08401948735275,1.7999999999999972</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 54</ns2:name>
             <ns2:description>Estimated Route Point 54/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>53</ns2:when>
@@ -658,11 +604,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80247372971547,32.083999542007476,1.8000000000000043</ns2:coordinates>
+                <ns2:coordinates>34.802477747869865,32.08401930798972,1.7999999999999987</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 55</ns2:name>
             <ns2:description>Estimated Route Point 55/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>54</ns2:when>
@@ -670,11 +615,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80247529955169,32.08399188705817,1.7999999999999996</ns2:coordinates>
+                <ns2:coordinates>34.80247845776218,32.08400939854177,1.8000000000000003</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 56</ns2:name>
             <ns2:description>Estimated Route Point 56/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>55</ns2:when>
@@ -682,11 +626,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80247518979352,32.08398302174742,1.800000000000005</ns2:coordinates>
+                <ns2:coordinates>34.80247821855558,32.08400061877768,1.7999999999999972</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 57</ns2:name>
             <ns2:description>Estimated Route Point 57/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>56</ns2:when>
@@ -694,11 +637,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802476623152465,32.083975234433645,1.8000000000000036</ns2:coordinates>
+                <ns2:coordinates>34.8024793728789,32.083991125032014,1.8</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 58</ns2:name>
             <ns2:description>Estimated Route Point 58/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>57</ns2:when>
@@ -706,11 +648,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802478450925534,32.0839682554331,1.8000000000000014</ns2:coordinates>
+                <ns2:coordinates>34.80248120902436,32.08398234697753,1.8000000000000003</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 59</ns2:name>
             <ns2:description>Estimated Route Point 59/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>58</ns2:when>
@@ -718,11 +659,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802480462957085,32.08396055038955,1.8000000000000034</ns2:coordinates>
+                <ns2:coordinates>34.802482574801296,32.08397407745033,1.800000000000004</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 60</ns2:name>
             <ns2:description>Estimated Route Point 60/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>59</ns2:when>
@@ -730,11 +670,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80248124069416,32.08395301378987,1.799999999999994</ns2:coordinates>
+                <ns2:coordinates>34.80248388909803,32.08396448217442,1.7999999999999958</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 61</ns2:name>
             <ns2:description>Estimated Route Point 61/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>60</ns2:when>
@@ -742,11 +681,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80248130620896,32.08394659582551,1.7999999999999963</ns2:coordinates>
+                <ns2:coordinates>34.802483881431726,32.08395515282573,1.8000000000000005</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 62</ns2:name>
             <ns2:description>Estimated Route Point 62/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>61</ns2:when>
@@ -754,11 +692,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80248305543764,32.08393836957495,1.7999999999999958</ns2:coordinates>
+                <ns2:coordinates>34.80248490022141,32.0839466161787,1.7999999999999965</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 63</ns2:name>
             <ns2:description>Estimated Route Point 63/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>62</ns2:when>
@@ -766,11 +703,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802485401605104,32.083931440055295,1.7999999999999974</ns2:coordinates>
+                <ns2:coordinates>34.80248542707144,32.083938243058675,1.7999999999999992</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 64</ns2:name>
             <ns2:description>Estimated Route Point 64/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>63</ns2:when>
@@ -778,11 +714,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80248623196275,32.083924345075864,1.799999999999993</ns2:coordinates>
+                <ns2:coordinates>34.80248643547821,32.083930508983094,1.8</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 65</ns2:name>
             <ns2:description>Estimated Route Point 65/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>64</ns2:when>
@@ -790,11 +725,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80248750895207,32.08391553009131,1.7999999999999974</ns2:coordinates>
+                <ns2:coordinates>34.8024876966261,32.083922064473995,1.7999999999999943</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 66</ns2:name>
             <ns2:description>Estimated Route Point 66/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>65</ns2:when>
@@ -802,11 +736,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802488238515956,32.083907178937785,1.8000000000000014</ns2:coordinates>
+                <ns2:coordinates>34.8024882245988,32.08391228279921,1.7999999999999967</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 67</ns2:name>
             <ns2:description>Estimated Route Point 67/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>66</ns2:when>
@@ -814,11 +747,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80248916021784,32.083898766876764,1.8000000000000127</ns2:coordinates>
+                <ns2:coordinates>34.80248845546002,32.08390344464383,1.7999999999999987</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 68</ns2:name>
             <ns2:description>Estimated Route Point 68/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>67</ns2:when>
@@ -826,11 +758,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802488572760204,32.083889620378166,1.7999999999999998</ns2:coordinates>
+                <ns2:coordinates>34.802487924478434,32.083894950309116,1.7999999999999956</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 69</ns2:name>
             <ns2:description>Estimated Route Point 69/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>68</ns2:when>
@@ -838,11 +769,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80248933163255,32.083878545409505,1.799999999999999</ns2:coordinates>
+                <ns2:coordinates>34.802489353350595,32.08388682036466,1.800000000000003</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 70</ns2:name>
             <ns2:description>Estimated Route Point 70/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>69</ns2:when>
@@ -850,11 +780,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249058221793,32.08386883319928,1.7999999999999996</ns2:coordinates>
+                <ns2:coordinates>34.80248998622944,32.08387908321618,1.8000000000000036</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 71</ns2:name>
             <ns2:description>Estimated Route Point 71/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>70</ns2:when>
@@ -862,11 +791,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802491664392576,32.08385887101304,1.8000000000000052</ns2:coordinates>
+                <ns2:coordinates>34.80248929088172,32.083870720033566,1.7999999999999978</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 72</ns2:name>
             <ns2:description>Estimated Route Point 72/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>71</ns2:when>
@@ -874,11 +802,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249377550815,32.083849705705944,1.8000000000000023</ns2:coordinates>
+                <ns2:coordinates>34.80248974178877,32.08386229392034,1.8000000000000016</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 73</ns2:name>
             <ns2:description>Estimated Route Point 73/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>72</ns2:when>
@@ -886,11 +813,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249363155006,32.08383987446376,1.8000000000000012</ns2:coordinates>
+                <ns2:coordinates>34.80248992870392,32.08385375630515,1.7999999999999945</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 74</ns2:name>
             <ns2:description>Estimated Route Point 74/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>73</ns2:when>
@@ -898,11 +824,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249489302084,32.08383081926418,1.8000000000000012</ns2:coordinates>
+                <ns2:coordinates>34.80249082356685,32.08384522152624,1.8000000000000034</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 75</ns2:name>
             <ns2:description>Estimated Route Point 75/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>74</ns2:when>
@@ -910,11 +835,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802495071391434,32.08382156762104,1.8000000000000043</ns2:coordinates>
+                <ns2:coordinates>34.80249129288451,32.08383559477218,1.7999999999999954</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 76</ns2:name>
             <ns2:description>Estimated Route Point 76/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>75</ns2:when>
@@ -922,11 +846,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249710710154,32.08381283340818,1.7999999999999923</ns2:coordinates>
+                <ns2:coordinates>34.802492714933415,32.083827622536475,1.7999999999999983</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 77</ns2:name>
             <ns2:description>Estimated Route Point 77/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>76</ns2:when>
@@ -934,11 +857,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249841908563,32.083803696091586,1.8000000000000012</ns2:coordinates>
+                <ns2:coordinates>34.802494652307466,32.08381778210669,1.8000000000000007</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 78</ns2:name>
             <ns2:description>Estimated Route Point 78/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>77</ns2:when>
@@ -946,11 +868,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249831183874,32.08379399417715,1.8000000000000052</ns2:coordinates>
+                <ns2:coordinates>34.80249541106663,32.08380990385959,1.7999999999999992</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 79</ns2:name>
             <ns2:description>Estimated Route Point 79/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>78</ns2:when>
@@ -958,11 +879,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249920661694,32.08378516472987,1.8000000000000032</ns2:coordinates>
+                <ns2:coordinates>34.80249707673001,32.08380205450768,1.7999999999999936</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 80</ns2:name>
             <ns2:description>Estimated Route Point 80/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>79</ns2:when>
@@ -970,11 +890,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802499198572725,32.08377630218142,1.8000000000000038</ns2:coordinates>
+                <ns2:coordinates>34.80249692645388,32.08379249603198,1.8000000000000005</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 81</ns2:name>
             <ns2:description>Estimated Route Point 81/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>80</ns2:when>
@@ -982,11 +901,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80250091567328,32.08376774648489,1.8000000000000127</ns2:coordinates>
+                <ns2:coordinates>34.80249857612547,32.083783738073784,1.8000000000000018</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 82</ns2:name>
             <ns2:description>Estimated Route Point 82/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>81</ns2:when>
@@ -994,11 +912,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80250281567484,32.08375980627223,1.7999999999999923</ns2:coordinates>
+                <ns2:coordinates>34.802499800387594,32.08377519502774,1.8000000000000058</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 83</ns2:name>
             <ns2:description>Estimated Route Point 83/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>82</ns2:when>
@@ -1006,11 +923,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80250314588338,32.08375075731418,1.7999999999999943</ns2:coordinates>
+                <ns2:coordinates>34.80250027634386,32.0837664916807,1.8000000000000003</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 84</ns2:name>
             <ns2:description>Estimated Route Point 84/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>83</ns2:when>
@@ -1018,11 +934,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80250371064677,32.08374024196517,1.8000000000000023</ns2:coordinates>
+                <ns2:coordinates>34.802500137047325,32.08375694395185,1.8000000000000047</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 85</ns2:name>
             <ns2:description>Estimated Route Point 85/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>84</ns2:when>
@@ -1030,11 +945,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80250348192099,32.08373158109401,1.8000000000000023</ns2:coordinates>
+                <ns2:coordinates>34.80249946790356,32.083748554841065,1.8000000000000014</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 86</ns2:name>
             <ns2:description>Estimated Route Point 86/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>85</ns2:when>
@@ -1042,11 +956,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80250446947924,32.08372222379964,1.799999999999999</ns2:coordinates>
+                <ns2:coordinates>34.802500098984076,32.083740532678426,1.8000000000000047</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 87</ns2:name>
             <ns2:description>Estimated Route Point 87/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>86</ns2:when>
@@ -1054,11 +967,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80250530599973,32.08371323659762,1.8000000000000074</ns2:coordinates>
+                <ns2:coordinates>34.80250055791489,32.08373106626136,1.8000000000000007</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 88</ns2:name>
             <ns2:description>Estimated Route Point 88/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>87</ns2:when>
@@ -1066,11 +978,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80250564070202,32.083704231154634,1.799999999999996</ns2:coordinates>
+                <ns2:coordinates>34.802499926702396,32.08372242528342,1.7999999999999987</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 89</ns2:name>
             <ns2:description>Estimated Route Point 89/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>88</ns2:when>
@@ -1078,11 +989,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80250597006298,32.08369524591691,1.8000000000000007</ns2:coordinates>
+                <ns2:coordinates>34.802501062272775,32.083713642698804,1.8000000000000027</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 90</ns2:name>
             <ns2:description>Estimated Route Point 90/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>89</ns2:when>
@@ -1090,11 +1000,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802517224583625,32.08369443564355,1.800000000000003</ns2:coordinates>
+                <ns2:coordinates>34.80251167440728,32.083713332664544,1.8000000000000027</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 91</ns2:name>
             <ns2:description>Estimated Route Point 91/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>90</ns2:when>
@@ -1102,11 +1011,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80252893433444,32.08369680038137,1.7999999999999892</ns2:coordinates>
+                <ns2:coordinates>34.802523616841256,32.0837145943095,1.8000000000000016</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 92</ns2:name>
             <ns2:description>Estimated Route Point 92/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>91</ns2:when>
@@ -1114,11 +1022,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802539728059514,32.083697608134656,1.800000000000003</ns2:coordinates>
+                <ns2:coordinates>34.80253465333593,32.08371592720752,1.8</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 93</ns2:name>
             <ns2:description>Estimated Route Point 93/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>92</ns2:when>
@@ -1126,11 +1033,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80254997683908,32.08369750155458,1.7999999999999863</ns2:coordinates>
+                <ns2:coordinates>34.80254467944702,32.08371613573915,1.8000000000000018</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 94</ns2:name>
             <ns2:description>Estimated Route Point 94/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>93</ns2:when>
@@ -1138,11 +1044,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80255982924347,32.08369797623016,1.7999999999999947</ns2:coordinates>
+                <ns2:coordinates>34.80255511327313,32.08371690453093,1.8</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 95</ns2:name>
             <ns2:description>Estimated Route Point 95/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>94</ns2:when>
@@ -1150,11 +1055,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80257240041213,32.083699227525464,1.8000000000000083</ns2:coordinates>
+                <ns2:coordinates>34.80256693609026,32.0837170434391,1.799999999999996</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 96</ns2:name>
             <ns2:description>Estimated Route Point 96/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>95</ns2:when>
@@ -1162,11 +1066,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80258297355029,32.08369844097172,1.8000000000000025</ns2:coordinates>
+                <ns2:coordinates>34.80257783509011,32.08371809061864,1.7999999999999958</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 97</ns2:name>
             <ns2:description>Estimated Route Point 97/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>96</ns2:when>
@@ -1174,11 +1077,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259312062354,32.083699743909875,1.8000000000000125</ns2:coordinates>
+                <ns2:coordinates>34.80258867374419,32.083717902192994,1.7999999999999992</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 98</ns2:name>
             <ns2:description>Estimated Route Point 98/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>97</ns2:when>
@@ -1186,11 +1088,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80260279645422,32.08370149530108,1.8000000000000071</ns2:coordinates>
+                <ns2:coordinates>34.80259950472643,32.08371879779594,1.7999999999999992</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 99</ns2:name>
             <ns2:description>Estimated Route Point 99/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>98</ns2:when>
@@ -1198,11 +1099,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8026128113064,32.08370021063696,1.8000000000000038</ns2:coordinates>
+                <ns2:coordinates>34.80261199886481,32.08371743917144,1.8</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 100</ns2:name>
             <ns2:description>Estimated Route Point 100/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>99</ns2:when>
@@ -1210,11 +1110,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80262195037045,32.08370117932933,1.8000000000000171</ns2:coordinates>
+                <ns2:coordinates>34.80262302558076,32.083719118537196,1.7999999999999987</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 101</ns2:name>
             <ns2:description>Estimated Route Point 101/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>100</ns2:when>
@@ -1222,11 +1121,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802632063189435,32.083701732261886,1.7999999999999925</ns2:coordinates>
+                <ns2:coordinates>34.80263374643878,32.083721057041714,1.7999999999999978</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 102</ns2:name>
             <ns2:description>Estimated Route Point 102/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>101</ns2:when>
@@ -1234,11 +1132,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80263079479971,32.08370887044946,1.8000000000000085</ns2:coordinates>
+                <ns2:coordinates>34.802632591474136,32.08372920966578,1.8000000000000056</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 103</ns2:name>
             <ns2:description>Estimated Route Point 103/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>102</ns2:when>
@@ -1246,11 +1143,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80263005715112,32.083718156545125,1.8000000000000018</ns2:coordinates>
+                <ns2:coordinates>34.80263122612146,32.083737935812856,1.800000000000003</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 104</ns2:name>
             <ns2:description>Estimated Route Point 104/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>103</ns2:when>
@@ -1258,11 +1154,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80262998078515,32.08372681881584,1.7999999999999976</ns2:coordinates>
+                <ns2:coordinates>34.80262962901084,32.08374690166907,1.8000000000000023</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 105</ns2:name>
             <ns2:description>Estimated Route Point 105/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>104</ns2:when>
@@ -1270,11 +1165,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80262687836254,32.08373737653037,1.799999999999995</ns2:coordinates>
+                <ns2:coordinates>34.80262804768275,32.08375545743885,1.8000000000000023</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 106</ns2:name>
             <ns2:description>Estimated Route Point 106/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>105</ns2:when>
@@ -1282,11 +1176,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80262571704668,32.08374712032743,1.8000000000000007</ns2:coordinates>
+                <ns2:coordinates>34.80262779064023,32.08376463967392,1.8000000000000032</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 107</ns2:name>
             <ns2:description>Estimated Route Point 107/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>106</ns2:when>
@@ -1294,11 +1187,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80262241734486,32.083757523954596,1.800000000000002</ns2:coordinates>
+                <ns2:coordinates>34.80262706360748,32.08377335442704,1.800000000000005</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 108</ns2:name>
             <ns2:description>Estimated Route Point 108/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>107</ns2:when>
@@ -1306,11 +1198,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80262125858467,32.083764644880524,1.7999999999999918</ns2:coordinates>
+                <ns2:coordinates>34.80262764852975,32.08378160416677,1.7999999999999974</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 109</ns2:name>
             <ns2:description>Estimated Route Point 109/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>108</ns2:when>
@@ -1318,11 +1209,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802619811392574,32.08377383018503,1.8000000000000018</ns2:coordinates>
+                <ns2:coordinates>34.802626670157444,32.083790467065256,1.8</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 110</ns2:name>
             <ns2:description>Estimated Route Point 110/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>109</ns2:when>
@@ -1330,11 +1220,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80261819983292,32.08378297722572,1.8000000000000036</ns2:coordinates>
+                <ns2:coordinates>34.80262523033704,32.083798924853234,1.8</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 111</ns2:name>
             <ns2:description>Estimated Route Point 111/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>110</ns2:when>
@@ -1342,11 +1231,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80261676200082,32.08379373783648,1.7999999999999967</ns2:coordinates>
+                <ns2:coordinates>34.80262414371656,32.08380766400291,1.8000000000000025</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 112</ns2:name>
             <ns2:description>Estimated Route Point 112/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>111</ns2:when>
@@ -1354,11 +1242,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80261610315425,32.083803377076514,1.7999999999999927</ns2:coordinates>
+                <ns2:coordinates>34.80262449736871,32.08381607172287,1.800000000000001</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 113</ns2:name>
             <ns2:description>Estimated Route Point 113/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>112</ns2:when>
@@ -1366,11 +1253,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802614649268314,32.083813252910645,1.8000000000000012</ns2:coordinates>
+                <ns2:coordinates>34.80262435177565,32.08382541125314,1.8000000000000025</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 114</ns2:name>
             <ns2:description>Estimated Route Point 114/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>113</ns2:when>
@@ -1378,11 +1264,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802614282064795,32.083821520351265,1.800000000000005</ns2:coordinates>
+                <ns2:coordinates>34.80262326365072,32.083833302936675,1.8000000000000032</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 115</ns2:name>
             <ns2:description>Estimated Route Point 115/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>114</ns2:when>
@@ -1390,11 +1275,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80261346939739,32.08382978138237,1.8000000000000054</ns2:coordinates>
+                <ns2:coordinates>34.80262269971229,32.08384086746878,1.8000000000000032</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 116</ns2:name>
             <ns2:description>Estimated Route Point 116/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>115</ns2:when>
@@ -1402,11 +1286,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80261427920655,32.08383858063402,1.8000000000000014</ns2:coordinates>
+                <ns2:coordinates>34.802622224604114,32.08384958776034,1.7999999999999967</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 117</ns2:name>
             <ns2:description>Estimated Route Point 117/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>116</ns2:when>
@@ -1414,11 +1297,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80261391393834,32.08384785367753,1.8000000000000023</ns2:coordinates>
+                <ns2:coordinates>34.80262077608135,32.083859137847945,1.7999999999999965</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 118</ns2:name>
             <ns2:description>Estimated Route Point 118/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>117</ns2:when>
@@ -1426,11 +1308,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802613100215005,32.08385791038108,1.800000000000003</ns2:coordinates>
+                <ns2:coordinates>34.80261990072449,32.08386840769969,1.7999999999999994</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 119</ns2:name>
             <ns2:description>Estimated Route Point 119/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>118</ns2:when>
@@ -1438,11 +1319,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802612578585496,32.083867464391865,1.8000000000000052</ns2:coordinates>
+                <ns2:coordinates>34.802618769131286,32.08387724490583,1.8000000000000025</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 120</ns2:name>
             <ns2:description>Estimated Route Point 120/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>119</ns2:when>
@@ -1450,11 +1330,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802612421158216,32.08387556206357,1.800000000000004</ns2:coordinates>
+                <ns2:coordinates>34.802618566693816,32.08388498599166,1.8000000000000038</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 121</ns2:name>
             <ns2:description>Estimated Route Point 121/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>120</ns2:when>
@@ -1462,11 +1341,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80261201883029,32.083883073763495,1.8000000000000058</ns2:coordinates>
+                <ns2:coordinates>34.802617420383626,32.083893767875786,1.799999999999999</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 122</ns2:name>
             <ns2:description>Estimated Route Point 122/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>121</ns2:when>
@@ -1474,11 +1352,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80261158466642,32.08389259667072,1.8000000000000134</ns2:coordinates>
+                <ns2:coordinates>34.80261656264273,32.083902625828536,1.800000000000005</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 123</ns2:name>
             <ns2:description>Estimated Route Point 123/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>122</ns2:when>
@@ -1486,11 +1363,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80261162543385,32.08390158918856,1.7999999999999916</ns2:coordinates>
+                <ns2:coordinates>34.8026166061389,32.08391157633911,1.8</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 124</ns2:name>
             <ns2:description>Estimated Route Point 124/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>123</ns2:when>
@@ -1498,11 +1374,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802609926737446,32.08391105907376,1.7999999999999983</ns2:coordinates>
+                <ns2:coordinates>34.80261572050723,32.08392040190526,1.800000000000005</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 125</ns2:name>
             <ns2:description>Estimated Route Point 125/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>124</ns2:when>
@@ -1510,11 +1385,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80260794691783,32.083919384785794,1.800000000000009</ns2:coordinates>
+                <ns2:coordinates>34.802614670592405,32.083929181997924,1.800000000000005</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 126</ns2:name>
             <ns2:description>Estimated Route Point 126/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>125</ns2:when>
@@ -1522,11 +1396,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80260699629582,32.08392784322127,1.7999999999999887</ns2:coordinates>
+                <ns2:coordinates>34.80261374934494,32.083937063259114,1.7999999999999996</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 127</ns2:name>
             <ns2:description>Estimated Route Point 127/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>126</ns2:when>
@@ -1534,11 +1407,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802606933159154,32.08393594172314,1.8000000000000016</ns2:coordinates>
+                <ns2:coordinates>34.802613826246095,32.08394594454907,1.7999999999999992</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 128</ns2:name>
             <ns2:description>Estimated Route Point 128/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>127</ns2:when>
@@ -1546,11 +1418,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802604831162405,32.08394464863328,1.7999999999999945</ns2:coordinates>
+                <ns2:coordinates>34.80261251344588,32.08395467752733,1.8000000000000005</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 129</ns2:name>
             <ns2:description>Estimated Route Point 129/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>128</ns2:when>
@@ -1558,11 +1429,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80260344445882,32.08395296162339,1.7999999999999976</ns2:coordinates>
+                <ns2:coordinates>34.80261131444559,32.083963564322545,1.8000000000000005</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 130</ns2:name>
             <ns2:description>Estimated Route Point 130/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>129</ns2:when>
@@ -1570,11 +1440,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802602422269516,32.083960857553656,1.7999999999999934</ns2:coordinates>
+                <ns2:coordinates>34.80261019297704,32.083972426437505,1.8000000000000014</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 131</ns2:name>
             <ns2:description>Estimated Route Point 131/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>130</ns2:when>
@@ -1582,11 +1451,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80260206107516,32.08396811676453,1.799999999999993</ns2:coordinates>
+                <ns2:coordinates>34.80260956933259,32.083981160904614,1.7999999999999987</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 132</ns2:name>
             <ns2:description>Estimated Route Point 132/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>131</ns2:when>
@@ -1594,11 +1462,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802601651277655,32.08397437190519,1.7999999999999967</ns2:coordinates>
+                <ns2:coordinates>34.8026078945942,32.08398896063506,1.8000000000000038</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 133</ns2:name>
             <ns2:description>Estimated Route Point 133/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>132</ns2:when>
@@ -1606,11 +1473,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80260167270987,32.0839826373452,1.7999999999999905</ns2:coordinates>
+                <ns2:coordinates>34.80260765860862,32.0839977427912,1.799999999999996</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 134</ns2:name>
             <ns2:description>Estimated Route Point 134/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>133</ns2:when>
@@ -1618,11 +1484,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802601452544465,32.08399071964681,1.7999999999999923</ns2:coordinates>
+                <ns2:coordinates>34.802606893398966,32.08400712111607,1.7999999999999956</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 135</ns2:name>
             <ns2:description>Estimated Route Point 135/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>134</ns2:when>
@@ -1630,11 +1495,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80260164005644,32.08399787377067,1.8000000000000012</ns2:coordinates>
+                <ns2:coordinates>34.802607260696234,32.08401589839162,1.8000000000000003</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 136</ns2:name>
             <ns2:description>Estimated Route Point 136/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>135</ns2:when>
@@ -1642,11 +1506,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802600917179426,32.08400577791695,1.7999999999999996</ns2:coordinates>
+                <ns2:coordinates>34.80260642995213,32.084024734783306,1.8000000000000005</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 137</ns2:name>
             <ns2:description>Estimated Route Point 137/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>136</ns2:when>
@@ -1654,11 +1517,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802601192004964,32.08401171195365,1.8000000000000111</ns2:coordinates>
+                <ns2:coordinates>34.802605582035255,32.0840336373406,1.800000000000007</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 138</ns2:name>
             <ns2:description>Estimated Route Point 138/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>137</ns2:when>
@@ -1666,11 +1528,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80259116790248,32.08400790289418,1.8000000000000016</ns2:coordinates>
+                <ns2:coordinates>34.80259497442442,32.0840325955354,1.8000000000000018</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 139</ns2:name>
             <ns2:description>Estimated Route Point 139/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>138</ns2:when>
@@ -1678,11 +1539,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802580035066,32.08400565301244,1.8000000000000052</ns2:coordinates>
+                <ns2:coordinates>34.802582675098506,32.08403261328699,1.799999999999996</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 140</ns2:name>
             <ns2:description>Estimated Route Point 140/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>139</ns2:when>
@@ -1690,11 +1550,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80257001257143,32.08400351288324,1.8000000000000098</ns2:coordinates>
+                <ns2:coordinates>34.80257248421843,32.084031643777,1.8000000000000038</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 141</ns2:name>
             <ns2:description>Estimated Route Point 141/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>140</ns2:when>
@@ -1702,11 +1561,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802558276376054,32.08400284304374,1.7999999999999967</ns2:coordinates>
+                <ns2:coordinates>34.80256242334747,32.08403150260579,1.7999999999999967</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 142</ns2:name>
             <ns2:description>Estimated Route Point 142/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>141</ns2:when>
@@ -1714,11 +1572,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80254598244758,32.084002218159064,1.7999999999999903</ns2:coordinates>
+                <ns2:coordinates>34.802551413891116,32.08403027513379,1.7999999999999987</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 143</ns2:name>
             <ns2:description>Estimated Route Point 143/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>142</ns2:when>
@@ -1726,11 +1583,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80253440264321,32.084001540750904,1.8000000000000065</ns2:coordinates>
+                <ns2:coordinates>34.8025407160826,32.084028338540016,1.7999999999999974</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 144</ns2:name>
             <ns2:description>Estimated Route Point 144/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>143</ns2:when>
@@ -1738,11 +1594,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80252328079059,32.0840011577978,1.7999999999999903</ns2:coordinates>
+                <ns2:coordinates>34.8025305610774,32.084028165074685,1.7999999999999985</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 145</ns2:name>
             <ns2:description>Estimated Route Point 145/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>144</ns2:when>
@@ -1750,11 +1605,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80251006809859,32.084001297601326,1.8000000000000043</ns2:coordinates>
+                <ns2:coordinates>34.80251761821708,32.08402782258368,1.8000000000000034</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 146</ns2:name>
             <ns2:description>Estimated Route Point 146/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>145</ns2:when>
@@ -1762,11 +1616,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249863149109,32.08400226447801,1.8000000000000036</ns2:coordinates>
+                <ns2:coordinates>34.802506626869224,32.084028116147024,1.7999999999999974</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 147</ns2:name>
             <ns2:description>Estimated Route Point 147/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>146</ns2:when>
@@ -1774,11 +1627,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80248744116597,32.084001459317335,1.7999999999999956</ns2:coordinates>
+                <ns2:coordinates>34.802494959256094,32.08402784310958,1.8000000000000058</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 148</ns2:name>
             <ns2:description>Estimated Route Point 148/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>147</ns2:when>
@@ -1786,11 +1638,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8024765410317,32.084001482051725,1.7999999999999903</ns2:coordinates>
+                <ns2:coordinates>34.802483924636256,32.08402842391357,1.8000000000000056</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 149</ns2:name>
             <ns2:description>Estimated Route Point 149/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>148</ns2:when>
@@ -1798,11 +1649,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80247728558171,32.08399297859538,1.8000000000000045</ns2:coordinates>
+                <ns2:coordinates>34.80248466407182,32.08401957531073,1.7999999999999938</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 150</ns2:name>
             <ns2:description>Estimated Route Point 150/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>149</ns2:when>
@@ -1810,11 +1660,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80247747213305,32.08398586580745,1.8000000000000032</ns2:coordinates>
+                <ns2:coordinates>34.80248445746839,32.084011797071994,1.7999999999999958</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 151</ns2:name>
             <ns2:description>Estimated Route Point 151/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>150</ns2:when>
@@ -1822,11 +1671,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802478281201296,32.0839783544857,1.8000000000000058</ns2:coordinates>
+                <ns2:coordinates>34.802485337784674,32.08400305066796,1.7999999999999967</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 152</ns2:name>
             <ns2:description>Estimated Route Point 152/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>151</ns2:when>
@@ -1834,11 +1682,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80247851390214,32.08396982546676,1.8000000000000047</ns2:coordinates>
+                <ns2:coordinates>34.80248636790654,32.0839938019264,1.7999999999999994</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 153</ns2:name>
             <ns2:description>Estimated Route Point 153/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>152</ns2:when>
@@ -1846,11 +1693,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802479134431685,32.08396389969655,1.8000000000000007</ns2:coordinates>
+                <ns2:coordinates>34.802487797292976,32.08398604788111,1.7999999999999992</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 154</ns2:name>
             <ns2:description>Estimated Route Point 154/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>153</ns2:when>
@@ -1858,11 +1704,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80248032572564,32.08395488799224,1.8000000000000083</ns2:coordinates>
+                <ns2:coordinates>34.80248767775715,32.08397678306107,1.7999999999999994</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 155</ns2:name>
             <ns2:description>Estimated Route Point 155/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>154</ns2:when>
@@ -1870,11 +1715,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802482060448085,32.083947456496155,1.8000000000000058</ns2:coordinates>
+                <ns2:coordinates>34.80248858689836,32.08396796607435,1.8000000000000012</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 156</ns2:name>
             <ns2:description>Estimated Route Point 156/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>155</ns2:when>
@@ -1882,11 +1726,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80248385165516,32.08394023956571,1.8000000000000012</ns2:coordinates>
+                <ns2:coordinates>34.80248945304586,32.083960118619174,1.7999999999999967</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 157</ns2:name>
             <ns2:description>Estimated Route Point 157/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>156</ns2:when>
@@ -1894,11 +1737,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802484083716465,32.083933244445916,1.7999999999999872</ns2:coordinates>
+                <ns2:coordinates>34.802489511318214,32.08395137866514,1.7999999999999992</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 158</ns2:name>
             <ns2:description>Estimated Route Point 158/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>157</ns2:when>
@@ -1906,11 +1748,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80248579991199,32.08392642554285,1.7999999999999963</ns2:coordinates>
+                <ns2:coordinates>34.80249034866327,32.08394354832705,1.800000000000006</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 159</ns2:name>
             <ns2:description>Estimated Route Point 159/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>158</ns2:when>
@@ -1918,11 +1759,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802485511438185,32.083917685316166,1.799999999999996</ns2:coordinates>
+                <ns2:coordinates>34.8024902402895,32.08393469587398,1.8000000000000038</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 160</ns2:name>
             <ns2:description>Estimated Route Point 160/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>159</ns2:when>
@@ -1930,11 +1770,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80248706131142,32.083908863233184,1.8000000000000078</ns2:coordinates>
+                <ns2:coordinates>34.80249140762785,32.08392599442326,1.8000000000000056</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 161</ns2:name>
             <ns2:description>Estimated Route Point 161/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>160</ns2:when>
@@ -1942,11 +1781,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8024864082542,32.08390252596489,1.8000000000000003</ns2:coordinates>
+                <ns2:coordinates>34.802491344664496,32.08391878103172,1.7999999999999994</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 162</ns2:name>
             <ns2:description>Estimated Route Point 162/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>161</ns2:when>
@@ -1954,11 +1792,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80248686141382,32.08389462167141,1.8</ns2:coordinates>
+                <ns2:coordinates>34.80249182356553,32.08390956313763,1.7999999999999958</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 163</ns2:name>
             <ns2:description>Estimated Route Point 163/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>162</ns2:when>
@@ -1966,11 +1803,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80248691335959,32.08388651252968,1.7999999999999965</ns2:coordinates>
+                <ns2:coordinates>34.80249173266054,32.083901747019,1.7999999999999972</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 164</ns2:name>
             <ns2:description>Estimated Route Point 164/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>163</ns2:when>
@@ -1978,11 +1814,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80248719633902,32.083876492725196,1.8000000000000123</ns2:coordinates>
+                <ns2:coordinates>34.80249272514447,32.08389302943042,1.8000000000000014</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 165</ns2:name>
             <ns2:description>Estimated Route Point 165/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>164</ns2:when>
@@ -1990,11 +1825,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802489383154686,32.083866796307326,1.800000000000008</ns2:coordinates>
+                <ns2:coordinates>34.80249393815379,32.08388428898984,1.799999999999997</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 166</ns2:name>
             <ns2:description>Estimated Route Point 166/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>165</ns2:when>
@@ -2002,11 +1836,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249003692792,32.083857887365426,1.7999999999999967</ns2:coordinates>
+                <ns2:coordinates>34.802494082426826,32.083876499915824,1.7999999999999978</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 167</ns2:name>
             <ns2:description>Estimated Route Point 167/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>166</ns2:when>
@@ -2014,11 +1847,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249091074795,32.08384864969671,1.7999999999999996</ns2:coordinates>
+                <ns2:coordinates>34.80249573440637,32.08386816904538,1.8000000000000003</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 168</ns2:name>
             <ns2:description>Estimated Route Point 168/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>167</ns2:when>
@@ -2026,11 +1858,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249141278262,32.08383892748906,1.8000000000000025</ns2:coordinates>
+                <ns2:coordinates>34.80249578704035,32.0838588874504,1.7999999999999996</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 169</ns2:name>
             <ns2:description>Estimated Route Point 169/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>168</ns2:when>
@@ -2038,11 +1869,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8024924797417,32.08383082994634,1.7999999999999883</ns2:coordinates>
+                <ns2:coordinates>34.8024971207081,32.08385078494689,1.8000000000000007</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 170</ns2:name>
             <ns2:description>Estimated Route Point 170/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>169</ns2:when>
@@ -2050,11 +1880,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249269124508,32.083821837606386,1.8000000000000052</ns2:coordinates>
+                <ns2:coordinates>34.80249687242989,32.083841905974616,1.800000000000001</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 171</ns2:name>
             <ns2:description>Estimated Route Point 171/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>170</ns2:when>
@@ -2062,11 +1891,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249426775798,32.08381417268938,1.800000000000004</ns2:coordinates>
+                <ns2:coordinates>34.80249791351679,32.08383408310847,1.8000000000000036</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 172</ns2:name>
             <ns2:description>Estimated Route Point 172/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>171</ns2:when>
@@ -2074,11 +1902,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249474351139,32.08380423881761,1.7999999999999965</ns2:coordinates>
+                <ns2:coordinates>34.802498850814615,32.08382449876599,1.7999999999999996</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 173</ns2:name>
             <ns2:description>Estimated Route Point 173/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>172</ns2:when>
@@ -2086,11 +1913,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802496918745625,32.083794394013324,1.7999999999999927</ns2:coordinates>
+                <ns2:coordinates>34.80249966929893,32.083815882963755,1.8000000000000032</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 174</ns2:name>
             <ns2:description>Estimated Route Point 174/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>173</ns2:when>
@@ -2098,11 +1924,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249880364895,32.083786175211905,1.8000000000000032</ns2:coordinates>
+                <ns2:coordinates>34.80250077315634,32.08380811798168,1.7999999999999958</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 175</ns2:name>
             <ns2:description>Estimated Route Point 175/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>174</ns2:when>
@@ -2110,11 +1935,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80249945554426,32.083776573014575,1.8000000000000076</ns2:coordinates>
+                <ns2:coordinates>34.80250098676878,32.08379881982507,1.799999999999999</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 176</ns2:name>
             <ns2:description>Estimated Route Point 176/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>175</ns2:when>
@@ -2122,11 +1946,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80250181838385,32.083768457254045,1.8000000000000032</ns2:coordinates>
+                <ns2:coordinates>34.80250204218744,32.08378996767445,1.7999999999999978</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 177</ns2:name>
             <ns2:description>Estimated Route Point 177/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>176</ns2:when>
@@ -2134,11 +1957,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80250226993585,32.083760918735265,1.7999999999999958</ns2:coordinates>
+                <ns2:coordinates>34.802502630088,32.08378208153241,1.8</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 178</ns2:name>
             <ns2:description>Estimated Route Point 178/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>177</ns2:when>
@@ -2146,11 +1968,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.8025039750922,32.08375284530628,1.7999999999999847</ns2:coordinates>
+                <ns2:coordinates>34.80250401413735,32.08377340730682,1.8000000000000058</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 179</ns2:name>
             <ns2:description>Estimated Route Point 179/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>178</ns2:when>
@@ -2158,11 +1979,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80250426426413,32.08374612273777,1.7999999999999985</ns2:coordinates>
+                <ns2:coordinates>34.802504294095,32.083765418927655,1.7999999999999996</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 180</ns2:name>
             <ns2:description>Estimated Route Point 180/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>179</ns2:when>
@@ -2170,11 +1990,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80250499922469,32.08373698878386,1.8000000000000023</ns2:coordinates>
+                <ns2:coordinates>34.8025046243595,32.083756763713005,1.799999999999997</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 181</ns2:name>
             <ns2:description>Estimated Route Point 181/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>180</ns2:when>
@@ -2182,11 +2001,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802505862563514,32.08372757411736,1.7999999999999914</ns2:coordinates>
+                <ns2:coordinates>34.802505636460005,32.08374799075359,1.8000000000000027</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 182</ns2:name>
             <ns2:description>Estimated Route Point 182/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>181</ns2:when>
@@ -2194,11 +2012,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80250579748197,32.08371931780991,1.7999999999999987</ns2:coordinates>
+                <ns2:coordinates>34.802505442577655,32.083739716484374,1.8000000000000005</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 183</ns2:name>
             <ns2:description>Estimated Route Point 183/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>182</ns2:when>
@@ -2206,11 +2023,10 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.80250672277202,32.08371019477822,1.7999999999999863</ns2:coordinates>
+                <ns2:coordinates>34.802506086482985,32.08373021952944,1.799999999999998</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Point 184</ns2:name>
             <ns2:description>Estimated Route Point 184/184</ns2:description>
             <ns2:TimeStamp>
                 <ns2:when>183</ns2:when>
@@ -2218,7 +2034,7 @@
             <ns2:styleUrl>#pointStyle</ns2:styleUrl>
             <ns2:Point>
                 <ns2:altitudeMode>relativeToGround</ns2:altitudeMode>
-                <ns2:coordinates>34.802506886180254,32.08370243828483,1.800000000000006</ns2:coordinates>
+                <ns2:coordinates>34.80250621513309,32.08372246148485,1.799999999999999</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
     </ns2:Document>

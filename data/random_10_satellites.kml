@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns:ns0="http://www.opengis.net/kml/2.2" xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <ns0:Style id="satelliteStyle">
+      <ns0:IconStyle>
+        <ns0:scale>1.0</ns0:scale>
+        <ns0:Icon>
+          <ns0:href>http://maps.google.com/mapfiles/kml/shapes/star.png</ns0:href>
+        </ns0:Icon>
+      </ns0:IconStyle>
+    </ns0:Style>
+    <ns0:Placemark>
+      <ns0:name>Satellite 5</ns0:name>
+      <ns0:description>Azimuth: 22.70°, Elevation: 53.41°, Height: 538.27 km</ns0:description>
+      <ns0:styleUrl>#satelliteStyle</ns0:styleUrl>
+      <ns0:Point>
+        <ns0:extrude>1</ns0:extrude>
+        <ns0:altitudeMode>absolute</ns0:altitudeMode>
+        <ns0:coordinates>36.421418175030766,35.376290583211485,538271.1083305262</ns0:coordinates>
+      </ns0:Point>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Satellite 27</ns0:name>
+      <ns0:description>Azimuth: 297.22°, Elevation: 46.22°, Height: 1093.03 km</ns0:description>
+      <ns0:styleUrl>#satelliteStyle</ns0:styleUrl>
+      <ns0:Point>
+        <ns0:extrude>1</ns0:extrude>
+        <ns0:altitudeMode>absolute</ns0:altitudeMode>
+        <ns0:coordinates>29.64534116889772,34.15117813688224,1093025.8963877612</ns0:coordinates>
+      </ns0:Point>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Satellite 1</ns0:name>
+      <ns0:description>Azimuth: -7.50°, Elevation: 49.18°, Height: 909.27 km</ns0:description>
+      <ns0:styleUrl>#satelliteStyle</ns0:styleUrl>
+      <ns0:Point>
+        <ns0:extrude>1</ns0:extrude>
+        <ns0:altitudeMode>absolute</ns0:altitudeMode>
+        <ns0:coordinates>34.01754307516342,37.4469595644327,909272.3176112882</ns0:coordinates>
+      </ns0:Point>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Satellite 2</ns0:name>
+      <ns0:description>Azimuth: 33.42°, Elevation: 76.50°, Height: 825.55 km</ns0:description>
+      <ns0:styleUrl>#satelliteStyle</ns0:styleUrl>
+      <ns0:Point>
+        <ns0:extrude>1</ns0:extrude>
+        <ns0:altitudeMode>absolute</ns0:altitudeMode>
+        <ns0:coordinates>38.34871583051882,36.877241664043034,825550.6804851878</ns0:coordinates>
+      </ns0:Point>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Satellite 29</ns0:name>
+      <ns0:description>Azimuth: 330.97°, Elevation: 59.52°, Height: 554.29 km</ns0:description>
+      <ns0:styleUrl>#satelliteStyle</ns0:styleUrl>
+      <ns0:Point>
+        <ns0:extrude>1</ns0:extrude>
+        <ns0:altitudeMode>absolute</ns0:altitudeMode>
+        <ns0:coordinates>33.76599656466658,33.36293814607312,554292.2198275402</ns0:coordinates>
+      </ns0:Point>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Satellite 13</ns0:name>
+      <ns0:description>Azimuth: 117.66°, Elevation: 56.83°, Height: 938.27 km</ns0:description>
+      <ns0:styleUrl>#satelliteStyle</ns0:styleUrl>
+      <ns0:Point>
+        <ns0:extrude>1</ns0:extrude>
+        <ns0:altitudeMode>absolute</ns0:altitudeMode>
+        <ns0:coordinates>36.3496898407682,30.687631846756066,938268.3603309209</ns0:coordinates>
+      </ns0:Point>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Satellite 26</ns0:name>
+      <ns0:description>Azimuth: 292.11°, Elevation: 54.51°, Height: 634.23 km</ns0:description>
+      <ns0:styleUrl>#satelliteStyle</ns0:styleUrl>
+      <ns0:Point>
+        <ns0:extrude>1</ns0:extrude>
+        <ns0:altitudeMode>absolute</ns0:altitudeMode>
+        <ns0:coordinates>29.902160155138347,33.490023412309654,634227.528352752</ns0:coordinates>
+      </ns0:Point>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Satellite 19</ns0:name>
+      <ns0:description>Azimuth: 189.53°, Elevation: 55.65°, Height: 519.15 km</ns0:description>
+      <ns0:styleUrl>#satelliteStyle</ns0:styleUrl>
+      <ns0:Point>
+        <ns0:extrude>1</ns0:extrude>
+        <ns0:altitudeMode>absolute</ns0:altitudeMode>
+        <ns0:coordinates>34.47531276252901,29.56521471226865,519153.4535674779</ns0:coordinates>
+      </ns0:Point>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Satellite 3</ns0:name>
+      <ns0:description>Azimuth: 33.66°, Elevation: 67.38°, Height: 781.83 km</ns0:description>
+      <ns0:styleUrl>#satelliteStyle</ns0:styleUrl>
+      <ns0:Point>
+        <ns0:extrude>1</ns0:extrude>
+        <ns0:altitudeMode>absolute</ns0:altitudeMode>
+        <ns0:coordinates>37.16984601802077,35.05882992069744,781833.2642304396</ns0:coordinates>
+      </ns0:Point>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Satellite 30</ns0:name>
+      <ns0:description>Azimuth: 369.66°, Elevation: 62.11°, Height: 720.77 km</ns0:description>
+      <ns0:styleUrl>#satelliteStyle</ns0:styleUrl>
+      <ns0:Point>
+        <ns0:extrude>1</ns0:extrude>
+        <ns0:altitudeMode>absolute</ns0:altitudeMode>
+        <ns0:coordinates>35.568104887710795,36.01440501651388,720765.493186617</ns0:coordinates>
+      </ns0:Point>
+    </ns0:Placemark>
+  </Document>
+</kml>

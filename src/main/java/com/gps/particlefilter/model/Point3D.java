@@ -46,10 +46,14 @@ public class Point3D {
     }
 
     // Calculates the azimuth angle between two points
+    // For UTM coordinates: X is easting, Y is northing
+    // Azimuth is measured clockwise from north
     public double azimuthTo(Point3D other) {
         double dx = other.x - this.x;
         double dy = other.y - this.y;
-        double azimuth = Math.toDegrees(Math.atan2(dy, dx));
+        // Use atan2(dx, dy) for azimuth from north
+        double azimuth = Math.toDegrees(Math.atan2(dx, dy));
+        // Normalize to 0-360 degrees
         if (azimuth < 0) {
             azimuth += 360;
         }
@@ -57,10 +61,12 @@ public class Point3D {
     }
 
     // Creates a new point at given distance and azimuth
+    // For UTM coordinates: azimuth is from north, X is easting, Y is northing
     public Point3D moveByDistanceAndAzimuth(double distance, double azimuth) {
         double azimuthRad = Math.toRadians(azimuth);
-        double dx = distance * Math.cos(azimuthRad);
-        double dy = distance * Math.sin(azimuthRad);
+        // For azimuth from north: dx = distance * sin(azimuth), dy = distance * cos(azimuth)
+        double dx = distance * Math.sin(azimuthRad);
+        double dy = distance * Math.cos(azimuthRad);
         return new Point3D(this.x + dx, this.y + dy, this.z);
     }
 

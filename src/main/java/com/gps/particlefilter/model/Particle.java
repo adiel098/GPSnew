@@ -40,6 +40,7 @@ public class Particle {
     public void setPreviousWeight(double previousWeight) {
         this.previousWeight = previousWeight;
     }
+    
 
     public Map<String, Boolean> getLosStatus() {
         return losStatus;
@@ -97,23 +98,23 @@ public class Particle {
     }
 
     /**
-     * Updated movement function to work with distance and angle - specially adapted for UTM coordinate system
+     * Updated movement function to work with distance and angle - adapted for UTM coordinate system
      * 
      * @param distance - the distance to move in meters
-     * @param azimuth - the azimuth angle in degrees
+     * @param azimuth - the azimuth angle in degrees (from north)
      * @param noise - noise level for distance and angle
      */
     public void move(double distance, double azimuth, double noise) {
         Random random = new Random();
         
-        // Add Gaussian noise to distance and angle (more suitable for UTM coordinate movement)
+        // Add Gaussian noise to distance and angle
         double noisyDistance = distance + random.nextGaussian() * noise * 0.5;
         double noisyAzimuth = azimuth + random.nextGaussian() * noise * 2.0;
 
-        // Direct calculation of new coordinates in UTM
+        // Correct calculation for azimuth from north in UTM coordinates
         double azimuthRad = Math.toRadians(noisyAzimuth);
-        double dx = noisyDistance * Math.cos(azimuthRad);
-        double dy = noisyDistance * Math.sin(azimuthRad);
+        double dx = noisyDistance * Math.sin(azimuthRad); // Easting component
+        double dy = noisyDistance * Math.cos(azimuthRad); // Northing component
         
         // In UTM system, x represents easting, y represents northing
         double newX = position.getX() + dx;

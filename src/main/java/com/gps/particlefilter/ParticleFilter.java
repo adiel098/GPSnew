@@ -20,7 +20,7 @@ public class ParticleFilter {
     private double velocity = 0.0; // Current velocity magnitude
     private double c = 1.0; // Error model coefficient (from article)
     private boolean useBayesianWeight = true; // Enable Bayesian weight function
-    private double bayesianC = 0.7; // Ratio between history and current measurement
+    private double bayesianC = 0.5; // Ratio between history and current measurement - reduced for better tracking
 
     public ParticleFilter(LosCalculator losCalculator, double gridSize, double movementNoise) {
         this.losCalculator = losCalculator;
@@ -36,27 +36,98 @@ public class ParticleFilter {
 
     public void initializeParticles(Point3D center, int particleCount) {
         particles.clear();
+        
+        // DEBUG: Check coordinate system and values
+        System.out.println("=== PARTICLE INITIALIZATION DEBUG ===");
+        System.out.println("Center point: X=" + center.getX() + ", Y=" + center.getY() + ", Z=" + center.getZ());
+        System.out.println("Grid size: " + gridSize + " meters");
+        System.out.println("Using UTM: " + coordManager.isUsingUtm());
+        
         // When using UTM, gridSize is already in meters
         double minY = center.getY() - gridSize;
         double maxY = center.getY() + gridSize;
         double minX = center.getX() - gridSize;
         double maxX = center.getX() + gridSize;
+        
+        System.out.println("Initialization bounds: X=[" + minX + " to " + maxX + "], Y=[" + minY + " to " + maxY + "]");
+        double totalRangeX = maxX - minX;
+        double totalRangeY = maxY - minY;
+        System.out.println("Total range: X=" + totalRangeX + "m, Y=" + totalRangeY + "m");
         // Update particle altitude to 1.8 meters above ground level
         double alt = 1.8; // Average human height
 
         int particlesPerRow = (int) Math.sqrt(particleCount);
+        
+        // Ensure we don't divide by zero and have proper step sizes
+        if (particlesPerRow <= 1) {
+            particlesPerRow = 2; // Minimum 2x2 grid
+        }
+        
         double yStep = (maxY - minY) / (particlesPerRow - 1);
         double xStep = (maxX - minX) / (particlesPerRow - 1);
-
-        for (double y = minY; y <= maxY; y += yStep) {
-            for (double x = minX; x <= maxX; x += xStep) {
-                if (particles.size() >= particleCount) break;
+        
+        System.out.println("Grid setup: " + particlesPerRow + "x" + particlesPerRow + " grid");
+        System.out.println("Step sizes: X=" + xStep + "m, Y=" + yStep + "m");
+        
+        // Ensure particles are distributed evenly and don't overlap
+        for (int row = 0; row < particlesPerRow && particles.size() < particleCount; row++) {
+            for (int col = 0; col < particlesPerRow && particles.size() < particleCount; col++) {
+                double x = minX + (col * xStep);
+                double y = minY + (row * yStep);
+                
                 Point3D position = new Point3D(x, y, alt);
                 Particle particle = new Particle(position);
+                
                 particle.setLosStatus(losCalculator.calculateLOS(position));
                 particles.add(particle);
             }
         }
+        
+        // DEBUG: Validate particle distribution
+        if (particles.size() > 0) {
+            Point3D firstPos = particles.get(0).getPosition();
+            Point3D lastPos = particles.get(particles.size() - 1).getPosition();
+            System.out.println("First particle: X=" + firstPos.getX() + ", Y=" + firstPos.getY());
+            System.out.println("Last particle: X=" + lastPos.getX() + ", Y=" + lastPos.getY());
+            
+            // Check distances from center
+            double firstDistance = firstPos.distanceTo(center);
+            double lastDistance = lastPos.distanceTo(center);
+            System.out.println("Distance from first particle to center: " + firstDistance + " meters");
+            System.out.println("Distance from last particle to center: " + lastDistance + " meters");
+            
+            // Calculate center of particle cloud
+            double avgX = 0, avgY = 0;
+            for (Particle p : particles) {
+                avgX += p.getPosition().getX();
+                avgY += p.getPosition().getY();
+            }
+            avgX /= particles.size();
+            avgY /= particles.size();
+            Point3D particleCenter = new Point3D(avgX, avgY, alt);
+            
+            double centerOffset = particleCenter.distanceTo(center);
+            System.out.println("Particle cloud center: X=" + avgX + ", Y=" + avgY);
+            System.out.println("Offset from GPS point: " + centerOffset + " meters");
+            
+            // Check for duplicates
+            int duplicates = 0;
+            for (int i = 0; i < particles.size(); i++) {
+                for (int j = i + 1; j < particles.size(); j++) {
+                    Point3D pos1 = particles.get(i).getPosition();
+                    Point3D pos2 = particles.get(j).getPosition();
+                    double dist = pos1.distanceTo(pos2);
+                    if (dist < 0.1) { // Less than 10cm apart
+                        duplicates++;
+                    }
+                }
+            }
+            if (duplicates > 0) {
+                System.out.println("WARNING: Found " + duplicates + " duplicate/overlapping particle pairs!");
+            }
+        }
+        System.out.println("Total particles created: " + particles.size());
+        System.out.println("=== END INITIALIZATION DEBUG ===\n");
     }
 
     public void updateWeights(Point3D originalPoint) {
@@ -125,6 +196,7 @@ public class ParticleFilter {
             Particle newParticle = new Particle(particles.get(j).getPosition());
             newParticle.setLosStatus(new HashMap<>(particles.get(j).getLosStatus()));
             newParticle.setWeight(particles.get(j).getWeight());
+            
             newParticles.add(newParticle);
             u += step;
         }
@@ -158,28 +230,26 @@ public class ParticleFilter {
         System.out.println("Distance: " + distance + "m, Azimuth: " + azimuth + "°");
         System.out.println("Velocity: " + velocity + " m/s, Error coefficient c: " + c);
         
-        // Article's error model: R = c × |v|
-        double errorRadius = c * velocity;
-        
-        // Move each particle with error model from article
+        // Move each particle using improved noise model
         for (Particle particle : particles) {
-            // Sample random point within circle of radius R (uniform distribution)
-            double randomRadius = errorRadius * Math.sqrt(random.nextUniform(0, 1));
-            double randomAngle = random.nextUniform(0, 2 * Math.PI);
+            // Apply Gaussian noise to distance (2-5% based on velocity)
+            double distanceNoiseStd = Math.max(0.02, Math.min(0.05, 1.0 / velocity)) * distance;
+            double noisyDistance = distance + random.nextGaussian(0, distanceNoiseStd);
             
-            // Calculate expected movement
-            double dx = distance * Math.cos(Math.toRadians(azimuth));
-            double dy = distance * Math.sin(Math.toRadians(azimuth));
+            // Apply small Gaussian noise to azimuth (±5-10 degrees based on velocity)
+            double azimuthNoiseStd = velocity < 1.0 ? 10.0 : 5.0; // More noise when slow
+            double noisyAzimuth = azimuth + random.nextGaussian(0, azimuthNoiseStd);
             
-            // Add random error from circle
-            double errorX = randomRadius * Math.cos(randomAngle);
-            double errorY = randomRadius * Math.sin(randomAngle);
+            // Calculate movement using corrected trigonometry for UTM coordinates
+            double azimuthRad = Math.toRadians(noisyAzimuth);
+            double dx = noisyDistance * Math.sin(azimuthRad); // Easting component
+            double dy = noisyDistance * Math.cos(azimuthRad); // Northing component
             
-            // Update particle position with movement + error
+            // Update particle position
             Point3D currentPos = particle.getPosition();
             Point3D newPos = new Point3D(
-                currentPos.getX() + dx + errorX,
-                currentPos.getY() + dy + errorY,
+                currentPos.getX() + dx,
+                currentPos.getY() + dy,
                 currentPos.getZ()
             );
             

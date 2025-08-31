@@ -1,23 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git cherry-pick:*)",
-      "Bash(git push:*)",
-      "Bash(java:*)",
-      "Bash(CLASSPATH=\"lib/*:.\")",
-      "Bash(echo \"Classpath: $CLASSPATH\")",
-      "Bash(for file in *.java)",
-      "Bash(do sed -i \"s/package com.gps.particlefilter.kml;/package com.gps.particlefilter.io;/g\" \"$file\")",
-      "Bash(done)",
-      "Bash(find:*)",
-      "Bash(jar:*)",
-      "Bash(dir:*)",
-      "Bash(timeout 60 java:*)",
-      "Read(/c:\\Users\\A\\Desktop\\Univers\\GPSnew\\github2\\GPSnew\\article/**)",
-      "Read(/c:\\Users\\A\\Desktop\\Univers\\GPSnew\\github2\\GPSnew\\article/**)",
-      "Read(/c:\\Users\\A\\Desktop\\Univers\\GPSnew\\github2\\GPSnew\\article/**)",
-      "Bash(del generate_fig14.bat)",
-      "Bash(python:*)"
+      "Bash(javac:*)",
+      "Bash(java:*)"
     ],
     "deny": [],
     "ask": [],

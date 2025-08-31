@@ -196,7 +196,7 @@ public class Main {
             System.out.println("\n=== Starting Particle Filter Simulation ===");
             
             // Parameters for particle filter (now properly in UTM meters!)
-            double gridSize = 25.0;       // 25 meters grid size - reduced from 50m for more focused initialization
+            double gridSize = 15.0;       // 15 meters grid size for better convergence
             double movementNoise = config.getParticleMeasurementNoise();  // From configuration
             int particleCount = config.getParticleCount();  // From configuration
             
@@ -210,6 +210,11 @@ public class Main {
             
             // Initialize particle filter with the first point
             Point3D startPoint = route.get(0);
+            System.out.println("=== MAIN DEBUG: START POINT ===");
+            System.out.println("Start point from route: X=" + startPoint.getX() + ", Y=" + startPoint.getY() + ", Z=" + startPoint.getZ());
+            System.out.println("Route size: " + route.size() + " points");
+            System.out.println("=== END MAIN DEBUG ===\n");
+            
             particleFilter.initializeParticles(startPoint, particleCount);
             
             // Add initial state to history with first timestamp
@@ -231,10 +236,6 @@ public class Main {
                 
                 // Update particle filter with current point
                 particleFilter.update(currentPoint, timestamp);
-                
-                // Save current state to history before calculating estimated position
-                particleFilter.getParticleHistory().add(new ArrayList<>(particleFilter.getParticles()));
-                particleFilter.getTimestamps().add(timestamp);
                 
                 // Calculate estimated position
                 Point3D estimatedPosition = calculateEstimatedPosition(particleFilter.getParticles());
@@ -356,12 +357,30 @@ public class Main {
      * (simplified Haversine distance)
      */
     private static double calculateError(Point3D truePosition, Point3D estimatedPosition) {
-        // Simple Euclidean distance in coordinate space
-        // (since we're working in a small area, this approximation is reasonable)
-        double latDiff = truePosition.getY() - estimatedPosition.getY();
-        double lonDiff = truePosition.getX() - estimatedPosition.getX();
-        double altDiff = truePosition.getZ() - estimatedPosition.getZ();
+        // Calculate Euclidean distance between positions
+        // If coordinates are in UTM (meters), result is in meters
+        // If coordinates are in geographic (degrees), result needs conversion to meters
+        double xDiff = truePosition.getX() - estimatedPosition.getX();
+        double yDiff = truePosition.getY() - estimatedPosition.getY();
         
-        return Math.sqrt(latDiff * latDiff + lonDiff * lonDiff);
+        double distance = Math.sqrt(xDiff * xDiff + yDiff * yDiff);
+        
+        // Check if we're working with geographic coordinates (small decimal values)
+        // If coordinates appear to be in degrees, convert to approximate meters
+        CoordinateSystemManager coordManager = CoordinateSystemManager.getInstance();
+        if (!coordManager.isUsingUtm()) {
+            // Convert degrees to meters using approximate conversion
+            // 1 degree lat ≈ 111,319 meters, 1 degree lon ≈ 111,319 * cos(lat) meters
+            double avgLat = Math.toRadians((truePosition.getY() + estimatedPosition.getY()) / 2.0);
+            double latMetersPerDegree = 111319.0;
+            double lonMetersPerDegree = 111319.0 * Math.cos(avgLat);
+            
+            distance = Math.sqrt(
+                Math.pow(xDiff * lonMetersPerDegree, 2) + 
+                Math.pow(yDiff * latMetersPerDegree, 2)
+            );
+        }
+        
+        return distance;
     }
 }
