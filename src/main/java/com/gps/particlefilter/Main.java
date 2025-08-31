@@ -237,8 +237,9 @@ public class Main {
                 // Update particle filter with current point
                 particleFilter.update(currentPoint, timestamp);
                 
-                // Calculate estimated position
-                Point3D estimatedPosition = calculateEstimatedPosition(particleFilter.getParticles());
+                // Calculate estimated position using particles from history (with preserved weights)
+                List<Particle> particlesWithWeights = particleFilter.getParticleHistory().get(particleFilter.getParticleHistory().size() - 1);
+                Point3D estimatedPosition = calculateEstimatedPosition(particlesWithWeights);
                 estimatedRoute.add(estimatedPosition);
                 
                 // Calculate error for this point

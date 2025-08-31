@@ -263,11 +263,12 @@ public class ParticleFilter {
             move(previousPoint, currentPoint);
         }
         updateWeights(currentPoint);
-        resample();
         
-        // Save current state to history and timestamp
+        // Save current state to history BEFORE resampling (preserves weights for estimation)
         particleHistory.add(new ArrayList<>(particles));
         timestamps.add(timestamp);
+        
+        resample();
         
         // Store the current point for next update (in current coordinate system)
         previousPoint = currentPoint;
