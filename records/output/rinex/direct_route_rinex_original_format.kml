@@ -1,0 +1,1178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+
+<Style id="redpin">
+ <IconStyle>
+  <color>ff0000ff</color>
+  <scale>0.5</scale>
+  <Icon>
+   <href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+  </Icon>
+ </IconStyle>
+</Style>
+
+<Style id="yellowpin">
+ <IconStyle>
+  <color>ff00ffff</color>
+  <scale>0.5</scale>
+  <Icon>
+   <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+  </Icon>
+ </IconStyle>
+</Style>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 0 with coordinates (x: 33.94163479269853, y: 29.20929511346191, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>0</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>33.941635,29.209295,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 1 with coordinates (x: 33.93392255924589, y: 28.59750789983523, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>1</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>33.933923,28.597508,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 2 with coordinates (x: 34.14350691495167, y: 28.53701647672667, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>2</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>34.143507,28.537016,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 4 with coordinates (x: 34.57192118139717, y: 28.45609652310151, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>4</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>34.571921,28.456097,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 6 with coordinates (x: 35.00700000000000, y: 27.84642749900000, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>6</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>35.007000,27.846427,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 7 with coordinates (x: 35.26156399625625, y: 27.85392114587141, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>7</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>35.261564,27.853921,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 9 with coordinates (x: 35.76687178595779, y: 27.91671259990092, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>9</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>35.766872,27.916713,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 10 with coordinates (x: 36.01561932853042, y: 27.97178707686198, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>10</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>36.015619,27.971787,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 12 with coordinates (x: 36.50037664508453, y: 28.12826049043425, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>12</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>36.500377,28.128260,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 13 with coordinates (x: 36.73447627671304, y: 28.22902604542193, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>13</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>36.734476,28.229026,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 14 with coordinates (x: 36.96181602985640, y: 28.34430284201442, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>14</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>36.961816,28.344303,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 16 with coordinates (x: 37.39265721116658, y: 28.61652413234657, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>16</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>37.392657,28.616524,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 17 with coordinates (x: 37.59444278492580, y: 28.77241857287184, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>17</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>37.594443,28.772419,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 18 with coordinates (x: 37.78606643960143, y: 28.94069482474796, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>18</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>37.786066,28.940695,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 20 with coordinates (x: 38.13583100475224, y: 29.31170557028705, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>20</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>38.135831,29.311706,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 21 with coordinates (x: 38.29257966642684, y: 29.51298634239203, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>21</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>38.292580,29.512986,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 22 with coordinates (x: 38.43638196580751, y: 29.72374802584866, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>22</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>38.436382,29.723748,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 23 with coordinates (x: 38.56671101352111, y: 29.94313230985492, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>23</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>38.566711,29.943132,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 24 with coordinates (x: 38.68303449335676, y: 30.17028947092213, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>24</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>38.683034,30.170289,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 26 with coordinates (x: 38.87179321493831, y: 30.64435256259925, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>26</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>38.871793,30.644353,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 27 with coordinates (x: 38.94349130422081, y: 30.88938082010905, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>27</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>38.943491,30.889381,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 28 with coordinates (x: 38.99965770361236, y: 31.13845980906939, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>28</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>38.999658,31.138460,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 30 with coordinates (x: 39.06464124000790, y: 31.64481485155022, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>30</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>39.064641,31.644815,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 31 with coordinates (x: 39.07314536600000, y: 31.90010000000000, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>31</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>39.073145,31.900100,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 32 with coordinates (x: 39.06559808515943, y: 32.15544534804410, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>32</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>39.065598,32.155445,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 34 with coordinates (x: 39.00252507769792, y: 32.66228717179101, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>34</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>39.002525,32.662287,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 35 with coordinates (x: 38.35680849827717, y: 32.76018463794652, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>35</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>38.356808,32.760185,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 37 with coordinates (x: 38.22181631886495, y: 33.17293582377862, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>37</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>38.221816,33.172936,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 38 with coordinates (x: 37.65063016982899, y: 33.14409793065660, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>38</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>37.650630,33.144098,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 40 with coordinates (x: 37.92532608423021, y: 33.75212604957893, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>40</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>37.925326,33.752126,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 42 with coordinates (x: 37.66953846796662, y: 34.10274337962132, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>42</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>37.669538,34.102743,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 44 with coordinates (x: 37.37191129010547, y: 34.41847473592529, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>44</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>37.371911,34.418475,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 46 with coordinates (x: 37.03713680707079, y: 34.69434359733531, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>46</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>37.037137,34.694344,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 47 with coordinates (x: 37.19005727690661, y: 35.34004783227459, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>47</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>37.190057,35.340048,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 49 with coordinates (x: 36.74212130949014, y: 35.58741990270716, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>49</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>36.742121,35.587420,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 50 with coordinates (x: 36.50734727593805, y: 35.68954398965698, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>50</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>36.507347,35.689544,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 51 with coordinates (x: 36.26660037531389, y: 35.77675133852333, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>51</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>36.266600,35.776751,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 53 with coordinates (x: 35.77097963496943, y: 35.90502019494741, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>53</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>35.770980,35.905020,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 54 with coordinates (x: 35.51806324389026, y: 35.94558213706507, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>54</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>35.518063,35.945582,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 56 with coordinates (x: 35.00700000000000, y: 35.97871793100000, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>56</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>35.007000,35.978718,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 57 with coordinates (x: 34.75086754007973, y: 35.97120887017221, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>57</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>34.750868,35.971209,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 59 with coordinates (x: 34.24245980496492, y: 35.90796005751395, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>59</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>34.242460,35.907960,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 61 with coordinates (x: 33.74586113630001, y: 35.78148631890136, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>61</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>33.745861,35.781486,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 63 with coordinates (x: 33.26891660986350, y: 35.59371579249662, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>63</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>33.268917,35.593716,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 64 with coordinates (x: 33.04017638266379, y: 35.47773887852747, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>64</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>33.040176,35.477739,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 66 with coordinates (x: 32.60669820747256, y: 35.20383240721128, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>66</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>32.606698,35.203832,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 67 with coordinates (x: 32.40367321925289, y: 35.04698149818358, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>67</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>32.403673,35.046981,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 69 with coordinates (x: 32.02905395019346, y: 34.69657747972063, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>69</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>32.029054,34.696577,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 71 with coordinates (x: 31.70126064303125, y: 34.30186053198374, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>71</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>31.701261,34.301861,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 72 with coordinates (x: 31.55655680129100, y: 34.08981812900376, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>72</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>31.556557,34.089818,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 73 with coordinates (x: 31.42544174871013, y: 33.86907831074600, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>73</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>31.425442,33.869078,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 74 with coordinates (x: 31.30841861988254, y: 33.64052028863999, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>74</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>31.308419,33.640520,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 76 with coordinates (x: 31.11848027504077, y: 33.16355664782942, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>76</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>31.118480,33.163557,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 78 with coordinates (x: 30.98979778564267, y: 32.66642230676368, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>78</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>30.989798,32.666422,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 79 with coordinates (x: 30.94911182178782, y: 32.41273049135735, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>79</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>30.949112,32.412730,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 81 with coordinates (x: 30.91584324900000, y: 31.90010000000000, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>81</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>30.915843,31.900100,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 82 with coordinates (x: 30.92341654723656, y: 31.64318270586688, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>82</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>30.923417,31.643183,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 84 with coordinates (x: 30.98684648296982, y: 31.13321470214164, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>84</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>30.986846,31.133215,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 86 with coordinates (x: 31.11374586434561, y: 30.63510504888567, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>86</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>31.113746,30.635105,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 87 with coordinates (x: 31.20038498030779, y: 30.39295449499376, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>87</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>31.200385,30.392954,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 89 with coordinates (x: 31.41841924430032, y: 29.92726103478466, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>89</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>31.418419,29.927261,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 91 with coordinates (x: 31.69316970137413, y: 29.49246135745560, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>91</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>31.693170,29.492461,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 93 with coordinates (x: 32.02032264972991, y: 29.09542328338702, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>93</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>32.020323,29.095423,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 94 with coordinates (x: 32.20198425664098, y: 28.91306162291439, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>94</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>32.201984,28.913062,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 96 with coordinates (x: 32.59789349780304, y: 28.58424936588656, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>96</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>32.597893,28.584249,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 98 with coordinates (x: 33.03198929933863, y: 28.30756887218913, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>98</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>33.031989,28.307569,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 100 with coordinates (x: 33.49746694590117, y: 28.08745471965550, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>100</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>33.497467,28.087455,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 102 with coordinates (x: 33.98697280776117, y: 27.92735638119366, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>102</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>33.986973,27.927356,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 103 with coordinates (x: 34.23834185960453, y: 27.87065291692988, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>103</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>34.238342,27.870653,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 104 with coordinates (x: 34.49280643201489, y: 27.82983879623374, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>104</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>34.492806,27.829839,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 105 with coordinates (x: 34.74936413254277, y: 27.80509515131302, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>105</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>34.749364,27.805095,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#redpin</styleUrl>
+ <Style>
+  <BalloonStyle>
+   <text>This point was taken at time 107 with coordinates (x: 35.26469962476238, y: 27.80408175796705, z: 1.800000)</text>
+  </BalloonStyle>
+ </Style>
+ <TimeStamp>
+  <when>107</when>
+ </TimeStamp>
+ <Point>
+  <altitudeMode>relativeToGround</altitudeMode>
+  <coordinates>35.264700,27.804082,1.800000</coordinates>
+ </Point>
+</Placemark>
+
+</Document>
+</kml>

@@ -1,8 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(javac:*)",
-      "Bash(java:*)"
+      "Bash(rm:*)",
+      "Bash(mkdir:*)",
+      "Bash(mv:*)"
     ],
     "deny": [],
     "ask": [],
