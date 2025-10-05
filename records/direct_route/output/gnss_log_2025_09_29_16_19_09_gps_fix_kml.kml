@@ -1,0 +1,1758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<name>gnss_log_2025_09_29_16_19_09</name>
+<Style id="gps_fix_point">
+<IconStyle>
+<color>ff00ff00</color>
+<scale>0.5</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href></Icon>
+</IconStyle>
+</Style>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 0s - Coordinates: (35.0070196856, 31.9000855135, 285.00m) - Speed: 0.56 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>0</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0070196856,31.9000855135,285.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 1s - Coordinates: (35.0070165843, 31.9000828732, 282.00m) - Speed: 0.04 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>1</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0070165843,31.9000828732,282.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 2s - Coordinates: (35.0070162490, 31.9000829151, 283.00m) - Speed: 0.00 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>2</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0070162490,31.9000829151,283.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 3s - Coordinates: (35.0070159137, 31.9000829151, 283.00m) - Speed: 0.00 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>3</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0070159137,31.9000829151,283.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 4s - Coordinates: (35.0070153270, 31.9000828313, 283.00m) - Speed: 0.00 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>4</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0070153270,31.9000828313,283.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 5s - Coordinates: (35.0070150755, 31.9000821188, 282.00m) - Speed: 0.00 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>5</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0070150755,31.9000821188,282.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 6s - Coordinates: (35.0070128124, 31.9000824960, 281.00m) - Speed: 0.39 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>6</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0070128124,31.9000824960,281.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 7s - Coordinates: (35.0070066936, 31.9000778859, 280.00m) - Speed: 0.33 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>7</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0070066936,31.9000778859,280.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 8s - Coordinates: (35.0070133992, 31.9000714738, 279.00m) - Speed: 0.33 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>8</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0070133992,31.9000714738,279.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 9s - Coordinates: (35.0070128124, 31.9000645587, 277.00m) - Speed: 0.32 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>9</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0070128124,31.9000645587,277.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 10s - Coordinates: (35.0070110522, 31.9000668218, 277.00m) - Speed: 0.26 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>10</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0070110522,31.9000668218,277.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 11s - Coordinates: (35.0070114713, 31.9000651455, 276.00m) - Speed: 0.29 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>11</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0070114713,31.9000651455,276.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 12s - Coordinates: (35.0070105493, 31.9000651455, 275.00m) - Speed: 0.32 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>12</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0070105493,31.9000651455,275.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 13s - Coordinates: (35.0070060231, 31.9000646006, 275.00m) - Speed: 0.11 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>13</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0070060231,31.9000646006,275.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 14s - Coordinates: (35.0070081186, 31.9000650616, 274.00m) - Speed: 0.25 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>14</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0070081186,31.9000650616,274.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 15s - Coordinates: (35.0070113037, 31.9000642654, 273.00m) - Speed: 0.41 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>15</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0070113037,31.9000642654,273.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 16s - Coordinates: (35.0070095435, 31.9000634272, 272.00m) - Speed: 0.35 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>16</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0070095435,31.9000634272,272.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 17s - Coordinates: (35.0070062745, 31.9000719348, 272.00m) - Speed: 0.41 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>17</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0070062745,31.9000719348,272.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 18s - Coordinates: (35.0069958810, 31.9000774249, 273.00m) - Speed: 0.55 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>18</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069958810,31.9000774249,273.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 19s - Coordinates: (35.0069927797, 31.9000787241, 272.00m) - Speed: 0.46 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>19</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069927797,31.9000787241,272.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 20s - Coordinates: (35.0069844816, 31.9000847591, 271.00m) - Speed: 0.49 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>20</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069844816,31.9000847591,271.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 21s - Coordinates: (35.0069808774, 31.9000939792, 272.00m) - Speed: 0.52 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>21</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069808774,31.9000939792,272.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 22s - Coordinates: (35.0069822185, 31.9000992179, 271.00m) - Speed: 0.58 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>22</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069822185,31.9000992179,271.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 23s - Coordinates: (35.0069740880, 31.9001000561, 271.00m) - Speed: 0.43 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>23</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069740880,31.9001000561,271.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 24s - Coordinates: (35.0069667958, 31.9001022773, 271.00m) - Speed: 0.28 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>24</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069667958,31.9001022773,271.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 25s - Coordinates: (35.0069601741, 31.9001021935, 270.00m) - Speed: 0.36 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>25</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069601741,31.9001021935,270.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 26s - Coordinates: (35.0069574919, 31.9001054205, 269.00m) - Speed: 0.39 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>26</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069574919,31.9001054205,269.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 27s - Coordinates: (35.0069466792, 31.9001111202, 267.00m) - Speed: 0.11 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>27</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069466792,31.9001111202,267.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 28s - Coordinates: (35.0069457572, 31.9001116650, 267.00m) - Speed: 0.39 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>28</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069457572,31.9001116650,267.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 29s - Coordinates: (35.0069413986, 31.9001164427, 266.00m) - Speed: 0.51 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>29</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069413986,31.9001164427,266.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 30s - Coordinates: (35.0069373753, 31.9001231063, 265.00m) - Speed: 0.66 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>30</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069373753,31.9001231063,265.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 31s - Coordinates: (35.0069329329, 31.9001241541, 264.00m) - Speed: 0.46 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>31</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069329329,31.9001241541,264.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 32s - Coordinates: (35.0069266465, 31.9001220586, 263.00m) - Speed: 0.21 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>32</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069266465,31.9001220586,263.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 33s - Coordinates: (35.0069258083, 31.9001233997, 262.00m) - Speed: 0.28 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>33</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069258083,31.9001233997,262.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 34s - Coordinates: (35.0069161691, 31.9001244474, 261.00m) - Speed: 0.47 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>34</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069161691,31.9001244474,261.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 35s - Coordinates: (35.0069148280, 31.9001272134, 261.00m) - Speed: 0.31 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>35</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069148280,31.9001272134,261.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 36s - Coordinates: (35.0069088768, 31.9001285546, 260.00m) - Speed: 0.33 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>36</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069088768,31.9001285546,260.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 37s - Coordinates: (35.0069042668, 31.9001265429, 259.00m) - Speed: 0.23 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>37</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069042668,31.9001265429,259.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 38s - Coordinates: (35.0069017522, 31.9001245312, 259.00m) - Speed: 0.34 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>38</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0069017522,31.9001245312,259.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 39s - Coordinates: (35.0068885088, 31.9001283869, 258.00m) - Speed: 0.36 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>39</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068885088,31.9001283869,258.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 40s - Coordinates: (35.0068851560, 31.9001327036, 258.00m) - Speed: 0.50 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>40</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068851560,31.9001327036,258.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 41s - Coordinates: (35.0068860780, 31.9001386547, 258.00m) - Speed: 0.75 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>41</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068860780,31.9001386547,258.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 42s - Coordinates: (35.0068895984, 31.9001497608, 258.00m) - Speed: 0.59 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>42</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068895984,31.9001497608,258.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 43s - Coordinates: (35.0068884250, 31.9001551671, 258.00m) - Speed: 0.57 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>43</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068884250,31.9001551671,258.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 44s - Coordinates: (35.0068864133, 31.9001588132, 257.00m) - Speed: 0.46 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>44</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068864133,31.9001588132,257.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 45s - Coordinates: (35.0068862457, 31.9001637166, 257.00m) - Speed: 0.63 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>45</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068862457,31.9001637166,257.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 46s - Coordinates: (35.0068824738, 31.9001708832, 256.00m) - Speed: 0.64 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>46</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068824738,31.9001708832,256.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 47s - Coordinates: (35.0068776123, 31.9001778821, 255.00m) - Speed: 0.90 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>47</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068776123,31.9001778821,255.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 48s - Coordinates: (35.0068688113, 31.9001884852, 255.00m) - Speed: 0.69 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>48</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068688113,31.9001884852,255.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 49s - Coordinates: (35.0068688113, 31.9001912512, 255.00m) - Speed: 0.57 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>49</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068688113,31.9001912512,255.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 50s - Coordinates: (35.0068640336, 31.9001966156, 256.00m) - Speed: 1.04 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>50</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068640336,31.9001966156,256.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 51s - Coordinates: (35.0068614352, 31.9002023153, 256.00m) - Speed: 0.90 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>51</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068614352,31.9002023153,256.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 52s - Coordinates: (35.0068580825, 31.9002091885, 255.00m) - Speed: 0.74 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>52</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068580825,31.9002091885,255.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 53s - Coordinates: (35.0068595912, 31.9002160197, 254.00m) - Speed: 0.79 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>53</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068595912,31.9002160197,254.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 54s - Coordinates: (35.0068636145, 31.9002231862, 254.00m) - Speed: 0.71 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>54</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068636145,31.9002231862,254.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 55s - Coordinates: (35.0068624411, 31.9002240244, 254.00m) - Speed: 0.29 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>55</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068624411,31.9002240244,254.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 56s - Coordinates: (35.0068582501, 31.9002301013, 254.00m) - Speed: 0.90 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>56</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068582501,31.9002301013,254.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 57s - Coordinates: (35.0068533048, 31.9002414588, 254.00m) - Speed: 0.93 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>57</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068533048,31.9002414588,254.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 58s - Coordinates: (35.0068501197, 31.9002453564, 254.00m) - Speed: 0.79 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>58</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068501197,31.9002453564,254.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 59s - Coordinates: (35.0068488624, 31.9002560433, 253.00m) - Speed: 0.71 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>59</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068488624,31.9002560433,253.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 60s - Coordinates: (35.0068457611, 31.9002609467, 253.00m) - Speed: 0.55 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>60</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068457611,31.9002609467,253.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 61s - Coordinates: (35.0068438333, 31.9002686162, 253.00m) - Speed: 0.89 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>61</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068438333,31.9002686162,253.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 62s - Coordinates: (35.0068419054, 31.9002782973, 253.00m) - Speed: 0.39 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>62</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068419054,31.9002782973,253.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 63s - Coordinates: (35.0068513770, 31.9002773333, 252.00m) - Speed: 0.13 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>63</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068513770,31.9002773333,252.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 64s - Coordinates: (35.0068589207, 31.9002740225, 251.00m) - Speed: 0.21 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>64</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068589207,31.9002740225,251.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 65s - Coordinates: (35.0068631116, 31.9002758246, 250.00m) - Speed: 0.18 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>65</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068631116,31.9002758246,250.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 66s - Coordinates: (35.0068647042, 31.9002728909, 249.00m) - Speed: 0.06 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>66</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068647042,31.9002728909,249.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 67s - Coordinates: (35.0068592560, 31.9002699573, 248.00m) - Speed: 0.27 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>67</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068592560,31.9002699573,248.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 68s - Coordinates: (35.0068543945, 31.9002640899, 247.00m) - Speed: 0.24 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>68</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068543945,31.9002640899,247.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 69s - Coordinates: (35.0068559870, 31.9002567558, 245.00m) - Speed: 0.30 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>69</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068559870,31.9002567558,245.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 70s - Coordinates: (35.0068471860, 31.9002501341, 244.00m) - Speed: 0.30 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>70</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068471860,31.9002501341,244.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 71s - Coordinates: (35.0068468507, 31.9002456497, 244.00m) - Speed: 0.23 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>71</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068468507,31.9002456497,244.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 72s - Coordinates: (35.0068417378, 31.9002406206, 243.00m) - Speed: 1.01 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>72</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068417378,31.9002406206,243.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 73s - Coordinates: (35.0068323500, 31.9002302689, 243.00m) - Speed: 0.30 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>73</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068323500,31.9002302689,243.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 74s - Coordinates: (35.0068300869, 31.9002233958, 242.00m) - Speed: 0.19 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>74</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068300869,31.9002233958,242.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 75s - Coordinates: (35.0068292487, 31.9002201688, 242.00m) - Speed: 0.09 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>75</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068292487,31.9002201688,242.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 76s - Coordinates: (35.0068341102, 31.9002151815, 241.00m) - Speed: 0.58 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>76</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068341102,31.9002151815,241.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 77s - Coordinates: (35.0068358704, 31.9002085598, 240.00m) - Speed: 0.51 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>77</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068358704,31.9002085598,240.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 78s - Coordinates: (35.0068408158, 31.9002005551, 239.00m) - Speed: 0.53 m/s - Accuracy: 2.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>78</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068408158,31.9002005551,239.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 79s - Coordinates: (35.0068450905, 31.9001900358, 239.00m) - Speed: 0.59 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>79</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068450905,31.9001900358,239.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 80s - Coordinates: (35.0068464316, 31.9001831627, 238.00m) - Speed: 0.93 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>80</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068464316,31.9001831627,238.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 81s - Coordinates: (35.0068549812, 31.9001708413, 238.00m) - Speed: 0.80 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>81</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068549812,31.9001708413,238.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 82s - Coordinates: (35.0068597589, 31.9001626689, 239.00m) - Speed: 1.10 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>82</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068597589,31.9001626689,239.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 83s - Coordinates: (35.0068614352, 31.9001531554, 239.00m) - Speed: 0.81 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>83</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068614352,31.9001531554,239.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 84s - Coordinates: (35.0068688113, 31.9001402054, 239.00m) - Speed: 0.86 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>84</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068688113,31.9001402054,239.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 85s - Coordinates: (35.0068739243, 31.9001296861, 239.00m) - Speed: 0.95 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>85</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068739243,31.9001296861,239.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 86s - Coordinates: (35.0068722479, 31.9001197955, 239.00m) - Speed: 0.80 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>86</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068722479,31.9001197955,239.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 87s - Coordinates: (35.0068734214, 31.9001068873, 239.00m) - Speed: 0.94 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>87</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068734214,31.9001068873,239.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 88s - Coordinates: (35.0068761036, 31.9000969548, 239.00m) - Speed: 0.89 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>88</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068761036,31.9000969548,239.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 89s - Coordinates: (35.0068785343, 31.9000848010, 239.00m) - Speed: 0.97 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>89</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068785343,31.9000848010,239.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 90s - Coordinates: (35.0068842340, 31.9000758324, 239.00m) - Speed: 0.91 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>90</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068842340,31.9000758324,239.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 91s - Coordinates: (35.0068899337, 31.9000653969, 240.00m) - Speed: 0.44 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>91</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068899337,31.9000653969,240.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 92s - Coordinates: (35.0068911072, 31.9000583561, 240.00m) - Speed: 1.07 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>92</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068911072,31.9000583561,240.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 93s - Coordinates: (35.0068914425, 31.9000475015, 240.00m) - Speed: 1.06 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>93</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068914425,31.9000475015,240.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 94s - Coordinates: (35.0068888441, 31.9000353059, 240.00m) - Speed: 0.91 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>94</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068888441,31.9000353059,240.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 95s - Coordinates: (35.0068882573, 31.9000262953, 239.00m) - Speed: 0.76 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>95</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068882573,31.9000262953,239.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 96s - Coordinates: (35.0068951305, 31.9000177039, 239.00m) - Speed: 0.79 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>96</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068951305,31.9000177039,239.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 97s - Coordinates: (35.0068963878, 31.9000133034, 238.00m) - Speed: 0.68 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>97</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068963878,31.9000133034,238.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 98s - Coordinates: (35.0068979803, 31.9000071427, 238.00m) - Speed: 0.59 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>98</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068979803,31.9000071427,238.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 99s - Coordinates: (35.0068982318, 31.9000041671, 238.00m) - Speed: 0.23 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>99</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068982318,31.9000041671,238.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 100s - Coordinates: (35.0068986509, 31.9000023650, 238.00m) - Speed: 0.30 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>100</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068986509,31.9000023650,238.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 101s - Coordinates: (35.0068974774, 31.8999986351, 238.00m) - Speed: 0.20 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>101</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068974774,31.8999986351,238.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 102s - Coordinates: (35.0068956334, 31.8999978388, 238.00m) - Speed: 0.26 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>102</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068956334,31.8999978388,238.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 103s - Coordinates: (35.0068940409, 31.8999946956, 239.00m) - Speed: 0.34 m/s - Accuracy: 1.50m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>103</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068940409,31.8999946956,239.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 104s - Coordinates: (35.0068916939, 31.8999907142, 239.00m) - Speed: 0.41 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>104</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068916939,31.8999907142,239.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 105s - Coordinates: (35.0068902690, 31.8999856850, 239.00m) - Speed: 0.41 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>105</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068902690,31.8999856850,239.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 106s - Coordinates: (35.0068900175, 31.8999823742, 239.00m) - Speed: 0.25 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>106</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068900175,31.8999823742,239.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 107s - Coordinates: (35.0068912748, 31.8999760039, 239.00m) - Speed: 0.41 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>107</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068912748,31.8999760039,239.000000</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+ <styleUrl>#gps_fix_point</styleUrl>
+<Style>
+<BalloonStyle>
+<text>GPS Fix at time 108s - Coordinates: (35.0068874191, 31.8999739084, 239.00m) - Speed: 0.12 m/s - Accuracy: 2.00m</text>
+</BalloonStyle>
+</Style>
+<TimeStamp>
+<when>108</when>
+ </TimeStamp>
+<Point>
+<altitudeMode>absolute</altitudeMode>
+<coordinates>35.0068874191,31.8999739084,239.000000</coordinates>
+</Point>
+</Placemark>
+
+</Document>
+</kml>

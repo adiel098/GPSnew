@@ -3,7 +3,9 @@
     "allow": [
       "Bash(rm:*)",
       "Bash(mkdir:*)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "Bash(dir /B \"C:\\Users\\A\\Desktop\\Univers\\GPSnew\\github2\\GPSnew\\records\")",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": [],

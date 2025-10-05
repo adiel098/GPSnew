@@ -366,54 +366,92 @@ class RINEXParser:
 
 
 def main():
-    """Extract data from both RINEX files"""
+    """Extract data from RINEX files"""
+    import sys
 
     parser = RINEXParser()
 
-    # Define paths
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    scripts_dir = os.path.dirname(script_dir)  # Parent of rinex_scripts is scripts
-    records_dir = os.path.dirname(scripts_dir)  # Parent of scripts is records
-    output_dir = os.path.join(records_dir, 'output', 'rinex')
+    # Check for command-line arguments
+    if len(sys.argv) > 1:
+        # Process specific file(s) provided as arguments
+        for rinex_file in sys.argv[1:]:
+            if not os.path.exists(rinex_file):
+                print(f"Error: File not found: {rinex_file}")
+                continue
 
-    # Ensure output directory exists
-    os.makedirs(output_dir, exist_ok=True)
+            print(f"\n{'='*60}")
+            print(f"Processing {rinex_file}")
 
-    routes = [
-        ('direct_route', 'Direct Route'),
-        ('rectangle_route', 'Rectangle Route')
-    ]
+            # Parse RINEX file
+            rinex_data = parser.parse_rinex_file(rinex_file)
 
-    for route_folder, route_name in routes:
-        route_path = os.path.join(records_dir, route_folder)
+            # Analyze data
+            analysis = parser.analyze_rinex_data(rinex_data)
 
-        # Find .25o file
-        rinex_files = [f for f in os.listdir(route_path) if f.endswith('.25o')]
+            # Print summary
+            parser.print_summary(analysis)
 
-        if not rinex_files:
-            print(f"No .25o files found in {route_folder}")
-            continue
+            # Determine output path
+            base_name = os.path.splitext(os.path.basename(rinex_file))[0]
+            output_dir = os.path.join(os.path.dirname(rinex_file), 'output')
+            os.makedirs(output_dir, exist_ok=True)
+            csv_output = os.path.join(output_dir, f"{base_name}_analysis.csv")
 
-        rinex_file = os.path.join(route_path, rinex_files[0])
-        print(f"\n{'='*60}")
-        print(f"Processing {route_name}")
-        print(f"RINEX file: {rinex_file}")
+            # Export to CSV
+            parser.export_to_csv(analysis, csv_output)
+            print(f"\nRINEX analysis exported to: {csv_output}")
 
-        # Parse RINEX file
-        rinex_data = parser.parse_rinex_file(rinex_file)
+            print(f"\n{'='*60}")
 
-        # Analyze data
-        analysis = parser.analyze_rinex_data(rinex_data)
+    else:
+        # Default behavior: process hardcoded routes
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        scripts_dir = os.path.dirname(script_dir)
+        records_dir = os.path.dirname(scripts_dir)
+        output_dir = os.path.join(records_dir, 'output', 'rinex')
 
-        # Print summary
-        parser.print_summary(analysis)
+        os.makedirs(output_dir, exist_ok=True)
 
-        # Export to CSV
-        csv_output = os.path.join(output_dir, f"{route_folder}_rinex_analysis.csv")
-        parser.export_to_csv(analysis, csv_output)
-        print(f"\nRINEX analysis exported to: {csv_output}")
+        routes = [
+            ('direct_route', 'Direct Route'),
+            ('rectangle_route', 'Rectangle Route')
+        ]
 
-        print(f"\n{'='*60}")
+        for route_folder, route_name in routes:
+            route_path = os.path.join(records_dir, route_folder)
+
+            if not os.path.exists(route_path):
+                print(f"Route folder not found: {route_path}")
+                continue
+
+            # Find .25o file or other RINEX observation files
+            rinex_files = [f for f in os.listdir(route_path)
+                          if f.endswith('.25o') or f.endswith('o')]
+
+            if not rinex_files:
+                print(f"No RINEX files found in {route_folder}")
+                continue
+
+            rinex_file = os.path.join(route_path, rinex_files[0])
+            print(f"\n{'='*60}")
+            print(f"Processing {route_name}")
+            print(f"RINEX file: {rinex_file}")
+
+            # Parse RINEX file
+            rinex_data = parser.parse_rinex_file(rinex_file)
+
+            # Analyze data
+            analysis = parser.analyze_rinex_data(rinex_data)
+
+            # Print summary
+            parser.print_summary(analysis)
+
+            # Export to CSV
+            csv_output = os.path.join(output_dir, f"{route_folder}_rinex_analysis.csv")
+            parser.export_to_csv(analysis, csv_output)
+            print(f"\nRINEX analysis exported to: {csv_output}")
+
+            print(f"\n{'='*60}")
 
 
 if __name__ == "__main__":
