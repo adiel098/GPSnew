@@ -5,7 +5,14 @@
       "Bash(mkdir:*)",
       "Bash(mv:*)",
       "Bash(dir /B \"C:\\Users\\A\\Desktop\\Univers\\GPSnew\\github2\\GPSnew\\records\")",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(tree:*)",
+      "Bash(./build.bat)",
+      "Bash(java:*)",
+      "Bash(javac:*)",
+      "Bash(python3:*)",
+      "Bash(dir /B \"C:\\Users\\A\\Desktop\\Univers\\GPSnew\\github2\\GPSnew\\records\\bursa_rectangle6_route1\\output\")",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": [],

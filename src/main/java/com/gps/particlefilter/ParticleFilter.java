@@ -145,9 +145,10 @@ public class ParticleFilter {
             
             // Count matching LOS states between particle and reference
             int n = particle.matchingLosCount(referenceStatus);
-            
+
             // Modified Sigmoid weight function from article (Equation 2)
             // Weight(x) = N × 1/(1 + e^(N/4-n/2))
+            // This formula works correctly for N ≤ 20 satellites (article tested with 17)
             double exponent = (N / 4.0) - (n / 2.0);
             double sigmoidWeight = N * (1.0 / (1.0 + Math.exp(exponent)));
             
@@ -208,13 +209,22 @@ public class ParticleFilter {
         // Calculate distance and azimuth between points
         double distance = from.distanceTo(to);
         double azimuth = from.azimuthTo(to);
-        
+
+        // Handle case where points are identical (distance = 0)
+        if (distance < 0.001) {
+            // No movement needed, just update LOS status
+            for (Particle particle : particles) {
+                particle.setLosStatus(losCalculator.calculateLOS(particle.getPosition()));
+            }
+            return;
+        }
+
         // Calculate velocity magnitude (assuming 1 second between updates)
         this.velocity = distance;
-        
+
         // Determine c coefficient based on velocity (from article)
         // Walking speed: ~1-2 m/s → c = 1.0-1.5
-        // Driving speed: >5 m/s → c = 0.5-1.0  
+        // Driving speed: >5 m/s → c = 0.5-1.0
         // Slow/stationary: <0.5 m/s → c = 2.0
         if (velocity < 0.5) {
             c = 2.0;
@@ -225,26 +235,26 @@ public class ParticleFilter {
         } else {
             c = 0.5;
         }
-        
+
         System.out.println("Moving from: " + from + " to: " + to);
         System.out.println("Distance: " + distance + "m, Azimuth: " + azimuth + "°");
         System.out.println("Velocity: " + velocity + " m/s, Error coefficient c: " + c);
-        
+
         // Move each particle using improved noise model
         for (Particle particle : particles) {
             // Apply Gaussian noise to distance (2-5% based on velocity)
             double distanceNoiseStd = Math.max(0.02, Math.min(0.05, 1.0 / velocity)) * distance;
             double noisyDistance = distance + random.nextGaussian(0, distanceNoiseStd);
-            
+
             // Apply small Gaussian noise to azimuth (±5-10 degrees based on velocity)
             double azimuthNoiseStd = velocity < 1.0 ? 10.0 : 5.0; // More noise when slow
             double noisyAzimuth = azimuth + random.nextGaussian(0, azimuthNoiseStd);
-            
+
             // Calculate movement using corrected trigonometry for UTM coordinates
             double azimuthRad = Math.toRadians(noisyAzimuth);
             double dx = noisyDistance * Math.sin(azimuthRad); // Easting component
             double dy = noisyDistance * Math.cos(azimuthRad); // Northing component
-            
+
             // Update particle position
             Point3D currentPos = particle.getPosition();
             Point3D newPos = new Point3D(
@@ -252,7 +262,7 @@ public class ParticleFilter {
                 currentPos.getY() + dy,
                 currentPos.getZ()
             );
-            
+
             particle.setPosition(newPos);
             particle.setLosStatus(losCalculator.calculateLOS(particle.getPosition()));
         }
